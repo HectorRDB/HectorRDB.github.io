@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classes on Hector Roux de Bézieux</title>
+    <link>/tags/classes/</link>
+    <description>Recent content in Classes on Hector Roux de Bézieux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Apr 2018 00:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CS289: Modelization of single-cell gene expression along a timeline</title>
+      <link>/project/cs289/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
+      
+      <guid>/project/cs289/</guid>
+      <description>CS289 Spring 2018 Final Project Modelization of single-cell gene expression along a timeline Group members: Daniel Amar, Ariane Lozac&amp;rsquo;hmeur, Hector Roux de Bézieux &amp;amp; Alexandre Vincent
+ The project proposal is available on Overleaf and may be read here. The project report is available on Overleaf and may be read here.  Report abstract The explosion of genomic data over the past two decades created a need for new and more performing tools.</description>
+    </item>
+    
+  </channel>
+</rss>

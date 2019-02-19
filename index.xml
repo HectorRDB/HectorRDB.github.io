@@ -6,8 +6,18 @@
     <description>Recent content in Hector Roux de Bézieux on Hector Roux de Bézieux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Jun 2018 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 -0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ESCAPE: Easy Single-Cell rna-sequencing Analyis through a Political Example</title>
+      <link>/project/nationalassemby/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>/project/nationalassemby/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Privacy Policy</title>
@@ -20,12 +30,28 @@
     </item>
     
     <item>
-      <title>Projects</title>
-      <link>/project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 -0700</pubDate>
+      <title>CS289: Modelization of single-cell gene expression along a timeline</title>
+      <link>/project/cs289/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
       
-      <guid>/project/</guid>
-      <description></description>
+      <guid>/project/cs289/</guid>
+      <description>
+
+&lt;h1 id=&#34;cs289-https-people-eecs-berkeley-edu-jrs-189-spring-2018-final-project&#34;&gt;&lt;a href=&#34;https://people.eecs.berkeley.edu/~jrs/189/&#34; target=&#34;_blank&#34;&gt;CS289&lt;/a&gt; Spring 2018 Final Project&lt;/h1&gt;
+
+&lt;h2 id=&#34;modelization-of-single-cell-gene-expression-along-a-timeline&#34;&gt;Modelization of single-cell gene expression along a timeline&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Group members:&lt;/strong&gt;&lt;/em&gt; Daniel Amar, Ariane Lozac&amp;rsquo;hmeur, Hector Roux de Bézieux &amp;amp; Alexandre Vincent&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The project proposal is available on Overleaf and may be &lt;em&gt;read&lt;/em&gt; &lt;a href=&#34;https://www.overleaf.com/read/gqyqyqsmwfdj&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The project report is available on Overleaf and may be &lt;em&gt;read&lt;/em&gt; &lt;a href=&#34;https://v2.overleaf.com/read/kzddthmzqwnd&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;report-abstract&#34;&gt;Report abstract&lt;/h2&gt;
+
+&lt;p&gt;The explosion of genomic data over the past two decades created a need for new and more performing tools. One type of data in particular, Single-cell RNA Sequencing data, allow for a cell-level detection of biological patterns but technical limitations add lots of noise sources to the data. In particular, some counts are dropped and appear as zeros, even thought the gene is expressed in the cell. Here, we present a new method to detect dropouts in cases of development trajectories. Our various model all improve substantially on random guesses and offer a computationally-efficient way to infer correct gene expression patterns over time. The GitHub containing all our scripts is available online at the following address: &lt;a href=&#34;https://github.com/HectorRDB/CS289_Final_Project&#34; target=&#34;_blank&#34;&gt;https://github.com/HectorRDB/CS289_Final_Project&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>

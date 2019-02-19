@@ -6,17 +6,35 @@
     <description>Recent content in Tags on Hector Roux de Bézieux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 18 Apr 2018 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Demo</title>
-      <link>/tags/demo/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 -0700</pubDate>
+      <title>Classes</title>
+      <link>/tags/classes/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
       
-      <guid>/tags/demo/</guid>
+      <guid>/tags/classes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>/tags/statistics/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>/tags/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorials</title>
+      <link>/tags/tutorials/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>/tags/tutorials/</guid>
       <description></description>
     </item>
     
