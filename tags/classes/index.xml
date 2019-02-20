@@ -12,13 +12,32 @@
     
     
     <item>
-      <title>CS289: Modelization of single-cell gene expression along a timeline</title>
+      <title>CS289 Final Project</title>
       <link>/project/cs289/</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/cs289/</guid>
-      <description>CS289 Spring 2018 Final Project Modelization of single-cell gene expression along a timeline Group members: Daniel Amar, Ariane Lozac&amp;rsquo;hmeur, Hector Roux de Bézieux &amp;amp; Alexandre Vincent
- The project proposal is available on Overleaf and may be read here. The project report is available on Overleaf and may be read here.  Report abstract The explosion of genomic data over the past two decades created a need for new and more performing tools.</description>
+      <description>Modelization of single-cell gene expression along a timeline Report abstract The explosion of genomic data over the past two decades created a need for new and more performing tools. One type of data in particular, Single-cell RNA Sequencing data, allow for a cell-level detection of biological patterns but technical limitations add lots of noise sources to the data. In particular, some counts are dropped and appear as zeros, even thought the gene is expressed in the cell.</description>
+    </item>
+    
+    <item>
+      <title>Courses taken at UC Berkeley</title>
+      <link>/project/courses/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
+      
+      <guid>/project/courses/</guid>
+      <description>Years  2019 2018 2017   
+2019  PB HLTH 290: Targeted Learning with Biomedical Big Data with Mark Van der Laan  Final Project Proposal on Overleaf   2018  CMPBIO 293 Doctoral Seminar in Computational Biology (Spring) with Nir Yosef  Presentation 1 Presentation 2  CMPBIO 293 Doctoral Seminar in Computational Biology (Fall) with Priya Moorjani &amp;amp; Daniel Rokhsar  Presentation  STAT 210A Theoretical Statistics with Will Fithian STAT 215B Statistical Models: Theory and Application with Jon Mcauliffe  Final Project not public  STAT 248 Analysis of Time Series with David Brillinger  Final Project report and code  CS 298A Introduction to Machine Learning with Jennifer Listgarten and Anant Sahai  Final Project  CS 294 Machine Learning and Statistics Meet Biology with Jennifer Listgarten  Presentation Final Project report.</description>
+    </item>
+    
+    <item>
+      <title>STAT 215A: Labs</title>
+      <link>/project/stat215a/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
+      
+      <guid>/project/stat215a/</guid>
+      <description>STAT 215A Statistical Models: Theory and Application I took this class in the Fall 2017, with Bin Yu and Rebecca Barter. For the purpose of this class, we studied 3 datasets across 4 labs. The grading was partly peer-reviewed based so my github for this class contains works from other students that I cannot share. However, the lab reports and code files are below:
+    Lab 1: Redwood trees Lab 2: Linguistic Survey Lab 3: Linguistic Survey Stability Lab 4: Cloud detection     Report Lab1 Lab2 Lab3 Lab4   Code Lab1 Lab2 Lab3 Lab4    Likewise, for the final report, the project report and code are accessible.</description>
     </item>
     
   </channel>

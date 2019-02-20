@@ -1,0 +1,400 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[list=true,listformat=simple]{subcaption}
+\usepackage[justification=centering]{caption}
+\setlength{\parskip}{\smallskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{multicol}
+\begin{document}
+\title{Lab 1 - Redwood Data, Stat 215A, Fall 2017}
+
+
+\author{Hector Roux de B\'{e}zieux}
+
+\maketitle
+
+<<setup, echo = FALSE, message=FALSE, warning=FALSE>>=
+opts_chunk$set(fig.ext='png')
+# load in useful packages
+library(tidyverse)
+library(forcats)
+library(lubridate)
+library(stringr)
+library(RColorBrewer)
+# load in the loadData() functions
+source("R/load.R")
+# load in the cleanData() functions
+source("R/clean.R")
+set.seed(0)
+@
+
+<<load-data, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE>>=
+
+# load the dates data
+dates_orig <- loadDatesData(path = "data/")
+# clean the dates data
+dates <- cleanDatesData(dates_orig)
+rm(dates_orig)
+
+# load the redwood sensor data
+redwood_all_orig <- loadRedwoodData(path = "data/", source = "all")
+redwood_net_orig <- loadRedwoodData(path = "data/", source = "net")
+redwood_log_orig <- loadRedwoodData(path = "data/", source = "log")
+# clean the redwood sensor data
+redwood_all<-cleanRedwoodData(redwood_all_orig)
+redwood_log<-cleanRedwoodData(redwood_log_orig)
+redwood_net<-cleanRedwoodData(redwood_net_orig)
+
+rm(redwood_all_orig,redwood_net_orig,redwood_log_orig)
+#Load the mote location data
+location<-loadMoteLocationData()
+
+@
+
+\section{Introduction}
+
+The local climate dynamics along the trunk of a redwood tree are complex and hard to measure. Deploying a wireless sensor network of nodes - several captors in one point- along the height of such a tree is a possible way to explore such dynamics.
+
+\section{The Data}
+
+\subsection{Data Collection}
+
+The data set is from Tolle et al.[1], and consists of a set of measurements on a redwood tree in Sonoma, California. The data was collected over a period of \Sexpr{length(table(redwood_net$date))} days, with measurements every 5 minutes done on \Sexpr{length((location$Height))} sensors more or less uniformly distributed over the height of the tree. \Sexpr{dim(location)[1]-length((location$Height[location$Tree=="interior"]))} nodes are linked to the edge while the rest are labelled interior, a distinction we will come back to.\\
+
+We started with three data sets:
+\begin{enumerate}
+  \item The first one links the position of the node on the tree to its ID number
+  \item The second one links the date of the measurements to a numerical value, which will be useful to plot.
+  \item The third is actually consisted of two data sets. Nodes communicate their measurements through a network and also save them in their internal log so we have a net data set and a log data set. Comparing the two values will prove useful for consistency. Nodes ID numbers and date are provided, linking those data sets to the 2 firsts.
+\end{enumerate}
+
+All in all, we have access to the following covariates:
+\begin{multicols}{3}
+\begin{itemize}
+  \item Date and time
+  \item Node ID
+  \item Node parent ID and depth in the network
+  \item Voltage
+  \item Position in height, distance and direction
+  \item Humidity
+  \item Temperature
+  \item Incident Photosynthetically Active solar Radiation (PAR)
+  \item Reflected PAR.
+\end{itemize}
+\end{multicols}
+
+\subsection{Data Cleaning}
+
+At first, there is \Sexpr{sum(is.na(redwood_all))} NAs in the data set. \textbf{Removing the rows with Nas} removes \Sexpr{round((1-(dim(drop_na(redwood_all))[1]/dim(redwood_all)[1]))*100,digits=1)}\% of all rows. This filter was kept for further analysis.
+
+<<Cleaning NAs, echo = FALSE, message = FALSE, warning = FALSE, cache = TRUE>>=
+redwood_all<-redwood_all%>%drop_na()
+redwood_log<-redwood_log%>%drop_na()
+redwood_net<-redwood_net%>%drop_na()
+@
+
+Then, we can notice that \textbf{several data points have values that are impossible from a physical point of view}. Humidity against temperature was first plotted to check whether the physical abnormalities where correlated, with the appropriate log transformation for humidity ($humidity->sign(humidity)\times log10(abs(humidity)+1)$. The extreme values are out of physical bounds for humidity and temperature and represent \Sexpr{round((1-(dim(filter(redwood_all,humidity>-100 &temp>0))[1]/dim(redwood_all)[1]))*100,digits=1)}\% of all rows. On a side note, all those values come from the log data set and have voltage values beneath \Sexpr{max(filter(redwood_all,temp<0|humidity<(-100))$voltage)}, which is considered below functional levels by the authors of the papers. They are therefore filtered out. 
+
+<<Cleaning with physical meaning, echo = FALSE, warning=FALSE, message=FALSE, fig.align="center",fig.width=4, fig.height=2, fig.cap="Physical validation of the data", fig.pos = "H",cache=TRUE>>=
+
+ggplot(redwood_all%>%mutate(physics=(temp<0|humidity<0),hum=sign(humidity)*log10(abs(humidity)+1)),aes(x=temp,y=hum))+
+  geom_point(aes(col=physics))+
+  scale_colour_brewer(name="Are values physical?",labels=c("True","False"),type="qual",palette=2)+
+  xlab("Temperature")+ylab("Humidity,log transformation")
+
+redwood_all<-redwood_all%>%filter(humidity>-100 &temp>0)
+redwood_net<-redwood_net%>%filter(humidity>-100 &temp>0)
+redwood_log<-redwood_log%>%filter(humidity>-100 &temp>0)
+@
+
+We also looked at Incident PAR versus Reflected PAR.
+
+<<PAR, echo = FALSE, warning=FALSE, message=FALSE, fig.align="center", fig.height=2, fig.width=4, fig.cap="Incident and Reflected PAR", fig.pos = "H">>=
+ggplot(redwood_all%>%sample_frac(size=0.1)%>%mutate(physics=(IPar<RPar)),aes(x=IPar,y=RPar))+
+  geom_point(aes(colour=physics))+
+  xlab("IPar")+ylab("RPar")+
+  scale_colour_brewer(name="Are values physical?",labels=c("True","False"),type="qual",palette=2)
+@
+
+We have a few points with very high IPar. They all come from the log data set and correspond to the same node (number 40). That node is the only one facing south on the edge so we can expect it will receive a lot of light.\\
+
+Then, \Sexpr{dim(filter(redwood_all,IPar<RPar))[1]} points had a higher reflected Par than Incident Par which isn't possible. For \Sexpr{round((dim(filter(redwood_all,IPar<RPar&IPar==0))[1]/dim(filter(redwood_all,IPar<RPar))[1])*100,digit=1)}\% of those points, the incident PAR is zero but the reflected PAR isn't. This is probably due to some malfunctioning of the measurement and those rows can be removed.For the rest, it was not possible to find an explanation for the anomalies in measurement but they were still filtered out. As this represent \Sexpr{dim(filter(redwood_all,IPar<RPar&IPar>0))[1]} points, it shouldn't have much effect on the analysis.
+
+<<Cleaning with PAR, echo = FALSE, message = FALSE, warning = FALSE>>=
+redwood_all<-redwood_all%>%filter(IPar>=RPar)
+redwood_log<-redwood_log%>%filter(IPar>=RPar)
+redwood_net<-redwood_net%>%filter(IPar>=RPar)
+@
+
+The remaining data points can be plotted with temperature and humidity:
+
+<<Temp, echo = FALSE, warning=FALSE, message=FALSE, fig.align="center", fig.height=2, fig.width=4, fig.cap="Temperature and humidity after initial cleaning of data", fig.pos = "H">>=
+ggplot(redwood_all%>%mutate(physics=(humidity<0)),
+       aes(x=temp,y=humidity))+geom_point(aes(col=physics,alpha=physics))+
+  scale_colour_brewer(name="Are values physical?",labels=c("True","False"),type="qual",palette=2)+
+  xlab("Temperature")+ylab("Humidity")+scale_alpha_discrete(range=c(0.1,1),guide=FALSE)
+@
+
+There seems to be a \textbf{saturation effect for the temperature captor at $T\approx 122$}. When the temperature captor is saturated, there seems to be measurements errors for the humidity captor as well, and humidity values are all over the place, including some negative values. To stay clear of saturation levels, a threshold of 100 degree was imposed, which filtered an additional \Sexpr{round((1-(dim(filter(redwood_all,temp<100))[1]/dim(redwood_all)[1]))*100,digits=1)}\% of the rows.\\
+
+<<Cleaning with temp, echo = FALSE, message = FALSE, warning = FALSE>>=
+redwood_all<-redwood_all%>%filter(temp<100)
+redwood_log<-redwood_log%>%filter(temp<100)
+redwood_net<-redwood_net%>%filter(temp<100)
+@
+
+Then, \textbf{the voltage of the nodes} was considered. Here we have very different values for the log data set and the network data set:
+<<Voltage, echo = FALSE, warning=FALSE, message=FALSE, fig.align="center", fig.height=2, fig.width=3, fig.cap="Voltage histograms for the network (left) and the log (right) dataset", fig.pos = "H",fig.show='hold'>>=
+ggplot(redwood_net%>%mutate(high_voltage=(voltage>800)),aes(x=voltage))+
+  geom_histogram(aes(fill=high_voltage),binwidth = 10)+xlab("Voltage for nodes in the networks")+
+  scale_fill_brewer(name="Voltage",labels=c("Normal","Outliers"),type="qual",guide=FALSE,palette=2)
+
+ggplot(redwood_log%>%mutate(low_voltage=(voltage<1)),aes(x=voltage))+
+  geom_histogram(aes(fill=low_voltage),binwidth = 0.05)+xlab("Voltage for nodes in the log")+
+  scale_fill_brewer(name="Voltage",labels=c("Normal","Outliers"),type="qual",palette=2)
+@
+
+All nodes who have a voltage lower than 1 in the log data set have a voltage of more than 1000 in the network data set, and \textit{vis versa}. They probably correspond to nodes with disfunctioning batteries and are therefore filtered. This amounts to filtering \Sexpr{length(unique(c(filter(redwood_log,voltage<1)$nodeid,filter(redwood_net,voltage>800)$nodeid)))} nodes. The fact that voltage levels have a two order of magnitude difference between both data sets will be handled in the data exploration section.
+
+<<Cleaning with voltage, echo = FALSE, message = FALSE, warning = FALSE>>=
+NID<-unique(c(filter(redwood_log,voltage<1)$nodeid,filter(redwood_net,voltage>800)$nodeid))
+redwood_all<-redwood_all%>%filter(!nodeid%in%NID)
+redwood_log<-redwood_log%>%filter(!nodeid%in%NID)
+redwood_net<-redwood_net%>%filter(!nodeid%in%NID)
+location<-location%>%filter(!ID %in% NID)
+rm(NID)
+@
+
+\subsection{Data Exploration}
+
+\textbf{The data set provided also as a measurement called $humid_{adj}$.} If the two densities are plotted, it seems like the $humid_{adj}$ values are just a re-scaling of the humidity measurement, probably because humidity is actually relative humidity and as such cannot be over 100\%. Therefore, we will now only use the adjusted humidity and refer to it as simply humidity after that point.
+
+<<humid_adj, echo = FALSE, warning=FALSE, message=FALSE, fig.align="center", fig.height=3, fig.width=5, fig.cap="Density plots for humidity and adjusted humidity", fig.pos = "H">>=
+ggplot(redwood_all%>%
+  gather(key=type,value="humidity",7,9),aes(x=humidity,fill=type))+
+  geom_density(alpha=0.5)+
+  scale_fill_manual(name="humidity measures",breaks=c("humidity","humid_adj"),labels=c("humidity","adjusted humidity"),values=brewer.pal(3,"Set1")[2:3])+scale_x_continuous(name="humidity and adjusted humidity", breaks=c(0.,25,50,75,100), labels=c(0.,25,50,75,100))+theme_bw()
+@
+
+<<Humid, echo = FALSE, results='hide', message = FALSE, warning = FALSE>>=
+redwood_all<-redwood_all%>%select(-humidity)
+redwood_net<-redwood_net%>%select(-humidity)
+redwood_log<-redwood_log%>%select(-humidity)
+@
+
+<<Common, echo = FALSE, results='hide', message = FALSE, warning = FALSE>>=
+r<-inner_join(redwood_log,redwood_net,by=c("nodeid"="nodeid","epoch"="epoch"))
+table(r$temp.x/r$temp.y)
+table(r$humid_adj.x/r$humid_adj.y)
+table(r$IPar.x/r$IPar.y)
+table(r$RPar.x/r$RPar.y)
+@
+
+\textbf {To ensure consistency between the two data sets} and ensure we had cleaned the data from most abnormal points, we selected the points that were matched in both data sets.This yielded \Sexpr{dim(r)[1]} data points. Throughout all those points, temperatures, humidity levels and Reflected PAR matched perfectly or with a .3\% difference at most that we decided to ignore. For the Incident PAR, all matched perfectly except one where the IPar had a three-fold difference between the log and network values. This point was in fact a duplicate in the log data set and appears twice, once with the right IPar value and once with the inflated one. We therefore deleted that point.
+
+<<clean with common , echo = FALSE, message = FALSE, warning = FALSE>>=
+redwood_all<-redwood_all%>%filter(nodeid!=105 | epoch!=7074 |IPar<2000)
+redwood_net<-redwood_net%>%filter(nodeid!=105 | epoch!=7074 |IPar<2000)
+redwood_log<-redwood_log%>%filter(nodeid!=105 | epoch!=7074 |IPar<2000)
+r<-inner_join(redwood_log,redwood_net,by=c("nodeid"="nodeid","epoch"="epoch"))
+@
+
+As mentioned above, the voltage levels for the log data set range from \Sexpr{summary(redwood_log$voltage)[1]} to \Sexpr{summary(redwood_log$voltage)[6]} while those in the network data set range from \Sexpr{summary(redwood_net$voltage)[1]} to \Sexpr{summary(redwood_net$voltage)[6]}. By selecting the common points of both data sets, we can see a clear relationship between the two voltage levels. A linear fit (in red) is not sufficient to fit the data. A better fit is a lin-log model (in blue).
+
+<<volts, echo = FALSE, warning=FALSE, message=FALSE, fig.align="center", fig.height=2.5, fig.width=1.66, fig.cap="Density plots for humidity and adjusted humidity", fig.pos = "H",fig.show='hold'>>=
+ggplot(r,aes(y=voltage.x,x=voltage.y))+geom_point(alpha=0.1,size=1)+scale_x_continuous(name="Network dataset voltage measurement", breaks=c(200,225,250), labels=c(200,225,250))+
+  ylab("Log dataset voltage measurement" )+
+  theme(axis.title.y=element_text(size=7),axis.title.x=element_text(size=5))
+  
+ggplot(r,aes(y=voltage.x,x=voltage.y))+geom_point(alpha=0.1,size=1)+
+  geom_smooth(method='glm',formula=y~x,se=TRUE,col="red",alpha=0.1)+scale_x_continuous(name="Network dataset voltage measurement", breaks=c(200,225,250), labels=c(200,225,250))+
+  theme(axis.title.y=element_text(size=7),axis.title.x=element_text(size=5))+ylab("")
+
+ggplot(r,aes(y=voltage.x,x=voltage.y))+geom_point(alpha=0.1,size=1)+
+  geom_smooth(method='glm',formula=y~log(x),se=TRUE,col="blue",alpha=0.1)+scale_x_continuous(name="Network dataset voltage measurement", breaks=c(200,225,250), labels=c(200,225,250))+
+  ylab("Log dataset voltage measurement" )+
+  theme(axis.title.y=element_text(size=7),axis.title.x=element_text(size=5))
+@
+
+
+We will therefore keep that option and we use that linear model to re-scale all the voltage values to be similar to the log data set.
+
+<<Normalize voltage, echo=FALSE,warning=FALSE,message=FALSE,results='hide'>>=
+l<-lm(voltage.x~log(voltage.y),r)
+
+volt<-function(y){
+  if (y>5) return(predict.lm(l,data.frame(voltage.y=y))) else return(y)
+}
+
+redwood_log<-redwood_log%>%mutate(volt=(volt(voltage)))%>%select(-voltage)
+redwood_all<-redwood_all%>%mutate(volt=(volt(voltage)))%>%select(-voltage)
+redwood_net<-redwood_net%>%mutate(volt=(volt(voltage)))%>%select(-voltage)
+@
+
+The next step is then to \textbf{check for consistency between the data sets derived from the node measurements and the others}, namely the date and position data set. We use the position data set as a reference for Node ID and filter out any node whose ID doesn't match. There is one node in the redwood that doesn't match any ID in the position data set and 11 from the position data set with no measurements (including some that have already been filtered out).\\ 
+
+<<Compare datasets, echo=FALSE,warning=FALSE,message=FALSE,results='hide'>>=
+redwood_all<-redwood_all%>%filter(nodeid %in% location$ID)
+redwood_log<-redwood_log%>%filter(nodeid %in% location$ID)
+redwood_net<-redwood_net%>%filter(nodeid %in% location$ID)
+location<-location%>%filter(ID %in% redwood_all$nodeid)
+@
+
+If we look at the dates data set, we can see it spans 46 days while the network data set only spans 27 days and all the points from the log data set are registered on the same day. Other than that, the date data set did not yield much insights into the data. We can notice that we have a perfect match between the time points from the network data set and the epoch. Therefore, we will ignore the date data set and use epoch as a proxy for the time afterwards.
+
+<<date_epoch, echo = FALSE, warning=FALSE, message=FALSE, fig.align="center", fig.height=3, fig.width=5, fig.cap="Relation between the date-time and the epoch variable", fig.pos = "H">>=
+ggplot(redwood_net,aes(x=datetime,y=epoch))+
+  geom_point(alpha=0.5,size=0.1)+xlab("date and time")
+@
+
+<<Trees, echo = FALSE, warning=FALSE, message=FALSE, >>=
+r<-redwood_log%>% mutate(days=gsub(" .*$","",datetime))
+r<-inner_join(r,location,by=c("nodeid"="ID"))
+r<-r%>%filter(Tree=="edge")
+@
+
+Finally, the position data set distinguish between two types of trees: interior and edge. The edge nodes are only present in the log data set and only have points for the first \Sexpr{round(length(unique(r$epoch))/(12*24),digits=0)} days. We will discuss the differences between each tree in deeper details in the \textit{Findings} section.
+
+\section{Graphical Critique}
+\subsection{Figure 3}
+
+The aim of Figure 3 is to help the reader get a clearer sense of the data. As the authors point out, the challenge is to represent a 3-dimensional data point (time, height and measurement) on a 2-dimensional sheet of paper. To do so, they proceed in three steps:
+
+\begin{enumerate}
+  \item Step 1 is a 1D visualization of each measurement. Those graphs serve their function rather well, even if the number of bins is a bit small and enhance artificially some aspects of the data. In particular, the first mode of the humidity measurement is quite smaller with a smaller bin. However, all in all, Figure 3)a) of the paper fulfill its role of giving a first approach to the data.\\
+  \item Step 2 corresponds to Figures 3)b) and 3)c). Those graphs aim to project the data on a 2D plan by squeezing the $3^{rd}$ dimension in the form of a boxplot. The general idea is pretty convincing and is appropriate to the data. However, those graphs are pretty messy. The color is very light and the eye is drawn to the outliers who actually represent many more non-white pixels in each plot, especially in 3)b) where we can't even see the boxes for the RPar measurements. Plotting the boxplots with or without the outliers could be one way to solve this issue. Adding a trendline which follow the temporal or spatial average could also be helpful if the authors wanted to limit the number of plots. On a smaller levels, the axis could be simplified by adding less graduations. In 3)c) in particular, a common y-axis could have worked for all 4 plots.\\
+  \item Lastly, Fig 3)d) aims to expose constant trends along the height if the tree by normalizing by the temporal mean. As this graph tries to exhibit global trends along the height, adding outliers only serves to confuse the reader. Adding a full line at x=0 would also help to better perceive the repartition above and below the means.
+  
+  \subsection{Figure 4}
+  
+  Figure 4 focuses on a single day and tries to exhibit both common responses and difference as a function of height. The graphs are divided in 2 columns.
+  
+  \begin{enumerate}
+  \item Column 1 display all the points for all four measurements. Colors help to identify each node for temperature and humidity. Those graphs are really nice and easy to grasp. The first two aim to demonstrate the common response of all nodes, and show how they move together in temperature and humidity along the day. The $3^{rd}$ and $4^{th}$ graphs aim to show how PAR measures are linked to the sum rising and setting. Not displaying individual lines is a appropriate choice. The choice of green to represent light might be a little awkward. Yellow is hard to see on paper but a deep orange could have been more relevant.
+  \item The second column is much harder to understand. For a specific time point in the day, the authors were trying to display the variations in each measurement along the height of the tree. However, the color and icon choices make reading the graphs difficult. First, the main feature of the graph is the trend line, as it is what the authors spend the longest commenting. Therefore, it can be surprising to draw that line so thin and in a fainter color that individual points. Moreover, the choice of cones to symbolize gradients is unfortunate. Regular arrows are more intuitive for gradients. Using different colors to pick out points that go against the global trend is nonetheless a good idea and helps to quickly see outliers, the second important feature of the graph. 
+  \end{enumerate}
+  
+  
+\end{enumerate}
+
+\newpage
+\section{Findings}
+
+\subsection{Node working time}
+
+We first wanted to look at why nodes failed across time. Different nodes had very different duration time. Some failed quite early and some lasted for the whole observation time. The authors of the paper argue that it is because of insufficient initial battery levels but some other factors could be at play. For example, captors at specific height could  be less protected from rain and therefore drain their battery faster. Distance from the center of tree might mean more encounters with wildlife that may damage the nodes. However, as can be seen on Figure 8, there is no relationship between height and battery life, or between distance and battery life. In similar fashion (not shown), the lifespan of each node seemed uncorrelated with any other metric. The initial battery level is therefore probably a good hypothesis.
+
+<<Duration , echo = FALSE, message = FALSE, warning = FALSE, fig.align="center", fig.height=3, fig.width=5, fig.cap="Nodes lifespan according to its position on the tree", fig.pos = "H">>=
+r_net<-redwood_net%>%select(epoch,temp,humid_adj,IPar,RPar,nodeid)
+r_log<-redwood_log%>%select(epoch,temp,humid_adj,IPar,RPar,nodeid)
+r<-dplyr::union(r_log,r_net)
+r<-inner_join(r,location,by=c("nodeid"="ID"))
+r<-r%>%filter(Tree=="interior")%>%group_by(nodeid)%>%mutate(duration=length(unique(epoch)))%>%select(nodeid,Height,duration,Dist)
+r<-r%>%distinct(nodeid,.keep_all=T)
+
+
+ggplot(r%>%mutate(Dist=as.character(Dist)),aes(x=Height,y=duration,col=Dist))+
+  geom_point(size=3)+
+  scale_color_manual(name="Distance(m)",breaks=c("0.1","1","3","4"),values=brewer.pal(9,"Greens")[3:7])+
+  guides(color=guide_legend(label.hjust=1))+
+  theme(panel.grid.major= element_line( size=.1, color="black",linetype = "dashed" ),panel.background = element_blank())+
+  scale_y_continuous(name="Lifespan",breaks=c(0,5000,10000))+
+  scale_x_continuous(name="Height (m)",breaks=c(25,40,55,70))
+@
+
+\subsection{Temperature variations}
+
+We then wanted to explore the drivers of temperature variation and more precisely the characteristic distance over which those variations took place. On Figure 9, we can see the variation in temperature for the interior tree over the full observation span. We only kept the measurement that matched between the log and the network data set to avoid any outliers we may have missed in the cleaning process and plotted the temperature of every single node along the tree, colored by the height of the node. It is nearly impossible de distinguish between individual nodes on the plot because the main driver of temperature is the global climate environment of the tree. The main variations in spatial temperature appear at a larger scale than that of a single tree.\\
+<<Daily variations, echo = FALSE, message = FALSE, warning = FALSE, fig.align="center", fig.height=3, fig.width=5, fig.cap="Variations in temperature for nodes of different height in the same tree", fig.pos = "H">>=
+r<-inner_join(redwood_log,redwood_net,by=c("nodeid"="nodeid","epoch"="epoch"))%>%
+  mutate(days=gsub(" .*$","",datetime.y))
+r<-inner_join(r,location,by=c("nodeid"="ID"))
+r<-r%>%select(epoch, temp.x,IPar.x,RPar.x,humid_adj.x,Height,nodeid,Dist,Tree)
+r<-r%>%group_by(nodeid)
+
+ggplot(r,aes(x=epoch,y=temp.x,col=Height))+geom_line(size=0.1)+ylab("Temperature (Celsius degrees)")+
+  scale_x_continuous(name="Date and time",breaks = c(2500,5000,7500,10000),labels=c("2004-05-07","2004-05-15","2004-05-24","2004-06-01"))+
+  scale_color_continuous(name="Height (m)",high="#B15928",low="#FFFF99")+
+  theme(panel.grid.major= element_line( size=.1, color="black" ,linetype = "dashed"),panel.background = element_blank())
+@
+
+<<Differences between trees, echo = FALSE, message = FALSE, warning = FALSE, fig.align="center", fig.height=3, fig.width=5, fig.cap="Variation in temperatures for all nodes in two distinct trees", fig.pos = "H">>=
+r<-redwood_log%>%select(epoch,temp,humid_adj,IPar,RPar,nodeid)
+r<-inner_join(r,location,by=c("nodeid"="ID"))
+
+
+ggplot(r%>%group_by(nodeid)%>%filter(temp<40&epoch<1000)%>%sample_frac(size=0.2),
+       aes(x=epoch,y=temp,col=Tree))+geom_point(size=0.1,alpha=0.5)+
+  scale_color_brewer(name="Tree location",labels=c("interior","edge"),type="qual",palette=2)+
+  ylab("Temperature (Celsius degrees)")+
+  scale_x_continuous(name="Date and time",breaks = c(2,500,1000))+
+  guides(colour = guide_legend(override.aes = list(size=2,alpha=1)))+ 
+  theme(panel.grid.major= element_line( size=.1, color="black" ,linetype = "dashed"), panel.grid.minor = element_blank(),panel.background = element_blank(),axis.line = element_line(colour = "black"))
+@
+
+Therefore, we plotted temperature variations for the two trees on a representative time period. As we can see on Figure 10, the temperature variations between the two trees are sometime correlated and sometimes not. This mean that the distance between the two trees is the right scale to study spatial temperature variations. Across the physical span of a forest, temperatures may vary greatly, according to those preliminary results. It also means that a few nodes per tree would suffice to map the forest, as all nodes from the same tree give similar temperatures. Deploying the network in such a way could yield very interesting insights into local climate dynamics.
+
+\newpage
+\subsection{Negative correlation of temperature and humidity}
+
+<<Node 119 , echo = FALSE, message = FALSE, warning = FALSE, fig.align="center", fig.height=3, fig.width=5, fig.cap="Correlation between humidity and temperature for one node", fig.pos = "H", results='hide'>>=
+r_net<-redwood_net%>%filter(nodeid==119)%>%select(epoch,temp,humid_adj,IPar,RPar)
+r_log<-redwood_log%>%filter(nodeid==119)%>%select(epoch,temp,humid_adj,IPar,RPar)
+r<-dplyr::union(r_log,r_net)
+r<-r%>%mutate(temp=temp/max(temp),humid_adj=humid_adj/max(humid_adj),IPar=IPar/max(IPar),RPar=RPar/max(RPar))
+r<-r%>%filter(epoch>7500)
+
+ggplot(r%>%gather(key=type,value="Measure",2,3)%>%group_by(type),
+       aes(x=epoch,y=Measure,color=type))+
+  geom_line()+
+  scale_color_manual(name="",labels=c("Humidity","Temperature"),breaks=c("humid_adj","temp"),values=brewer.pal(5,"Set1")[c(2,5)])+
+  scale_y_continuous(name="Measure (normalized values)",breaks = c(0.5,1))+
+  scale_x_continuous(name="Date and time",breaks = c(7775,8927,10078),labels = c("2004-05-25","2004-05-29","2004-06-02"))
+@
+
+Finally, we wanted to look at a specific node. We chose node 119 because it had of of the longest lifespans and none if its measurements had been previously filtered. Here, we can look at a representative portion of time (plotting the whole experience time-span lead to unreadable graphs). To get interpretable values, we scaled both humidity and temperature by their highest values to bring everything back to a [0,1] scale.\\
+
+We can clearly see that humidity and temperature are strongly negatively correlated on the graph. Indeed, on the whole data set, the correlation coefficient is \Sexpr{cor(r$temp,r$humid_adj)}. This could be expected given the shape of the points in Figure 3.\\
+
+We can also see that the time plotted spans 10.5 days: every day is marked by a local spike in temperature, which confirm that temperatures are more impacted by the passing of time during the day than any spatial metric, for a given tree. 
+
+\section{Discussion}
+
+<<Total cleaning , echo = FALSE, message = FALSE, warning = FALSE>>=
+r<-inner_join(redwood_all,location,by=c("nodeid"="ID"))
+r<-r%>%distinct(epoch,nodeid,.keep_all=T)
+t<-r%>%filter(Tree=="interior")
+redwood_all_orig <- loadRedwoodData(path = "data/", source = "all")
+@
+
+All the data cleaning performed in this analysis ends up clearing \Sexpr{round((1-dim(r)[1]/dim(redwood_all_orig)[1])*100,1)}\% of the data set when removing duplicate and \Sexpr{round((1-dim(t)[1]/dim(redwood_all_orig)[1])*100,1)}\% when only selecting the interior tree, which is roughly what the authors of the paper have, since they only mention data points from one tree. So we can imagine our cleaning was roughly equivalent to theirs. Cleaning impossible physical values and obvious outliers seemed anyway a reasonable thing to do considering the data set and the nature of the outliers.\\
+
+Our assumption that the variable $humidity_{adj}$ is actually the adjusted humidity may be false and further exploration to re-scale the humidity variable may be necessary in that case. Replacing $humidity_adj$ with humidity did not however alter much our results so this should not be too much of an issue.\\
+
+The issue of the voltage should be further pursued to insure our analysis is correct. A link with battery lifespan would prove interesting in particular. On that subject, deploying only nodes with full battery, as suggested by the authors, would help develop a better time-series analysis across all nodes.\\
+
+The question of spatial variation of temperature across the forest could be off interest to climatologists. Using the node technology could allow to precisely map the forest in an efficient way and, paired with terrain information, it could help better understand local temperature dynamics. On the scale of a single tree, the impact of the time of the day is very important. Collecting data points more regularly (every mn for example) on a shorter span of days could help better map the local dynamics along the height of the tree.\\
+
+Finally, the connected dynamics of each measurement should be studied and, with subject knowledge, a proper model could be developed to explain the relationship between them - and the climate dynamic along the trunk of  redwood tree. 
+
+\section{Conclusion}
+
+After a necessary cleaning step that removed around a 3$^{rd}$ of the data points, analyzing the measures yield several interesting results about the heterogeneity of battery lifespan, the spatial and temporal scale of temperature variation and the relationships between metrics. This first analysis gives several clues towards what questions to ask an expert of the field, as well as what a next experiment could look like and what insight might be learned from it.
+
+\begin{thebibliography}{1}
+\bibitem[1]{tolle2005macroscope}
+A macroscope in the redwoods, \textit{Tolle, Gilman and Polastre, Joseph and Szewczyk, Robert and Culler, David and Turner, Neil and Tu, Kevin and Burgess, Stephen and Dawson, Todd and Buonadonna, Phil and Gay, David and others}, Proceedings of the 3rd international conference on Embedded networked sensor systems.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,234 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+
+%For headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%For figures
+\usepackage{graphicx}
+\graphicspath{ {figure/} }
+\usepackage{wrapfig}
+\usepackage{placeins}
+\usepackage[list=true,listformat=simple]{subcaption}
+\usepackage[justification=centering]{caption}
+
+%For text and equations
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\setlength{\parindent}{0pt}
+
+\setlength{\parskip}{\smallskipamount}
+
+\begin{document}
+
+\title{Lab 3 - Parallelizing k-means Stat 215A, Fall 2017}
+
+<<setup, include=FALSE>>=
+set.seed(0)
+library(knitr)
+library(tidyverse)
+library(stringr)
+library(stats)
+library(foreach)
+library(doParallel)
+library('Rcpp')
+library('microbenchmark')
+library(stats)
+library("RColorBrewer")
+
+#Create the figure folder
+if (!file.exists("figure")){dir.create(file.path("figure"))}
+@
+
+\author{Hector Roux de B\'{e}zieux}
+
+\maketitle
+
+<<Load Data, echo =FALSE>>=
+load("data/lingBinary.RData")
+@
+
+\section{Similarity of clustering}
+
+First, we implement the computation of the similarity matrix in. We compute the \textit{Jaccard coefficient} for the two labeling from kmeans. The \textit{Jaccard coefficient} is $\frac{N_{11}}{N_{11}+N_{10}+N_{01}}$. The algorithm is efficient in memory usage since we never store any similarity matrix . We only compute the similarities on the spot and store the result in the summary statistics $N_{11},N_{01},N_{10}$. Memory usage is in O(n) instead of being in O($n^2)$. In R, this is computationally slower than matrix product since R is optimized for such operations, but the reduced memory usage makes up for it. We can see that, for 9000 samples, the algorithm run in 1s (see the table below).\\
+
+<<Similarity in R, echo = FALSE>>=
+#Takes the clusters returned by kmeans as input
+#Return the Jaccard Coefficent as output
+
+similarity_R <- function(L1_com, L2_com){
+#Initialize the values
+  #All points are in the same cluster are themselves
+  N11 <- length(L2_com) 
+  N10 <- N01 <- 0
+  
+  #Loop over all possible pairs of points
+  #This is less efficient than matrix computation but this way
+  #we do not store the similarity matrix
+  #Since the similarity matrix is symetric, we only need to loop
+  #Over the upper part
+  for (i in 1:(length(L1_com)-1)){
+    for (j in (i+1):length(L1_com)){
+      #Increase N11 by 2 if points cluster together in L1 and L2
+      N11 <- N11 + 2*(L1_com[i] == L1_com[j]) * (L2_com[i] == L2_com[j])
+      
+      #Increase N01 by 2 if points cluster together in L2 and not L1 
+      N01 <- N01 + 2*(L1_com[i] != L1_com[j]) * (L2_com[i] == L2_com[j])
+      
+      #Increase N10 by 2 if points cluster together in L1 and not L2 
+      N10 <- N10 + 2*(L1_com[i] == L1_com[j]) * (L2_com[i] != L2_com[j])
+    }
+  }
+  
+  #Return the Jaccard Coefficient
+  return(as.numeric(N11/ (N11 + N10 + N01)))
+}
+@
+
+We can also code the same algorithm in C++ and compare the relative speed. The similarity algorithm in C++ is stored in the \textbf{extra/} folder, in the \textbf{Similarity.cpp} file. We select 20\% of the data (around 9000 samples) twice independently, run k-means on each set with $k=2$ and compare the two labeling with the two similarity algorithms. We verify that both give the same result. Then, we use the \textit{microbenchmark} package. Both algorithm are ran 100 times and we compare the time it takes to run them both.
+
+<<Comparison, echo = FALSE, cache = TRUE>>=
+sourceCpp('extra/Rcpp_demo.cpp')
+
+#Define the cluster
+m <- 0.2
+k <- 2
+X <- lingBinary[, -(1:6)]
+X1 <- X %>% sample_frac(size = m)
+X2 <- X %>% sample_frac(size = m)
+
+L1 <- kmeans(x = X1, centers = k)
+L2 <- kmeans(x = X2, centers = k)
+
+#Compute the Jaccard Coefficient
+#on the common points
+L1_com <- L1$cluster[names(L1$cluster) %in% names(L2$cluster)]
+L2_com <- L2$cluster[names(L1_com)]
+L1_com <- as.numeric(L1_com)
+L2_com <- as.numeric(L2_com)
+
+
+microbenchmark(similarity_cpp(L1_com, L2_com), similarity_R(L1_com, L2_com), times = 100L)
+@
+
+
+The R algorithm run takes roughly $10^3$ more time than the C++ one.
+
+\section{Parallel Computing}
+
+First we can code the inner loop. For given K, N and m, we sample twice a fraction m of the data set, run the k-mean algorithm with k clusters, compute the similarity score and repeat those steps N times. All that is done in a function called \textbf{SubSample} that takes as input k, N, m and the data set X and returns a $N\times 1$ vector of scores.\\
+
+Then we loop over the number of clusters, k, from 2 to 10.  This is the part that we parallelize. The code is present in the .Rnw file with the option \textit{eval = FALSE} which means it is not run when the pdf is compiled. The real code that was use to produce the latter output is in the \textbf{R/} folder.\\
+
+<<Inner loop, echo =FALSE, cache=TRUE>>=
+sourceCpp('extra/Rcpp_demo.cpp')
+
+#Do a function that does the inner loop
+#For a given number of clusters k
+SubSample <- function(k, N, m, X){
+  #Create the similarity matrix
+  S <- rep(0, N)
+  
+  #Subsample and compute the Jaccard Coefficent N times
+  for (i in 1:N){
+    #Get the samples
+    X1 <- X %>% sample_frac(size = m)
+    X2 <- X %>% sample_frac(size = m)
+    
+    #Cluster
+    L1 <- kmeans(x = X1, centers = k)
+    L2 <- kmeans(x = X2, centers = k)
+    
+    #Compute the Jaccard Coefficient
+    #on the common points
+    L1_com <- L1$cluster[names(L1$cluster) %in% names(L2$cluster)]
+    L2_com <- L2$cluster[names(L1$cluster)]
+  
+    S[i] <- similarity_cpp(L1_com, L2_com)
+  }
+  
+  #Return the vector of scores
+  return(S)
+}
+@
+
+<<Outer Loop, echo=FALSE, warning=FALSE, message=FALSE, eval=FALSE>>=
+nCores <- 4
+registerDoParallel(nCores) 
+kmax <- 10
+N <- 100
+m <- 0.8
+X <- lingBinary[, -(1:6)]
+
+Q <- foreach(k in 1:kmax) %dopar% {
+    output <- SubSample(k = k, N = N, m = m, X = X)
+    output
+}
+
+df <- as.data.frame(Q)
+colnames(df) <- 2:kmax
+write.table(df, "data/stability.txt")
+@
+
+\newpage
+\section{Results}
+
+<<Result, echo = FALSE, warning=FALSE, message=FALSE, results='hide'>>= 
+#Load the score matrix
+df <- read.table("data/stability.txt", header = TRUE)
+colnames(df) <- 2:10
+
+#Plot the score densities
+pdf("figure/density_score.pdf", width=12,height=9)
+ggplot(df %>% gather(key = "Cluster", value = "score", 1:9),
+       aes(x=  score, col = Cluster)) + stat_density(geom = "line", size =2, alpha = 0.7) +
+       scale_color_manual(name = "Number of clusters",
+                          values = brewer.pal(9, "Spectral")[c(9,1:8)],
+                          breaks = 2:10) + theme_bw(base_size = 25) +
+       guides(colour = guide_legend(override.aes = list(size = 3)))
+dev.off()
+@
+
+First we can plot the density kernels for all the similarity scores of given number of clusters. This is Fig 1. A first comment is that even for $k = 2$, the maximum score, \Sexpr{round(max(df), digits =2)}, is quite low. This probably mean that our clustering is not very strong. However, we can already see a clear cut between $k=2$ and $k=3$, between $k=3$ and $k=4$ and between $k=4$ and the rest. This would lead to choosing either $k=2$ or $k=3$. With only that plot, $k=3$ might be a more reasonable choice since the score is really consistent across all subsamplings. \\
+
+\begin{figure}[!h]
+  \centering
+	\includegraphics[width=0.5\textwidth]{density_score.pdf}
+  \caption{Kernel density plots of the similarity score over 100 subsamplings, for various number of clusters}
+\end{figure}
+
+We can also reproduce the figure 3 of the Ben Hur paper:
+
+<<Fig, echo = FALSE, warning=FALSE, message=FALSE, results='hide'>>= 
+CumDis <- sapply(df, FUN = ecdf)
+par(xpd = TRUE, mar=c(5.1, 4.1, 5, 2.1) + 0.1)
+pdf("figure/fig3.pdf")
+plot(CumDis[[1]], xlim = c(0.02,0.3), 
+     col = brewer.pal(9, "Spectral")[1], main = "", xlab = "similarity", 
+     ylab  = "cumulative", pch = 20)
+for (i in 2:9){
+  plot(CumDis[[i]], add = TRUE, col = brewer.pal(9, "Spectral")[i], pch = 20)
+}
+legend(title = "Number of clusters", legend = 2:10, 
+       lty = 1, "top", inset = c(0, -0.3),
+       col = brewer.pal(9, "Spectral"), cex = 0.5, horiz = TRUE, x = )
+dev.off()
+par(mar = c(5.1, 4.1, 4.1, 2.1))
+
+@
+
+\begin{figure}[!h]
+  \centering
+	\includegraphics[width=0.5\textwidth]{fig3.pdf}
+  \caption{of the cumulative distributions for increasing values of k}
+\end{figure}
+
+As advised in Ben-Hur et al. [2001]., we want to select a cluster with very stable and very high similarity score. For $k=3$, the score is very constant. We can imagine that, each type, a specific subset of points are correctly clustered while the rest of the points are not. So a small portion of the dataset clusters in 3 groups while the rest doesn't cluster at all. Therfore, selecting $k=3$ could make sense.\\
+
+However, suppose we have k clusters assigned at random. For n large enough, we have \\$N_{11}= n\times $P(2 points are assigned the same cluster twice) $= \frac{n}{k^2}$. Likewise, $N_{01}= \frac{n(k-1)}{k^2}= N_{10}$. So the Jaccard Coefficent is $\frac{1}{2k-1}$. Therefore, when assigning at random, the Jaccard Coefficent has an expected value of 0.2 when $k=3$. This is higher than what we have here!! However, since the similarity score is very stable, we can assume that the clusters are partly not assigned at random but given that the score is lower than its expected value for random assignments, the clustering is probably quite poor.
+
+\end{document}
