@@ -36,6 +36,14 @@
     
     <url>
     
+      <loc>/project/ressources/</loc>
+      <lastmod>2018-04-18T00:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/project/stat215a/</loc>
       <lastmod>2018-04-18T00:00:00-07:00</lastmod>
     </url>
@@ -147,6 +155,15 @@
     <url>
     
       <loc>/tags/</loc>
+      <lastmod>2018-04-18T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/tutorial/</loc>
       <lastmod>2018-04-18T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>

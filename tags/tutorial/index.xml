@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on Hector Roux de Bézieux</title>
+    <link>/tags/tutorial/</link>
+    <description>Recent content in Tutorial on Hector Roux de Bézieux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Apr 2018 00:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ressources for &#39;omics analysis</title>
+      <link>/project/ressources/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
+      
+      <guid>/project/ressources/</guid>
+      <description>[THIS IS A DRAFT] Overview Recently, a new member joined the Dudoit lab and I had to think on which ressources to point him to so that he could start getting up to speed with on the field. I think that the ressources I recommand fall into 4 broad (and largely overlapping) categories:
+ Biology and techniques How to find, acess and pre-process data (including how to use bio-informatics tools) Statistics How to use all of the above to conduct an analysis (with - of course - a strong emphasis on R tools)  I&amp;rsquo;ll therefore try to list ressources to help in all subjects.</description>
+    </item>
+    
+  </channel>
+</rss>
