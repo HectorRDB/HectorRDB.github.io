@@ -12,13 +12,13 @@
     
     
     <item>
-      <title>Ressources for &#39;omics analysis</title>
+      <title>Welcome to the RNA-Seq world</title>
       <link>/project/ressources/</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/ressources/</guid>
       <description>[THIS IS A DRAFT] Overview Recently, a new member joined the Dudoit lab and I had to think on which ressources to point him to so that he could start getting up to speed with on the field. I think that the ressources I recommand fall into 4 broad (and largely overlapping) categories:
- Biology and techniques How to find, acess and pre-process data (including how to use bio-informatics tools) Statistics How to use all of the above to conduct an analysis (with - of course - a strong emphasis on R tools)  I&amp;rsquo;ll therefore try to list ressources to help in all subjects.</description>
+ How to produce data with sequencing How to find, acess and pre-process data (including how to use bio-informatics tools) How to analyze the data: statistics How to use all of the above to conduct an analysis (with - of course - a strong emphasis on R tools)  I&amp;rsquo;ll therefore try to list ressources to help in all subjects.</description>
     </item>
     
   </channel>

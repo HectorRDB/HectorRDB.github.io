@@ -39,16 +39,6 @@
     </item>
     
     <item>
-      <title>Ressources for &#39;omics analysis</title>
-      <link>/project/ressources/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
-      
-      <guid>/project/ressources/</guid>
-      <description>[THIS IS A DRAFT] Overview Recently, a new member joined the Dudoit lab and I had to think on which ressources to point him to so that he could start getting up to speed with on the field. I think that the ressources I recommand fall into 4 broad (and largely overlapping) categories:
- Biology and techniques How to find, acess and pre-process data (including how to use bio-informatics tools) Statistics How to use all of the above to conduct an analysis (with - of course - a strong emphasis on R tools)  I&amp;rsquo;ll therefore try to list ressources to help in all subjects.</description>
-    </item>
-    
-    <item>
       <title>STAT 215A: Labs</title>
       <link>/project/stat215a/</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
@@ -56,6 +46,16 @@
       <guid>/project/stat215a/</guid>
       <description>STAT 215A Statistical Models: Theory and Application I took this class in the Fall 2017, with Bin Yu and Rebecca Barter. For the purpose of this class, we studied 3 datasets across 4 labs. The grading was partly peer-reviewed based so my github for this class contains works from other students that I cannot share. However, the lab reports and code files are below:
     Lab 1: Redwood trees Lab 2: Linguistic Survey Lab 3: Linguistic Survey Stability Lab 4: Cloud detection     Report Lab1 Lab2 Lab3 Lab4   Code Lab1 Lab2 Lab3 Lab4    Likewise, for the final report, the project report and code are accessible.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to the RNA-Seq world</title>
+      <link>/project/ressources/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
+      
+      <guid>/project/ressources/</guid>
+      <description>[THIS IS A DRAFT] Overview Recently, a new member joined the Dudoit lab and I had to think on which ressources to point him to so that he could start getting up to speed with on the field. I think that the ressources I recommand fall into 4 broad (and largely overlapping) categories:
+ How to produce data with sequencing How to find, acess and pre-process data (including how to use bio-informatics tools) How to analyze the data: statistics How to use all of the above to conduct an analysis (with - of course - a strong emphasis on R tools)  I&amp;rsquo;ll therefore try to list ressources to help in all subjects.</description>
     </item>
     
   </channel>

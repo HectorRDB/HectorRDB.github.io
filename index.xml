@@ -136,83 +136,6 @@
     </item>
     
     <item>
-      <title>Ressources for &#39;omics analysis</title>
-      <link>/project/ressources/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
-      
-      <guid>/project/ressources/</guid>
-      <description>
-
-&lt;h2 id=&#34;this-is-a-draft&#34;&gt;[THIS IS A DRAFT]&lt;/h2&gt;
-
-&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
-
-&lt;p&gt;Recently, a new member joined the &lt;a href=&#34;https://www.stat.berkeley.edu/~sandrine/&#34; target=&#34;_blank&#34;&gt;Dudoit lab&lt;/a&gt; and I had to think on which ressources to point him to so that he could start getting up to speed with on the field. I think that the ressources I recommand fall into 4 broad (and largely overlapping) categories:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#Bio&#34;&gt;Biology and techniques&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#Data&#34;&gt;How to find, acess and pre-process data (including how to use bio-informatics tools)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#Stat&#34;&gt;Statistics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#Biostat&#34;&gt;How to use all of the above to conduct an analysis (with - of course - a strong emphasis on R tools)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I&amp;rsquo;ll therefore try to list ressources to help in all subjects. This will be a mix of (scientific) papers, books, package vignette, personal tutorials, video&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;If you find any other ressources, feel free to &lt;a href=&#34;https://hectorrdb.github.io/#contact&#34; target=&#34;_blank&#34;&gt;contact me&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&#34;before-we-begin&#34;&gt;Before we begin&lt;/h1&gt;
-
-&lt;p&gt;Those ressources assume that you have at least a basic knowledge of &lt;a href=&#34;https://cran.r-project.org/&#34; target=&#34;_blank&#34;&gt;R&lt;/a&gt;, statistics and biology. For R otherwise, I recommand (and I am far from the only one) Garrett Grolemund &amp;amp; Hadley Wickham&amp;rsquo;s &lt;a href=&#34;https://r4ds.had.co.nz/&#34; target=&#34;_blank&#34;&gt;R For Data Science&lt;/a&gt;.
-Any suggestions for biology and statistics introductory guides are weclome.&lt;/p&gt;
-
-&lt;h1 id=&#34;Bio&#34;&gt;Biology and techniques&lt;/h1&gt;
-
-&lt;p&gt;Koen review
-Central dogma
-Illumina video
-Sanger sequencing&lt;/p&gt;
-
-&lt;h1 id=&#34;Data&#34;&gt;Getting your hands on data&lt;/h1&gt;
-
-&lt;p&gt;A first - and excellent - ressource of good pre-processed data is the &lt;a href=&#34;https://jhubiostatistics.shinyapps.io/recount/&#34; target=&#34;_blank&#34;&gt;recount2 project&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.nature.com/articles/nprot.2012.016&#34; target=&#34;_blank&#34;&gt;https://www.nature.com/articles/nprot.2012.016&lt;/a&gt;
-Kallisto&lt;/p&gt;
-
-&lt;p&gt;STAR&lt;/p&gt;
-
-&lt;p&gt;Link to bash tuto&lt;/p&gt;
-
-&lt;p&gt;script for pubmed (diya)&lt;/p&gt;
-
-&lt;h1 id=&#34;Stat&#34;&gt;Statistics&lt;/h1&gt;
-
-&lt;p&gt;Susan&amp;rsquo;s Holmes &lt;a href=&#34;http://web.stanford.edu/class/bios221/&#34; target=&#34;_blank&#34;&gt;Modern Statistics for Modern Biology&lt;/a&gt;
-Dim reduction (link rebecca&amp;rsquo;s slide with permission or actually build tuto)
-Clustering (link to book chapter)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/jtleek/genomicspapers&#34; target=&#34;_blank&#34;&gt;https://github.com/jtleek/genomicspapers&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;Biostat&#34;&gt;Applications to RNA-Seq&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/jtleek/genomicspapers&#34; target=&#34;_blank&#34;&gt;https://github.com/jtleek/genomicspapers&lt;/a&gt; as well&lt;/p&gt;
-
-&lt;p&gt;salens review
-EDA: Rebecca&amp;rsquo;s ggplot tutorial (make a new one more bio focused? Maybe based on Dada2).
-Koen review  (bis)
-Bioconductor workshop&lt;/p&gt;
-
-&lt;h1 id=&#34;reproducible-research&#34;&gt;Reproducible research&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://vita.had.co.nz/papers/tidy-data.pdf&#34; target=&#34;_blank&#34;&gt;http://vita.had.co.nz/papers/tidy-data.pdf&lt;/a&gt;
-R package
-Github
-advanced R
-Cargo statistics blog post&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>STAT 215A: Labs</title>
       <link>/project/stat215a/</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
@@ -257,6 +180,122 @@ Cargo statistics blog post&lt;/p&gt;
 &lt;p&gt;Likewise, for the final report, the &lt;a href=&#34;/files/stat215a/lab_final.pdf&#34;&gt;project report&lt;/a&gt; and &lt;a href=&#34;/files/stat215a/lab_final.rnw&#34;&gt;code&lt;/a&gt; are accessible.&lt;/p&gt;
 
 &lt;p&gt;I also highly recommand to go and visit &lt;a href=&#34;http://www.rebeccabarter.com/&#34; target=&#34;_blank&#34;&gt;Rebecca Barter&amp;rsquo;s website&lt;/a&gt; for great tutorials.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome to the RNA-Seq world</title>
+      <link>/project/ressources/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
+      
+      <guid>/project/ressources/</guid>
+      <description>
+
+&lt;h2 id=&#34;this-is-a-draft&#34;&gt;[THIS IS A DRAFT]&lt;/h2&gt;
+
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;Recently, a new member joined the &lt;a href=&#34;https://www.stat.berkeley.edu/~sandrine/&#34; target=&#34;_blank&#34;&gt;Dudoit lab&lt;/a&gt; and I had to think on which ressources to point him to so that he could start getting up to speed with on the field. I think that the ressources I recommand fall into 4 broad (and largely overlapping) categories:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#Bio&#34;&gt;How to produce data with sequencing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#Data&#34;&gt;How to find, acess and pre-process data (including how to use bio-informatics tools)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#Stat&#34;&gt;How to analyze the data:  statistics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#Biostat&#34;&gt;How to use all of the above to conduct an analysis (with - of course - a strong emphasis on R tools)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;ll therefore try to list ressources to help in all subjects. This will be a mix of (scientific) papers, books, package vignette, personal tutorials, video&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;If you find any other ressources, feel free to put an issue on the &lt;a href=&#34;https://github.com/HectorRDB/HectorRDB.github.io/issues&#34; target=&#34;_blank&#34;&gt;github repo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;before-we-begin&#34;&gt;Before we begin&lt;/h1&gt;
+
+&lt;p&gt;The ressources below broadly assume that you have at least a basic knowledge of &lt;a href=&#34;https://cran.r-project.org/&#34; target=&#34;_blank&#34;&gt;R&lt;/a&gt;, statistics and biology.&lt;/p&gt;
+
+&lt;p&gt;Otherwise, for R, I recommand (and I am far from the only one) Garrett Grolemund &amp;amp; Hadley Wickham&amp;rsquo;s &lt;a href=&#34;https://r4ds.had.co.nz/&#34; target=&#34;_blank&#34;&gt;R For Data Science&lt;/a&gt;.  Additionaly, the statistical computing facility at Berkeley host yearly R bootcamps. The material is &lt;a href=&#34;https://github.com/berkeley-scf/r-bootcamp-2018&#34; target=&#34;_blank&#34;&gt;on Github&lt;/a&gt; and are a great way to practice (this is how I really learned R, and I had the change to help in the teaching in 2018).&lt;/p&gt;
+
+&lt;p&gt;Biological concept you should be familiar with are (with links to the relevant Wikipedia pages): the &lt;a href=&#34;https://en.wikipedia.org/wiki/Central_dogma_of_molecular_biology&#34; target=&#34;_blank&#34;&gt;Central Dogma&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/RNA_splicing&#34; target=&#34;_blank&#34;&gt;mRNA splicing&lt;/a&gt;. Keeping up to date with the current knowledge  on majors diseases.&lt;/p&gt;
+
+&lt;p&gt;For statistics, I recommand ??.&lt;/p&gt;
+
+&lt;h1 id=&#34;Bio&#34;&gt;Sequencing methodology&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;RNA - Sequencing mostly relies on Illumina Sequencing nowadays but it&amp;rsquo;s useful to learn about other sequencing methods. I feel that for this, videos are the best medium to understand the mechanisms.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Sanger sequencing&lt;/strong&gt; The first method used for sequening. The video below gives a 3mn tutorial on how it works.
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/FvHRio1yyhQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Illumina Sequencing&lt;/strong&gt; Also called Next Generation Sequencing or Short read sequencing. The best ressources I have found come from the Illumina Website
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/fCd6B5HRaZ8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PacBio Sequencing&lt;/strong&gt; Long read sequencing, 2$^nd$ generation of NGS. In very, short, longer reads with lower accuracy compared to Illumina reads
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/NHCJ8PtYCFc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Oxford NanoPore sequencing&lt;/strong&gt; Even longer reads with even lower quality.
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.vimeo.com/video/211385238&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Single-cell RNA-Sequencing is, of course, conducted at the single-cell level. The way the cells are pre-processed, separated and sequenced is method-dependent. A good overview of those methods can be found in &lt;a href=&#34;https://www.nature.com/articles/nprot.2017.149&#34; target=&#34;_blank&#34;&gt;Svensson et al&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;Data&#34;&gt;Prepping the data for analysis&lt;/h1&gt;
+
+&lt;h2 id=&#34;obtaining-data&#34;&gt;Obtaining data&lt;/h2&gt;
+
+&lt;p&gt;Need a part on scripting to get data based from SRA index.&lt;/p&gt;
+
+&lt;h2 id=&#34;pre-processing-data&#34;&gt;Pre-processing data&lt;/h2&gt;
+
+&lt;p&gt;The sequencing step produces reads at the cell level. The next question is how to map them to a reference genome to obtain transcript or gene expression levels. To obtain this matrix, a few bioinformatic tools exist. One series of tool is &lt;a href=&#34;https://academic.oup.com/bioinformatics/article/25/9/1105/203994&#34; target=&#34;_blank&#34;&gt;Tophat&lt;/a&gt;, which was replaced by &lt;a href=&#34;https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-4-r36&#34; target=&#34;_blank&#34;&gt;Tophat2&lt;/a&gt; and then &lt;a href=&#34;https://www.nature.com/articles/nmeth.3317&#34; target=&#34;_blank&#34;&gt;HISAT&lt;/a&gt;, which was finally upgraded to HISAT2. A popular alternative is the &lt;a href=&#34;https://academic.oup.com/bioinformatics/article/29/1/15/272537&#34; target=&#34;_blank&#34;&gt;STAR algorithm&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Recently, tools that do not rely on full genome alignement have been proposed, including &lt;a href=&#34;https://www.nature.com/articles/nbt.3519&#34; target=&#34;_blank&#34;&gt;Kallisto&lt;/a&gt; and &lt;a href=&#34;https://www.nature.com/articles/nmeth.4197&#34; target=&#34;_blank&#34;&gt;Salmon&lt;/a&gt;. A recent (not yet per-reviewed comparison) can be found by &lt;a href=&#34;https://www.biorxiv.org/content/10.1101/444620v1.abstract&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To run those scripts, basic knowledge of shell scripting is needed. Good tutorials can be &lt;a href=&#34;https://github.com/berkeley-scf/tutorial-using-bash&#34; target=&#34;_blank&#34;&gt;found here&lt;/a&gt; or &lt;a href=&#34;https://datacarpentry.org/shell-genomics/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-recount2-project&#34;&gt;The recount2 project&lt;/h2&gt;
+
+&lt;p&gt;Many datasets have been stored in a clean format in the &lt;a href=&#34;https://jhubiostatistics.shinyapps.io/recount/&#34; target=&#34;_blank&#34;&gt;recount2 project&lt;/a&gt;. This is an excellent place to start if you want to explore algorithms on real world and diverse datasets.&lt;/p&gt;
+
+&lt;h1 id=&#34;Stat&#34;&gt;Tools needed for analysis&lt;/h1&gt;
+
+&lt;p&gt;Susan&amp;rsquo;s Holmes &lt;a href=&#34;http://web.stanford.edu/class/bios221/&#34; target=&#34;_blank&#34;&gt;Modern Statistics for Modern Biology&lt;/a&gt;
+Dim reduction (link rebecca&amp;rsquo;s slide with permission or actually build tuto)
+Clustering (link to book chapter)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/jtleek/genomicspapers&#34; target=&#34;_blank&#34;&gt;https://github.com/jtleek/genomicspapers&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;Biostat&#34;&gt;Applications to RNA-Seq&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/jtleek/genomicspapers&#34; target=&#34;_blank&#34;&gt;https://github.com/jtleek/genomicspapers&lt;/a&gt; as well&lt;/p&gt;
+
+&lt;p&gt;salens review
+EDA: Rebecca&amp;rsquo;s ggplot tutorial (make a new one more bio focused? Maybe based on Dada2).
+Koen review  (bis)
+Bioconductor workshop&lt;/p&gt;
+
+&lt;h1 id=&#34;reproducible-research&#34;&gt;Reproducible research&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://vita.had.co.nz/papers/tidy-data.pdf&#34; target=&#34;_blank&#34;&gt;http://vita.had.co.nz/papers/tidy-data.pdf&lt;/a&gt;
+R package
+Github
+advanced R
+Cargo statistics blog post&lt;/p&gt;
 </description>
     </item>
     
