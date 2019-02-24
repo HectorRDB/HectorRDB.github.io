@@ -202,6 +202,7 @@
 &lt;li&gt;&lt;a href=&#34;#Data&#34;&gt;How to find, acess and pre-process data (including how to use bio-informatics tools)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#Stat&#34;&gt;How to analyze the data:  statistics&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#Biostat&#34;&gt;How to use all of the above to conduct an analysis (with - of course - a strong emphasis on R tools)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#Repro&#34;&gt;How to do all those analyses correctly: reproducible research&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;I&amp;rsquo;ll therefore try to list ressources to help in all subjects. This will be a mix of (scientific) papers, books, package vignette, personal tutorials, video&amp;hellip;&lt;/p&gt;
@@ -251,7 +252,9 @@
  &lt;/div&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Single-cell RNA-Sequencing is, of course, conducted at the single-cell level. The way the cells are pre-processed, separated and sequenced is method-dependent. A good overview of those methods can be found in &lt;a href=&#34;https://www.nature.com/articles/nprot.2017.149&#34; target=&#34;_blank&#34;&gt;Svensson et al&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Single-cell RNA-Sequencing is, of course, conducted at the single-cell level. The way the cells are pre-processed, separated and sequenced is method-dependent. A good overview of those methods can be found in &lt;a href=&#34;https://www.nature.com/articles/nprot.2017.149&#34; target=&#34;_blank&#34;&gt;Svensson et al&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Many other different types of &amp;lsquo;omics exist: the &lt;a href=&#34;https://www.youtube.com/user/joshstarmer/videos&#34; target=&#34;_blank&#34;&gt;youtube chanel StatQuest&lt;/a&gt; gives a good intro to many of them (as well as clear explanantions for many statistical analyses).&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;Data&#34;&gt;Prepping the data for analysis&lt;/h1&gt;
@@ -268,34 +271,44 @@
 
 &lt;p&gt;To run those scripts, basic knowledge of shell scripting is needed. Good tutorials can be &lt;a href=&#34;https://github.com/berkeley-scf/tutorial-using-bash&#34; target=&#34;_blank&#34;&gt;found here&lt;/a&gt; or &lt;a href=&#34;https://datacarpentry.org/shell-genomics/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-recount2-project&#34;&gt;The recount2 project&lt;/h2&gt;
+&lt;h2 id=&#34;pre-processed-data&#34;&gt;Pre-processed data.&lt;/h2&gt;
 
 &lt;p&gt;Many datasets have been stored in a clean format in the &lt;a href=&#34;https://jhubiostatistics.shinyapps.io/recount/&#34; target=&#34;_blank&#34;&gt;recount2 project&lt;/a&gt;. This is an excellent place to start if you want to explore algorithms on real world and diverse datasets.&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&#34;https://bioconductor.org/&#34; target=&#34;_blank&#34;&gt;The Bioconductor Project&lt;/a&gt; also has a lot of datasets packages.&lt;/p&gt;
+
 &lt;h1 id=&#34;Stat&#34;&gt;Tools needed for analysis&lt;/h1&gt;
 
-&lt;p&gt;Susan&amp;rsquo;s Holmes &lt;a href=&#34;http://web.stanford.edu/class/bios221/&#34; target=&#34;_blank&#34;&gt;Modern Statistics for Modern Biology&lt;/a&gt;
-Dim reduction (link rebecca&amp;rsquo;s slide with permission or actually build tuto)
-Clustering (link to book chapter)&lt;/p&gt;
+&lt;p&gt;Many excellent books exist to give a clear understanding of the many tools and concept needed. Freedman&amp;rsquo;s book, &lt;a href=&#34;https://www.cambridge.org/core/books/statistical-models/15F12FD4EB5FAD43B85FA824286DD44F&#34; target=&#34;_blank&#34;&gt;Statistical Models: Theory and Practice&lt;/a&gt; is a must-read, which I consider maybe closer to a philosophical treaty. More applied, Susan&amp;rsquo;s Holmes new book, &lt;a href=&#34;http://web.stanford.edu/class/bios221/&#34; target=&#34;_blank&#34;&gt;Modern Statistics for Modern Biology&lt;/a&gt; is quite complete for tools used in genomics. Key concepts include dimensionality reduction, clustering and modelling. A deeper and mathier book is the &lt;a href=&#34;https://web.stanford.edu/~hastie/ElemStatLearn/&#34; target=&#34;_blank&#34;&gt;The Elements of  Statistical Learning&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/jtleek/genomicspapers&#34; target=&#34;_blank&#34;&gt;https://github.com/jtleek/genomicspapers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A central concept in high-dimensional statistics that characterize genomics is multiple hypothesis testing. &lt;a href=&#34;https://statweb.stanford.edu/~ckirby/brad/LSI/monograph_CUP.pdf?fbclid=IwAR2sggb2cAkJmElvE6uz61egXYWu94-4933X1NbOn05AqPFVAeliQFE15PQ&#34; target=&#34;_blank&#34;&gt;Efron (2010)&lt;/a&gt; is a good reference. &lt;a href=&#34;https://www.pnas.org/content/100/16/9440.abstract&#34; target=&#34;_blank&#34;&gt;This paper&lt;/a&gt; present it in the genomic setting.&lt;/p&gt;
+
+&lt;p&gt;A final essential read is a &lt;a href=&#34;https://www.significancemagazine.com/2-uncategorised/593-cargo-cult-statistics-and-scientific-crisis&#34; target=&#34;_blank&#34;&gt;recent post by Phillipe Stark on cargo-cult statistics&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The R language is used in many RNA-Seq applications. To improve your coding practices, I also recommand &lt;a href=&#34;http://adv-r.had.co.nz/&#34; target=&#34;_blank&#34;&gt;advanced R&lt;/a&gt; by Hadley Wickham.&lt;/p&gt;
 
 &lt;h1 id=&#34;Biostat&#34;&gt;Applications to RNA-Seq&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/jtleek/genomicspapers&#34; target=&#34;_blank&#34;&gt;https://github.com/jtleek/genomicspapers&lt;/a&gt; as well&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re finally getting to the RNA-Seq analysis part. To start, I advice to begin with a practical tutorial. The &lt;a href=&#34;https://bioconductor.github.io/BiocWorkshops/&#34; target=&#34;_blank&#34;&gt;Bioconductor 2018 Workshop&lt;/a&gt; provides a few that I recommand. &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5558107/&#34; target=&#34;_blank&#34;&gt;This other one&lt;/a&gt; is longer but more complete.&lt;/p&gt;
 
-&lt;p&gt;salens review
-EDA: Rebecca&amp;rsquo;s ggplot tutorial (make a new one more bio focused? Maybe based on Dada2).
-Koen review  (bis)
-Bioconductor workshop&lt;/p&gt;
+&lt;p&gt;Once you have seen how to proceed, I recommand this &lt;a href=&#34;https://peerj.com/preprints/27283/?fbclid=IwAR0WH2eTl2Hwig9xxnt_DuYuIsFORwtRMrcI-LgZ6AujxPX1tsPb6t_esXk&#34; target=&#34;_blank&#34;&gt;recent review by Koen et al.&lt;/a&gt;, which very nicely recoup many concepts from above and can point you to further ressources.&lt;/p&gt;
 
-&lt;h1 id=&#34;reproducible-research&#34;&gt;Reproducible research&lt;/h1&gt;
+&lt;p&gt;Then, I recommand to dive into method papers. This list is adopted from the &lt;a href=&#34;https://github.com/jtleek/genomicspapers&#34; target=&#34;_blank&#34;&gt;Leek group paper&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://vita.had.co.nz/papers/tidy-data.pdf&#34; target=&#34;_blank&#34;&gt;http://vita.had.co.nz/papers/tidy-data.pdf&lt;/a&gt;
-R package
-Github
-advanced R
-Cargo statistics blog post&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://biostat.jhsph.edu/~jleek/papers/seqvar.pdf&#34; target=&#34;_blank&#34;&gt;Sequencing technology does not eliminate biological variability&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/16646809&#34; target=&#34;_blank&#34;&gt;The first paper behind the Limma package&lt;/a&gt; and the &lt;a href=&#34;https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29&#34; target=&#34;_blank&#34;&gt;second, with voom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/&#34; target=&#34;_blank&#34;&gt;edgeR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-94&#34; target=&#34;_blank&#34;&gt;Key need for Normalization&lt;/a&gt;, especially because of &lt;a href=&#34;https://www.nature.com/articles/nrg2825&#34; target=&#34;_blank&#34;&gt;batch effects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Methods for normalization include &lt;a href=&#34;https://www.biorxiv.org/content/10.1101/235382v2&#34; target=&#34;_blank&#34;&gt;scone&lt;/a&gt;, &lt;a href=&#34;https://www.nature.com/articles/s41467-017-02554-5&#34; target=&#34;_blank&#34;&gt;zinbWave&lt;/a&gt; and &lt;a href=&#34;https://www.nature.com/articles/s41592-018-0229-2&#34; target=&#34;_blank&#34;&gt;scVI&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://satijalab.org/seurat/&#34; target=&#34;_blank&#34;&gt;Seurat&lt;/a&gt; which propose a global framework of analysis&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.biorxiv.org/content/10.1101/276907v1&#34; target=&#34;_blank&#34;&gt;This paper&lt;/a&gt; (not yet per-reviewed) propose a nice overview of trajectory inference&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/20048385&#34; target=&#34;_blank&#34;&gt;Gene Set Enrichment Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;Repro&#34;&gt;Reproducible research&lt;/h1&gt;
+
+&lt;p&gt;All the analyses you conduct should aim for reproducibility. A first step is statistical and computational reproducibility. To help, several tool exist. Git and Github are powerful tools and many good tutorial exist (see &lt;a href=&#34;https://bids.github.io/2019-01-17-bids/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for example). Good coding practices are also necessary. Saving your software in packages part of it, and &lt;a href=&#34;http://r-pkgs.had.co.nz/&#34; target=&#34;_blank&#34;&gt;this book&lt;/a&gt; is a good reference on how to build them. I also recommand using tools like R Markdown to combine text, math, code and figures in one coherent place.&lt;/p&gt;
 </description>
     </item>
     
