@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tutorials on Hector Roux de Bézieux</title>
-    <link>/tags/tutorials/</link>
-    <description>Recent content in Tutorials on Hector Roux de Bézieux</description>
+    <title>Research on Hector Roux de Bézieux</title>
+    <link>/tags/research/</link>
+    <description>Recent content in Research on Hector Roux de Bézieux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Apr 2018 00:00:00 -0700</lastBuildDate>
     
-	<atom:link href="/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/research/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>ESCAPE</title>
-      <link>/project/nationalassemby/</link>
-      <pubDate>Mon, 18 Feb 2019 00:00:00 -0800</pubDate>
-      
-      <guid>/project/nationalassemby/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Welcome to the RNA-Seq world</title>
