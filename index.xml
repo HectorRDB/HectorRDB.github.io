@@ -285,11 +285,12 @@
 
 &lt;h1 id=&#34;Biostat&#34;&gt;Applications to RNA-Seq&lt;/h1&gt;
 
-&lt;p&gt;We&amp;rsquo;re finally getting to the RNA-Seq analysis part. To start, I advice to begin with a practical tutorial. The &lt;a href=&#34;https://bioconductor.github.io/BiocWorkshops/&#34; target=&#34;_blank&#34;&gt;Bioconductor 2018 Workshop&lt;/a&gt; provides a few that I recommend. &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5558107/&#34; target=&#34;_blank&#34;&gt;This other one&lt;/a&gt; is longer but more complete.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re finally getting to the RNA-Seq analysis part. To start, I advice to begin with a practical tutorial. The &lt;a href=&#34;https://bioconductor.github.io/BiocWorkshops/&#34; target=&#34;_blank&#34;&gt;Bioconductor 2018 Workshop&lt;/a&gt; provides a few that I recommend. &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5558107/&#34; target=&#34;_blank&#34;&gt;This other one&lt;/a&gt; is longer but more complete.
+This &lt;a href=&#34;( /project/nationalassemby/)&#34; target=&#34;_blank&#34;&gt;other tutorial&lt;/a&gt; that I wrote is shorter but can be a good place to start.&lt;/p&gt;
 
 &lt;p&gt;Once you have seen how to proceed, this &lt;a href=&#34;https://peerj.com/preprints/27283/?fbclid=IwAR0WH2eTl2Hwig9xxnt_DuYuIsFORwtRMrcI-LgZ6AujxPX1tsPb6t_esXk&#34; target=&#34;_blank&#34;&gt;recent review by Koen et al.&lt;/a&gt; is a good follow-up that very nicely recoup many concepts from above and can point you to further resources.&lt;/p&gt;
 
-&lt;p&gt;Then, I recommend to dive into method papers. This list is adopted from the &lt;a href=&#34;https://github.com/jtleek/genomicspapers&#34; target=&#34;_blank&#34;&gt;Leek group paper&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then, I recommend to dive into method papers. This list is partly inspired from the &lt;a href=&#34;https://github.com/jtleek/genomicspapers&#34; target=&#34;_blank&#34;&gt;Leek group paper&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://biostat.jhsph.edu/~jleek/papers/seqvar.pdf&#34; target=&#34;_blank&#34;&gt;Sequencing technology does not eliminate biological variability&lt;/a&gt;&lt;/li&gt;
