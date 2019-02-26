@@ -13,11 +13,11 @@
     
     <item>
       <title>Welcome to the RNA-Seq world</title>
-      <link>/project/ressources/</link>
+      <link>/project/resources/</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
       
-      <guid>/project/ressources/</guid>
-      <description>Overview Recently, Philippe Boileau joined the Dudoit lab and I had to think on which ressources to point him to so that he could start getting up to speed with on the field. Together, we hence build the following list of interesting material. Those fall into 4 broad (and largely overlapping) categories:
+      <guid>/project/resources/</guid>
+      <description>Overview Recently, Philippe Boileau joined the Dudoit lab and I had to think on which resources to point him to so that he could start getting up to speed with on the field. Together, we hence build the following list of interesting material. Those fall into 4 broad (and largely overlapping) categories:
  How to produce data with sequencing How to find, access and pre-process data (including how to use bio-informatics tools) How to analyze the data: statistics How to use all of the above to conduct an analysis (with - of course - a strong emphasis on R tools) How to do all those analyses correctly: reproducible research  I&amp;rsquo;ll therefore try to list resources to help in all subjects.</description>
     </item>
     
