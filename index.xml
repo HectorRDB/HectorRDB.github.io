@@ -15,7 +15,27 @@
       <pubDate>Mon, 18 Feb 2019 00:00:00 -0800</pubDate>
       
       <guid>/project/nationalassemby/</guid>
-      <description></description>
+      <description>
+
+&lt;h1 id=&#34;escape&#34;&gt;ESCAPE&lt;/h1&gt;
+
+&lt;h2 id=&#34;e-asy-s-ingle-c-ell-rna-sequencing-a-nalyis-through-a-p-olitical-e-xample&#34;&gt;&lt;strong&gt;E&lt;/strong&gt;asy &lt;strong&gt;S&lt;/strong&gt;ingle-&lt;strong&gt;C&lt;/strong&gt;ell rna-sequencing &lt;strong&gt;A&lt;/strong&gt;nalyis through a &lt;strong&gt;P&lt;/strong&gt;olitical &lt;strong&gt;E&lt;/strong&gt;xample&lt;/h2&gt;
+
+&lt;p&gt;Single-cell RNA-sequencing (scRNA-seq) is a very potent biological tool used for many applications. A far from exhaustive list would include identifying new cell types, finding differentially expressed (DE) genes, and discovering lineages among cells. To get an overview of the principle, see &lt;a href=&#34;https://en.wikipedia.org/wiki/Single_cell_sequencing#Single-cell_RNA_sequencing_(scRNA-seq)&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;However, the usual framework might seem a little daunting for beginners and, while many well-crafted tutorials exists, they all share the same idea: use a biological dataset as an example. Here, we want to use a political dataset that would be more understandable to a broader public to explain the usual steps in scRNA-seq analysis. Only some basics on data analysis are needed to understand this tutorial. Knowledge of R helps to understand the code but is not necessary to follow along.&lt;/p&gt;
+
+&lt;p&gt;See&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hectorrdb.github.io/NationalAssembly/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for the tutorial and&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/HectorRDB/NationalAssembly&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for the code and access to data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;acknowledgement&#34;&gt;Acknowledgement&lt;/h2&gt;
+
+&lt;p&gt;Special thanks to &lt;a href=&#34;https://vviers.github.io/&#34; target=&#34;_blank&#34;&gt;Vincent Viers&lt;/a&gt; for the initial inspiration of this project. The code used for scraping the data is based on the blog post &lt;a href=&#34;https://freakonometrics.hypotheses.org/50973&#34; target=&#34;_blank&#34;&gt;https://freakonometrics.hypotheses.org/50973&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
