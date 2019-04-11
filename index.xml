@@ -6,8 +6,20 @@
     <description>Recent content in Hector Roux de Bézieux on Hector Roux de Bézieux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Apr 2019 15:00:00 -0700</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unlocking the power of continuity in single cell RNA-Seq: Differential gene Expression along developmental trajectories.</title>
+      <link>/talk/stemcellretreat/</link>
+      <pubDate>Sun, 14 Apr 2019 15:00:00 -0700</pubDate>
+      
+      <guid>/talk/stemcellretreat/</guid>
+      <description>&lt;p&gt;Trajectory inference is often used with single-cell RNA-seq data to study dynamic changes in gene expression levels during, e.g., cell cycle, differentiation, or cellular activation.  Downstream of trajectory inference, researchers are often interested in discovering genes that are associated with a particular lineage in the trajectory. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to the system under study. Current data analysis procedures, however, artificially cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference. Other methods only assess broad differences in gene expression between lineages, hence failing to pinpoint the exact types of divergence. Our new method allows flexible inference of (i) within-lineage differential expression by detecting associations between gene expression and pseudotime over an entire lineage, or comparing gene expression between points/regions within the linage; and (ii) between-lineage differential expression by comparing gene expression between lineages over the entire lineages or at specific points/regions. This talk gives a high-level overview of the  method, demonstrating its modularity and unique capacity to deliver powerful insights into complex biological phenomenons.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/logo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ESCAPE</title>
