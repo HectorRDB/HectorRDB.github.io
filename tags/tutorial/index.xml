@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on Hector Roux de Bézieux</title>
+    <link>/tags/tutorial/</link>
+    <description>Recent content in Tutorial on Hector Roux de Bézieux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Apr 2018 00:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R Package used for my useful functions</title>
+      <link>/project/personal-package/</link>
+      <pubDate>Thu, 19 Apr 2018 00:00:00 -0700</pubDate>
+      
+      <guid>/project/personal-package/</guid>
+      <description>This is a package to load useful functions that I use on a daily basis. It also contains a template for an Rmd and RStudio Project template. The package website is available at https://hectorrdb.github.io/DailyHRB/.
+You can install it from Github with the following:
+if (!&amp;quot;devtools&amp;quot; %in% installed.packages()) { install.pacakges(&amp;quot;devtools&amp;quot;) } devtools::install_github(&amp;quot;HectorRDB/DailyHRB&amp;quot;)  or from source with
+git clone git@github.com:HectorRDB/DailyHRB.git R CMD INSTALL DailyHRB  </description>
+    </item>
+    
+  </channel>
+</rss>
