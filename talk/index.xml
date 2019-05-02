@@ -13,10 +13,10 @@
     
     <item>
       <title>Unlocking the power of continuity in single cell RNA-Seq: Differential gene Expression along developmental trajectories.</title>
-      <link>/talk/stemcellretreat/</link>
+      <link>/talk/tradeseq/</link>
       <pubDate>Sun, 14 Apr 2019 15:00:00 -0700</pubDate>
       
-      <guid>/talk/stemcellretreat/</guid>
+      <guid>/talk/tradeseq/</guid>
       <description>Trajectory inference is often used with single-cell RNA-seq data to study dynamic changes in gene expression levels during, e.g., cell cycle, differentiation, or cellular activation. Downstream of trajectory inference, researchers are often interested in discovering genes that are associated with a particular lineage in the trajectory. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to the system under study. Current data analysis procedures, however, artificially cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference.</description>
     </item>
     

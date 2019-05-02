@@ -6,15 +6,25 @@
     <description>Recent content in Hector Roux de Bézieux on Hector Roux de Bézieux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Apr 2019 15:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 01 May 2019 15:00:00 -0700</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Trajectory-based differential expression analysis for single-cell sequencing data</title>
+      <link>/publication/tradeseq/</link>
+      <pubDate>Wed, 01 May 2019 15:00:00 -0700</pubDate>
+      
+      <guid>/publication/tradeseq/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/img/logo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Unlocking the power of continuity in single cell RNA-Seq: Differential gene Expression along developmental trajectories.</title>
-      <link>/talk/stemcellretreat/</link>
+      <link>/talk/tradeseq/</link>
       <pubDate>Sun, 14 Apr 2019 15:00:00 -0700</pubDate>
       
-      <guid>/talk/stemcellretreat/</guid>
+      <guid>/talk/tradeseq/</guid>
       <description>&lt;p&gt;Trajectory inference is often used with single-cell RNA-seq data to study dynamic changes in gene expression levels during, e.g., cell cycle, differentiation, or cellular activation.  Downstream of trajectory inference, researchers are often interested in discovering genes that are associated with a particular lineage in the trajectory. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to the system under study. Current data analysis procedures, however, artificially cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference. Other methods only assess broad differences in gene expression between lineages, hence failing to pinpoint the exact types of divergence. Our new method allows flexible inference of (i) within-lineage differential expression by detecting associations between gene expression and pseudotime over an entire lineage, or comparing gene expression between points/regions within the linage; and (ii) between-lineage differential expression by comparing gene expression between lineages over the entire lineages or at specific points/regions. This talk gives a high-level overview of the  method, demonstrating its modularity and unique capacity to deliver powerful insights into complex biological phenomenons.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/img/logo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -371,6 +381,24 @@ This &lt;a href=&#34;https://hectorrdb.github.io/NationalAssembly/&#34; target=&
 &lt;p&gt;To help, several tool exist. Git and Github are powerful tools and many good tutorial exist (see &lt;a href=&#34;https://bids.github.io/2019-01-17-bids/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for example). Good coding practices are also necessary. Saving your software in packages is a part of it, and &lt;a href=&#34;http://r-pkgs.had.co.nz/&#34; target=&#34;_blank&#34;&gt;this book&lt;/a&gt; is a good reference on how to build them in an efficient fashion. I also recommend using tools like &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34;&gt;RMarkdown&lt;/a&gt; or &lt;a href=&#34;https://yihui.name/knitr/&#34; target=&#34;_blank&#34;&gt;knitr&lt;/a&gt; to combine text, math, code and figures in one coherent place when writing papers, reports or even for day-to-day analyses.&lt;/p&gt;
 
 &lt;p&gt;While code is now commonly saved and made public for reproducibility purposes, data is unfortunatly not always available. Raw files can be made accessible through ncbi. Pre-processed data (a count matrix for example) can also be made public using a data R package, such as the experiment packages that can be found in &lt;a href=&#34;https://www.bioconductor.org/packages/release/BiocViews.html#___ExperimentData&#34; target=&#34;_blank&#34;&gt;Bioconductor&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>tradeSeq</title>
+      <link>/project/tradeseq/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
+      
+      <guid>/project/tradeseq/</guid>
+      <description>
+
+&lt;h2 id=&#34;tradeseq-trajectory-based-differential-expression-analysis-for-single-cell-sequencing-data&#34;&gt;tradeSeq: Trajectory-based differential expression analysis for single-cell sequencing data&lt;/h2&gt;
+
+&lt;p&gt;Work in collaboration with Koen Van den Berge, Hector Roux de Bezieux, Kelly Street, Wouter Saelens, Robrecht Cannoodt, Yvan Saeys, Sandrine Dudoit, Lieven Clement&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression levels during biological processes such as the cell cycle, cell type differentiation, and cellular activation. Downstream of trajectory inference, it is vital to discover genes that are associated with the lineages in the trajectory to illuminate the underlying biological processes. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to further unravel the system under study. Current data analysis procedures, however, typically cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference to its full potential. The few available non-cluster-based methods only assess broad differences in gene expression between lineages, hence failing to pinpoint the exact types of divergence. We introduce a powerful generalized additive model framework based on the negative binomial distribution that allows flexible inference of (i) within-lineage differential expression by detecting associations between gene expression and pseudotime over an entire lineage or by comparing gene expression between points/regions within the lineage and (ii) between-lineage differential expression by comparing gene expression between lineages over the entire lineages or at specific points/regions. By incorporating observation-level weights, the model additionally allows to account for zero inflation, commonly observed in single-cell RNA-seq data from full-length protocols. We evaluate the method on simulated and real datasets from droplet-based and full-length protocols, and show that the flexible inference framework is capable of yielding biological insights through a clear interpretation of the data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/logo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -4,7 +4,15 @@
     
     <url>
     
-      <loc>/talk/stemcellretreat/</loc>
+      <loc>/publication/tradeseq/</loc>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/tradeseq/</loc>
       <lastmod>2019-04-14T15:00:00-07:00</lastmod>
     </url>
     
@@ -68,7 +76,24 @@
     
     <url>
     
+      <loc>/project/tradeseq/</loc>
+      <lastmod>2018-04-18T00:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/author/admin/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication_types/3/</loc>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -108,8 +133,17 @@
     
     <url>
     
+      <loc>/authors/hector-roux-de-bezieux/</loc>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/</loc>
-      <lastmod>2019-04-14T15:00:00-07:00</lastmod>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -119,6 +153,33 @@
     
       <loc>/authors/hector-roux-de-b%C3%A9zieux/</loc>
       <lastmod>2019-04-14T15:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/kelly-street/</loc>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/koen-van-den-berge/</loc>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/lieven-clement/</loc>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -143,6 +204,7 @@
     <url>
     
       <loc>/publication_types/</loc>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -151,6 +213,7 @@
     <url>
     
       <loc>/publication/</loc>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
     </url>
     
   
@@ -167,6 +230,24 @@
     
       <loc>/tags/research/</loc>
       <lastmod>2018-04-18T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/robrecht-cannoodt/</loc>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/sandrine-dudoit/</loc>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -209,6 +290,24 @@
     
       <loc>/tags/tutorials/</loc>
       <lastmod>2019-02-18T00:00:00-08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/wouter-saelens/</loc>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/authors/yvan-saeys/</loc>
+      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
