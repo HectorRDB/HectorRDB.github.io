@@ -27,7 +27,7 @@
       <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/tradeseq/</guid>
-      <description>tradeSeq: Trajectory-based differential expression analysis for single-cell sequencing data Work in collaboration with Koen Van den Berge, Hector Roux de Bezieux, Kelly Street, Wouter Saelens, Robrecht Cannoodt, Yvan Saeys, Sandrine Dudoit, Lieven Clement
+      <description>tradeSeq: Trajectory-based differential expression analysis for single-cell sequencing data Work in collaboration with Koen Van den Berge, Kelly Street, Wouter Saelens, Robrecht Cannoodt, Yvan Saeys, Sandrine Dudoit and Lieven Clement
 Abstract: Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression levels during biological processes such as the cell cycle, cell type differentiation, and cellular activation. Downstream of trajectory inference, it is vital to discover genes that are associated with the lineages in the trajectory to illuminate the underlying biological processes.</description>
     </item>
     
