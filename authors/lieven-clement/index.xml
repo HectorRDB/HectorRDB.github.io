@@ -6,7 +6,7 @@
     <description>Recent content in Lieven Clement on Hector Roux de Bézieux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 May 2019 15:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 01 May 2019 15:00:00 +0200</lastBuildDate>
     
 	<atom:link href="/authors/lieven-clement/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,10 +14,10 @@
     <item>
       <title>Trajectory-based differential expression analysis for single-cell sequencing data</title>
       <link>/publication/tradeseq/</link>
-      <pubDate>Wed, 01 May 2019 15:00:00 -0700</pubDate>
+      <pubDate>Wed, 01 May 2019 15:00:00 +0200</pubDate>
       
       <guid>/publication/tradeseq/</guid>
-      <description></description>
+      <description>Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression levels during biological processes such as the cell cycle, cell type differentiation, and cellular activation. Downstream of trajectory inference, it is vital to discover genes that are associated with the lineages in the trajectory to illuminate the underlying biological processes. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to further unravel the system under study.</description>
     </item>
     
   </channel>

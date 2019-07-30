@@ -6,23 +6,25 @@
     <description>Recent content in Hector Roux de Bézieux on Hector Roux de Bézieux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 May 2019 15:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 01 May 2019 15:00:00 +0200</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Trajectory-based differential expression analysis for single-cell sequencing data</title>
       <link>/publication/tradeseq/</link>
-      <pubDate>Wed, 01 May 2019 15:00:00 -0700</pubDate>
+      <pubDate>Wed, 01 May 2019 15:00:00 +0200</pubDate>
       
       <guid>/publication/tradeseq/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;/img/logo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression levels during biological processes such as the cell cycle, cell type differentiation, and cellular activation. Downstream of trajectory inference, it is vital to discover genes that are associated with the lineages in the trajectory to illuminate the underlying biological processes. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to further unravel the system under study. Current data analysis procedures, however, typically cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference to its full potential. The few available non-cluster-based methods only assess broad differences in gene expression between lineages, hence failing to pinpoint the exact types of divergence. We introduce a powerful generalized additive model framework based on the negative binomial distribution that allows flexible inference of (i) within-lineage differential expression by detecting associations between gene expression and pseudotime over an entire lineage or by comparing gene expression between points/regions within the lineage and (ii) between-lineage differential expression by comparing gene expression between lineages over the entire lineages or at specific points/regions. By incorporating observation-level weights, the model additionally allows to account for zero inflation, commonly observed in single-cell RNA-seq data from full-length protocols. We evaluate the method on simulated and real datasets from droplet-based and full-length protocols, and show that the flexible inference framework is capable of yielding biological insights through a clear interpretation of the data.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Trajectory inference, Differential Expression and clustering along developmental trajectories in single cell RNA-Sequencing.</title>
       <link>/talk/statseminar/</link>
-      <pubDate>Thu, 18 Apr 2019 15:00:00 -0700</pubDate>
+      <pubDate>Thu, 18 Apr 2019 15:00:00 +0200</pubDate>
       
       <guid>/talk/statseminar/</guid>
       <description>&lt;p&gt;Trajectory inference is often used with single-cell RNA-seq data to study dynamic changes in gene expression levels during, e.g., cell cycle, differentiation, or cellular activation.  Downstream of trajectory inference, researchers are often interested in discovering genes that are associated with a particular lineage in the trajectory. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to the system under study. Current data analysis procedures, however, artificially cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference. Other methods only assess broad differences in gene expression between lineages, hence failing to pinpoint the exact types of divergence. Our new method allows flexible inference of (i) within-lineage differential expression by detecting associations between gene expression and pseudotime over an entire lineage, or comparing gene expression between points/regions within the linage; and (ii) between-lineage differential expression by comparing gene expression between lineages over the entire lineages or at specific points/regions. This talk gives a high-level overview of the  method, demonstrating its modularity and unique capacity to deliver powerful insights into complex biological phenomenons.&lt;/p&gt;
@@ -34,7 +36,7 @@
     <item>
       <title>Unlocking the power of continuity in single cell RNA-Seq: Differential gene Expression along developmental trajectories.</title>
       <link>/talk/stemcell/</link>
-      <pubDate>Sun, 14 Apr 2019 15:00:00 -0700</pubDate>
+      <pubDate>Sun, 14 Apr 2019 15:00:00 +0200</pubDate>
       
       <guid>/talk/stemcell/</guid>
       <description>&lt;p&gt;Trajectory inference is often used with single-cell RNA-seq data to study dynamic changes in gene expression levels during, e.g., cell cycle, differentiation, or cellular activation.  Downstream of trajectory inference, researchers are often interested in discovering genes that are associated with a particular lineage in the trajectory. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to the system under study. Current data analysis procedures, however, artificially cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference. Other methods only assess broad differences in gene expression between lineages, hence failing to pinpoint the exact types of divergence. Our new method allows flexible inference of (i) within-lineage differential expression by detecting associations between gene expression and pseudotime over an entire lineage, or comparing gene expression between points/regions within the linage; and (ii) between-lineage differential expression by comparing gene expression between lineages over the entire lineages or at specific points/regions. This talk gives a high-level overview of the  method, demonstrating its modularity and unique capacity to deliver powerful insights into complex biological phenomenons.&lt;/p&gt;
@@ -46,7 +48,7 @@
     <item>
       <title>ESCAPE</title>
       <link>/project/nationalassemby/</link>
-      <pubDate>Mon, 18 Feb 2019 00:00:00 -0800</pubDate>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>
       
       <guid>/project/nationalassemby/</guid>
       <description>
@@ -75,7 +77,7 @@
     <item>
       <title>Privacy Policy</title>
       <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 -0700</pubDate>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0200</pubDate>
       
       <guid>/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
@@ -85,7 +87,7 @@
     <item>
       <title>R Package used for my useful functions</title>
       <link>/project/personal-package/</link>
-      <pubDate>Thu, 19 Apr 2018 00:00:00 -0700</pubDate>
+      <pubDate>Thu, 19 Apr 2018 00:00:00 +0200</pubDate>
       
       <guid>/project/personal-package/</guid>
       <description>&lt;p&gt;This is a package to load useful functions that I use on a daily basis. It also contains a template for an Rmd and RStudio Project template. The package website is available at &lt;a href=&#34;https://hectorrdb.github.io/DailyHRB/&#34; target=&#34;_blank&#34;&gt;https://hectorrdb.github.io/DailyHRB/&lt;/a&gt;.&lt;/p&gt;
@@ -109,7 +111,7 @@ R CMD INSTALL DailyHRB
     <item>
       <title>CS289 Final Project</title>
       <link>/project/cs289/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
       
       <guid>/project/cs289/</guid>
       <description>
@@ -134,7 +136,7 @@ R CMD INSTALL DailyHRB
     <item>
       <title>Courses taken at UC Berkeley</title>
       <link>/project/courses/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
       
       <guid>/project/courses/</guid>
       <description>
@@ -216,7 +218,7 @@ R CMD INSTALL DailyHRB
     <item>
       <title>STAT 215A: Labs</title>
       <link>/project/stat215a/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
       
       <guid>/project/stat215a/</guid>
       <description>
@@ -264,7 +266,7 @@ R CMD INSTALL DailyHRB
     <item>
       <title>Welcome to the RNA-Seq world</title>
       <link>/project/resources/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
       
       <guid>/project/resources/</guid>
       <description>
@@ -399,7 +401,7 @@ This &lt;a href=&#34;https://hectorrdb.github.io/NationalAssembly/&#34; target=&
     <item>
       <title>tradeSeq</title>
       <link>/project/tradeseq/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
       
       <guid>/project/tradeseq/</guid>
       <description>

@@ -6,7 +6,7 @@
     <description>Recent content on Hector Roux de Bézieux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Apr 2019 15:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2019 15:00:00 +0200</lastBuildDate>
     
 	<atom:link href="/authors/hector-roux-de-b%C3%A9zieux/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Trajectory inference, Differential Expression and clustering along developmental trajectories in single cell RNA-Sequencing.</title>
       <link>/talk/statseminar/</link>
-      <pubDate>Thu, 18 Apr 2019 15:00:00 -0700</pubDate>
+      <pubDate>Thu, 18 Apr 2019 15:00:00 +0200</pubDate>
       
       <guid>/talk/statseminar/</guid>
       <description>Trajectory inference is often used with single-cell RNA-seq data to study dynamic changes in gene expression levels during, e.g., cell cycle, differentiation, or cellular activation. Downstream of trajectory inference, researchers are often interested in discovering genes that are associated with a particular lineage in the trajectory. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to the system under study. Current data analysis procedures, however, artificially cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference.</description>
@@ -23,7 +23,7 @@
     <item>
       <title>Unlocking the power of continuity in single cell RNA-Seq: Differential gene Expression along developmental trajectories.</title>
       <link>/talk/stemcell/</link>
-      <pubDate>Sun, 14 Apr 2019 15:00:00 -0700</pubDate>
+      <pubDate>Sun, 14 Apr 2019 15:00:00 +0200</pubDate>
       
       <guid>/talk/stemcell/</guid>
       <description>Trajectory inference is often used with single-cell RNA-seq data to study dynamic changes in gene expression levels during, e.g., cell cycle, differentiation, or cellular activation. Downstream of trajectory inference, researchers are often interested in discovering genes that are associated with a particular lineage in the trajectory. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to the system under study. Current data analysis procedures, however, artificially cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference.</description>
