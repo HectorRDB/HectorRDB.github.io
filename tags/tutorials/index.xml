@@ -6,7 +6,7 @@
     <description>Recent content in Tutorials on Hector Roux de Bézieux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>ESCAPE</title>
       <link>/project/nationalassemby/</link>
-      <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 -0800</pubDate>
       
       <guid>/project/nationalassemby/</guid>
       <description>ESCAPE Easy Single-Cell RNA-sequencing Analyis through a Political Example Single-cell RNA-sequencing (scRNA-seq) is a very potent biological tool used for many applications. A far from exhaustive list would include identifying new cell types, finding differentially expressed (DE) genes, and discovering lineages among cells. To get an overview of the principle, see here.
@@ -24,7 +24,7 @@ However, the usual framework might seem a little daunting for beginners and, whi
     <item>
       <title>Welcome to the RNA-Seq world</title>
       <link>/project/resources/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/resources/</guid>
       <description>Overview Recently, Philippe Boileau joined the Dudoit lab and I had to think on which resources to point him to so that he could start getting up to speed with on the field. Together, we hence build the following list of interesting material. Those fall into 4 broad (and largely overlapping) categories:

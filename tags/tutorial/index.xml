@@ -6,7 +6,7 @@
     <description>Recent content in Tutorial on Hector Roux de Bézieux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Apr 2018 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 19 Apr 2018 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>R Package used for my useful functions</title>
       <link>/project/personal-package/</link>
-      <pubDate>Thu, 19 Apr 2018 00:00:00 +0200</pubDate>
+      <pubDate>Thu, 19 Apr 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/personal-package/</guid>
       <description>This is a package to load useful functions that I use on a daily basis. It also contains a template for an Rmd and RStudio Project template. The package website is available at https://hectorrdb.github.io/DailyHRB/.

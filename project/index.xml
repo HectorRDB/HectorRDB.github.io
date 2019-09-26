@@ -6,7 +6,7 @@
     <description>Recent content in Projects on Hector Roux de Bézieux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>ESCAPE</title>
       <link>/project/nationalassemby/</link>
-      <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 -0800</pubDate>
       
       <guid>/project/nationalassemby/</guid>
       <description>ESCAPE Easy Single-Cell RNA-sequencing Analyis through a Political Example Single-cell RNA-sequencing (scRNA-seq) is a very potent biological tool used for many applications. A far from exhaustive list would include identifying new cell types, finding differentially expressed (DE) genes, and discovering lineages among cells. To get an overview of the principle, see here.
@@ -24,7 +24,7 @@ However, the usual framework might seem a little daunting for beginners and, whi
     <item>
       <title>R Package used for my useful functions</title>
       <link>/project/personal-package/</link>
-      <pubDate>Thu, 19 Apr 2018 00:00:00 +0200</pubDate>
+      <pubDate>Thu, 19 Apr 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/personal-package/</guid>
       <description>This is a package to load useful functions that I use on a daily basis. It also contains a template for an Rmd and RStudio Project template. The package website is available at https://hectorrdb.github.io/DailyHRB/.
@@ -36,7 +36,7 @@ git clone git@github.com:HectorRDB/DailyHRB.git R CMD INSTALL DailyHRB  </descri
     <item>
       <title>CS289 Final Project</title>
       <link>/project/cs289/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/cs289/</guid>
       <description>Modelization of single-cell gene expression along a timeline Report abstract The explosion of genomic data over the past two decades created a need for new and more performing tools. One type of data in particular, Single-cell RNA Sequencing data, allow for a cell-level detection of biological patterns but technical limitations add lots of noise sources to the data. In particular, some counts are dropped and appear as zeros, even thought the gene is expressed in the cell.</description>
@@ -45,7 +45,7 @@ git clone git@github.com:HectorRDB/DailyHRB.git R CMD INSTALL DailyHRB  </descri
     <item>
       <title>Courses taken at UC Berkeley</title>
       <link>/project/courses/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/courses/</guid>
       <description>2019 2018 2017  2019  PB HLTH 290: Targeted Learning with Biomedical Big Data with Mark Van der Laan  Final Project Proposal on Overleaf   2018  CMPBIO 293 Doctoral Seminar in Computational Biology (Spring) with Nir Yosef  Presentation 1 Presentation 2  CMPBIO 293 Doctoral Seminar in Computational Biology (Fall) with Priya Moorjani &amp;amp; Daniel Rokhsar  Presentation  STAT 210A Theoretical Statistics with Will Fithian STAT 215B Statistical Models: Theory and Application with Jon Mcauliffe  Final Project not public  STAT 248 Analysis of Time Series with David Brillinger  Final Project report and code  CS 298A Introduction to Machine Learning with Jennifer Listgarten and Anant Sahai  Final Project  CS 294 Machine Learning and Statistics Meet Biology with Jennifer Listgarten  Presentation Final Project report.</description>
@@ -54,7 +54,7 @@ git clone git@github.com:HectorRDB/DailyHRB.git R CMD INSTALL DailyHRB  </descri
     <item>
       <title>STAT 215A: Labs</title>
       <link>/project/stat215a/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/stat215a/</guid>
       <description>STAT 215A Statistical Models: Theory and Application I took this class in the Fall 2017, with Bin Yu and Rebecca Barter. For the purpose of this class, we studied 3 datasets across 4 labs. The grading was partly peer-reviewed based so my github for this class contains works from other students that I cannot share. However, the lab reports and code files are below:
@@ -64,7 +64,7 @@ git clone git@github.com:HectorRDB/DailyHRB.git R CMD INSTALL DailyHRB  </descri
     <item>
       <title>Welcome to the RNA-Seq world</title>
       <link>/project/resources/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/resources/</guid>
       <description>Overview Recently, Philippe Boileau joined the Dudoit lab and I had to think on which resources to point him to so that he could start getting up to speed with on the field. Together, we hence build the following list of interesting material. Those fall into 4 broad (and largely overlapping) categories:
@@ -74,7 +74,7 @@ git clone git@github.com:HectorRDB/DailyHRB.git R CMD INSTALL DailyHRB  </descri
     <item>
       <title>tradeSeq</title>
       <link>/project/tradeseq/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
       
       <guid>/project/tradeseq/</guid>
       <description>tradeSeq: Trajectory-based differential expression analysis for single-cell sequencing data Work in collaboration with Koen Van den Berge, Kelly Street, Wouter Saelens, Robrecht Cannoodt, Yvan Saeys, Sandrine Dudoit and Lieven Clement
