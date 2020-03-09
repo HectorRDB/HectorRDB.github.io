@@ -422,9 +422,9 @@ This &lt;a href=&#34;https://hectorrdb.github.io/NationalAssembly/&#34; target=&
 &lt;li&gt;&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/&#34; target=&#34;_blank&#34;&gt;edgeR&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-94&#34; target=&#34;_blank&#34;&gt;Key need for Normalization&lt;/a&gt;, especially because of &lt;a href=&#34;https://www.nature.com/articles/nrg2825&#34; target=&#34;_blank&#34;&gt;batch effects&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Methods for normalization include &lt;a href=&#34;https://www.biorxiv.org/content/10.1101/235382v2&#34; target=&#34;_blank&#34;&gt;scone&lt;/a&gt;, &lt;a href=&#34;https://www.nature.com/articles/s41467-017-02554-5&#34; target=&#34;_blank&#34;&gt;zinbWave&lt;/a&gt; and &lt;a href=&#34;https://www.nature.com/articles/s41592-018-0229-2&#34; target=&#34;_blank&#34;&gt;scVI&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://satijalab.org/seurat/&#34; target=&#34;_blank&#34;&gt;Seurat&lt;/a&gt; which propose a global framework of analysis&lt;/li&gt;
-&lt;li&gt;Clustering is a key step of RNA-Seq analysis. &lt;a href=&#34;https://f1000research.com/articles/7-1141/v2&#34; target=&#34;_blank&#34;&gt;This paper&lt;/a&gt; contrast several methods on real and synthetic data.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.biorxiv.org/content/10.1101/276907v1&#34; target=&#34;_blank&#34;&gt;This paper&lt;/a&gt; (not yet per-reviewed) propose a nice overview of trajectory inference&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://satijalab.org/seurat/&#34; target=&#34;_blank&#34;&gt;Seurat&lt;/a&gt; is a global framework of analysis&lt;/li&gt;
+&lt;li&gt;Clustering is a key step of RNA-Seq analysis. &lt;a href=&#34;https://f1000research.com/articles/7-1141/v2&#34; target=&#34;_blank&#34;&gt;This paper&lt;/a&gt; contrasts several methods on real and synthetic data.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nature.com/articles/s41587-019-0071-9&#34; target=&#34;_blank&#34;&gt;This paper&lt;/a&gt; proposes a nice overview of trajectory inference&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/20048385&#34; target=&#34;_blank&#34;&gt;Gene Set Enrichment Analysis&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
