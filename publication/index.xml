@@ -6,10 +6,19 @@
     <description>Recent content in Publications on Hector Roux de Bézieux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 May 2019 15:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2020 15:00:00 -0800</lastBuildDate>
     
 	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Improving replicability in single-cell RNA-Seq cell type discovery with Dune</title>
+      <link>/publication/dune/</link>
+      <pubDate>Wed, 04 Mar 2020 15:00:00 -0800</pubDate>
+      
+      <guid>/publication/dune/</guid>
+      <description>Single-cell transcriptome sequencing (scRNA-Seq) has allowed many new types of investigations at unprecedented and unique levels of resolution. Among the primary goals of scRNA-Seq is the classification of cells into potentially novel cell types. Many approaches build on the existing clustering literature to develop tools specific to single-cell applications. However, almost all of these methods rely on heuristics or user-supplied parameters to control the number of clusters identified. This affects both the resolution of the clusters within the original dataset as well as their replicability across datasets.</description>
+    </item>
     
     <item>
       <title>Trajectory-based differential expression analysis for single-cell sequencing data</title>
@@ -17,7 +26,7 @@
       <pubDate>Wed, 01 May 2019 15:00:00 -0700</pubDate>
       
       <guid>/publication/tradeseq/</guid>
-      <description>Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression levels during biological processes such as the cell cycle, cell type differentiation, and cellular activation. Downstream of trajectory inference, it is vital to discover genes that are associated with the lineages in the trajectory to illuminate the underlying biological processes. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to further unravel the system under study.</description>
+      <description>Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression. Downstream of trajectory inference, it is vital to discover genes that are (i) associated with the lineages in the trajectory, or (ii) differentially expressed between lineages, to illuminate the underlying biological processes. Current data analysis procedures, however, either fail to exploit the continuous resolution provided by trajectory inference, or fail to pinpoint the exact types of differential expression.</description>
     </item>
     
   </channel>

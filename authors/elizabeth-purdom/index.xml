@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elizabeth Purdom on Hector Roux de Bézieux</title>
+    <link>/authors/elizabeth-purdom/</link>
+    <description>Recent content in Elizabeth Purdom on Hector Roux de Bézieux</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Mar 2020 15:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="/authors/elizabeth-purdom/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Improving replicability in single-cell RNA-Seq cell type discovery with Dune</title>
+      <link>/publication/dune/</link>
+      <pubDate>Wed, 04 Mar 2020 15:00:00 -0800</pubDate>
+      
+      <guid>/publication/dune/</guid>
+      <description>Single-cell transcriptome sequencing (scRNA-Seq) has allowed many new types of investigations at unprecedented and unique levels of resolution. Among the primary goals of scRNA-Seq is the classification of cells into potentially novel cell types. Many approaches build on the existing clustering literature to develop tools specific to single-cell applications. However, almost all of these methods rely on heuristics or user-supplied parameters to control the number of clusters identified. This affects both the resolution of the clusters within the original dataset as well as their replicability across datasets.</description>
+    </item>
+    
+  </channel>
+</rss>

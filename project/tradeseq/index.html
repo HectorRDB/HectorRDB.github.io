@@ -486,6 +486,8 @@
 
 
 
+  
+
 
 
 <div class="btn-links mb-3">
@@ -503,6 +505,10 @@
 
 
 
+<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
+        data-filename="/project/tradeseq/cite.bib">
+  Cite
+</button>
 
 
 
@@ -515,6 +521,23 @@
 
 
 
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://www.nature.com/articles/s41467-020-14766-3" target="_blank" rel="noopener">
+    
+    Paper
+  </a>
 
   
   
@@ -618,9 +641,11 @@
 
 <p>Work in collaboration with Koen Van den Berge, Kelly Street, Wouter Saelens, Robrecht Cannoodt, Yvan Saeys, Sandrine Dudoit and Lieven Clement</p>
 
-<p><strong>Abstract:</strong> Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression levels during biological processes such as the cell cycle, cell type differentiation, and cellular activation. Downstream of trajectory inference, it is vital to discover genes that are associated with the lineages in the trajectory to illuminate the underlying biological processes. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to further unravel the system under study. Current data analysis procedures, however, typically cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference to its full potential. The few available non-cluster-based methods only assess broad differences in gene expression between lineages, hence failing to pinpoint the exact types of divergence. We introduce a powerful generalized additive model framework based on the negative binomial distribution that allows flexible inference of (i) within-lineage differential expression by detecting associations between gene expression and pseudotime over an entire lineage or by comparing gene expression between points/regions within the lineage and (ii) between-lineage differential expression by comparing gene expression between lineages over the entire lineages or at specific points/regions. By incorporating observation-level weights, the model additionally allows to account for zero inflation, commonly observed in single-cell RNA-seq data from full-length protocols. We evaluate the method on simulated and real datasets from droplet-based and full-length protocols, and show that the flexible inference framework is capable of yielding biological insights through a clear interpretation of the data.</p>
+<p align="center">
+  <img src="/img/logo.png" width="30%"/>
+</p>
 
-<p><img src="/img/logo.png" alt="" /></p>
+<p><strong>Abstract:</strong> Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression. Downstream of trajectory inference, it is vital to discover genes that are (i) associated with the lineages in the trajectory, or (ii) differentially expressed between lineages, to illuminate the underlying biological processes. Current data analysis procedures, however, either fail to exploit the continuous resolution provided by trajectory inference, or fail to pinpoint the exact types of differential expression. We introduce tradeSeq, a powerful generalized additive model framework based on the negative binomial distribution that allows flexible inference of both within-lineage and between-lineage differential expression. By incorporating observation-level weights, the model additionally allows to account for zero inflation. We evaluate the method on simulated datasets and on real datasets from droplet-based and full-length protocols, and show that it yields biological insights through a clear interpretation of the data.</p>
 
     </div>
 
@@ -838,7 +863,7 @@
 
     
     <div class="article-style" itemprop="articleBody">
-      Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression …
+      Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression. …
     </div>
     
 
@@ -931,6 +956,11 @@
 
 
 
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/tradeseq/cite.bib">
+  Cite
+</button>
+
 
 
 
@@ -949,7 +979,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1101/623397" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1038/s41467-020-14766-3" target="_blank" rel="noopener">
   DOI
 </a>
 
