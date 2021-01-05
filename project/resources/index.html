@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.0.0">
-  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="generator" content="Hugo 0.71.1" />
 
   
 
@@ -123,9 +123,9 @@
   <meta property="og:description" content="Currated list of resources that could be useful to beginners (or not) when learning how dive into RNA-Seq Analysis"><meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-04-18T00:00:00-07:00">
+  <meta property="article:published_time" content="2018-04-18T00:00:00&#43;02:00">
   
-  <meta property="article:modified_time" content="2018-04-18T00:00:00-07:00">
+  <meta property="article:modified_time" content="2018-04-18T00:00:00&#43;02:00">
   
 
   
@@ -273,25 +273,6 @@
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#teaching">
-            
-            <span>Teaching</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
           <a class="nav-link" href="/#experience">
             
             <span>Experience</span>
@@ -398,8 +379,8 @@
 
 
 
-<meta content="2018-04-18 00:00:00 -0700 PDT" itemprop="datePublished">
-<meta content="2018-04-18 00:00:00 -0700 PDT" itemprop="dateModified">
+<meta content="2018-04-18 00:00:00 &#43;0200 CEST" itemprop="datePublished">
+<meta content="2018-04-18 00:00:00 &#43;0200 CEST" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -497,12 +478,8 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      
-
-<h1 id="overview">Overview</h1>
-
-<p>Recently, Philippe Boileau joined the <a href="https://www.stat.berkeley.edu/~sandrine/" target="_blank">Dudoit lab</a> and I had to think on which resources to point him to so that he could start getting up to speed with on the field. Together, we hence build the following list of interesting material. Those fall into 4 broad (and largely overlapping) categories:</p>
-
+      <h1 id="overview">Overview</h1>
+<p>Recently, Philippe Boileau joined the <a href="https://www.stat.berkeley.edu/~sandrine/">Dudoit lab</a> and I had to think on which resources to point him to so that he could start getting up to speed with on the field. Together, we hence build the following list of interesting material. Those fall into 4 broad (and largely overlapping) categories:</p>
 <ul>
 <li><a href="#Bio">How to produce data with sequencing</a></li>
 <li><a href="#Data">How to find, access and pre-process data (including how to use bio-informatics tools)</a></li>
@@ -510,119 +487,83 @@
 <li><a href="#Biostat">How to use all of the above to conduct an analysis (with - of course - a strong emphasis on R tools)</a></li>
 <li><a href="#Repro">How to do all those analyses correctly: reproducible research</a></li>
 </ul>
-
 <p>I&rsquo;ll therefore try to list resources to help in all subjects. This will be a mix of (scientific) papers, books, package vignette, personal tutorials, video&hellip;</p>
-
-<p>If you find any other relevant material, feel free to put an issue on the <a href="https://github.com/HectorRDB/HectorRDB.github.io/issues" target="_blank">github repo</a>.</p>
-
+<p>If you find any other relevant material, feel free to put an issue on the <a href="https://github.com/HectorRDB/HectorRDB.github.io/issues">github repo</a>.</p>
 <h1 id="before-we-begin">Before we begin</h1>
-
-<p>The resources below broadly assume that you have at least a basic knowledge of <a href="https://cran.r-project.org/" target="_blank">R</a>, statistics and biology.</p>
-
-<p>Otherwise, for R, I recommend (and I am far from the only one) Garrett Grolemund &amp; Hadley Wickham&rsquo;s <a href="https://r4ds.had.co.nz/" target="_blank">R For Data Science</a>.  Additionally, the statistical computing facility at Berkeley host yearly R bootcamp. The material is <a href="https://github.com/berkeley-scf/r-bootcamp-2018" target="_blank">on Github</a> and are a great way to practice (this is how I really learned R, and I had the change to help in the teaching in 2018).</p>
-
-<p>Biological concept you should be familiar with are (with links to the relevant Wikipedia pages): the <a href="https://en.wikipedia.org/wiki/Central_dogma_of_molecular_biology" target="_blank">Central Dogma</a>, <a href="https://en.wikipedia.org/wiki/RNA_splicing" target="_blank">mRNA splicing</a>. Keeping up to date with the current knowledge  on majors diseases is also crucial to .</p>
-
+<p>The resources below broadly assume that you have at least a basic knowledge of <a href="https://cran.r-project.org/">R</a>, statistics and biology.</p>
+<p>Otherwise, for R, I recommend (and I am far from the only one) Garrett Grolemund &amp; Hadley Wickham&rsquo;s <a href="https://r4ds.had.co.nz/">R For Data Science</a>.  Additionally, the statistical computing facility at Berkeley host yearly R bootcamp. The material is <a href="https://github.com/berkeley-scf/r-bootcamp-2018">on Github</a> and are a great way to practice (this is how I really learned R, and I had the change to help in the teaching in 2018).</p>
+<p>Biological concept you should be familiar with are (with links to the relevant Wikipedia pages): the <a href="https://en.wikipedia.org/wiki/Central_dogma_of_molecular_biology">Central Dogma</a>, <a href="https://en.wikipedia.org/wiki/RNA_splicing">mRNA splicing</a>. Keeping up to date with the current knowledge  on majors diseases is also crucial to .</p>
 <p>For statistics, I do not have any material to recommend.</p>
-
 <h1 id="Bio">Sequencing methodology</h1>
-
 <ul>
 <li>RNA - Sequencing mostly relies on Illumina Sequencing nowadays but it&rsquo;s useful to learn about other sequencing methods. I feel that for this, videos are the best medium to understand the mechanisms.</li>
 </ul>
-
 <p><strong>Sanger sequencing</strong> The first method used for sequening. The video below gives a 3mn tutorial on how it works.
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/FvHRio1yyhQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/FvHRio1yyhQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
-
 <p><strong>Illumina Sequencing</strong> Also called Next Generation Sequencing or Short read sequencing. The best resources I have found come from the Illumina Website
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/fCd6B5HRaZ8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/fCd6B5HRaZ8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
-
 <p><strong>PacBio Sequencing</strong> Long read sequencing, 2$^nd$ generation of NGS. In very, short, longer reads with lower accuracy compared to Illumina reads
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/NHCJ8PtYCFc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/NHCJ8PtYCFc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
-
 <p><strong>Oxford NanoPore sequencing</strong> Even longer reads with even lower quality.
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//player.vimeo.com/video/211385238" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/211385238" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
  </div></p>
-
 <ul>
-<li><p>Single-cell RNA-Sequencing is, of course, conducted at the single-cell level. The way the cells are pre-processed, separated and sequenced is method-dependent. A good overview of those methods can be found in <a href="https://www.nature.com/articles/nprot.2017.149" target="_blank">Svensson et al</a>.</p></li>
-
-<li><p>Many other different types of &lsquo;omics exist: the <a href="https://www.youtube.com/user/joshstarmer/videos" target="_blank">youtube chanel StatQuest</a> gives a good intro to many of them (as well as clear explanations for many statistical analyses). Some &lsquo;omics that are often collected along RNA-Seq are Chip-Seq and ATAC-Seq.</p></li>
+<li>
+<p>Single-cell RNA-Sequencing is, of course, conducted at the single-cell level. The way the cells are pre-processed, separated and sequenced is method-dependent. A good overview of those methods can be found in <a href="https://www.nature.com/articles/nprot.2017.149">Svensson et al</a>.</p>
+</li>
+<li>
+<p>Many other different types of &lsquo;omics exist: the <a href="https://www.youtube.com/user/joshstarmer/videos">youtube chanel StatQuest</a> gives a good intro to many of them (as well as clear explanations for many statistical analyses). Some &lsquo;omics that are often collected along RNA-Seq are Chip-Seq and ATAC-Seq.</p>
+</li>
 </ul>
-
 <h1 id="Data">Prepping the data for analysis</h1>
-
 <h2 id="obtaining-data">Obtaining data</h2>
-
-<p>The R <a href="https://www.bioconductor.org/packages/release/bioc/html/GEOquery.html" target="_blank">GEOQuery package</a> from <a href="https://www.bioconductor.org/" target="_blank">Bioconductor</a> allows you to download data and sample information from <a href="https://www.ncbi.nlm.nih.gov" target="_blank">ncbi</a>. Most papers provide GEO accession numbers as a key to access their data and is usually enough.</p>
-
+<p>The R <a href="https://www.bioconductor.org/packages/release/bioc/html/GEOquery.html">GEOQuery package</a> from <a href="https://www.bioconductor.org/">Bioconductor</a> allows you to download data and sample information from <a href="https://www.ncbi.nlm.nih.gov">ncbi</a>. Most papers provide GEO accession numbers as a key to access their data and is usually enough.</p>
 <h2 id="pre-processing-data">Pre-processing data</h2>
-
-<p>The sequencing step produces reads at the cell level. The next question is how to map them to a reference genome to obtain transcript or gene expression levels. To obtain this matrix, a few bioinformatic tools exist. One series of tool is <a href="https://academic.oup.com/bioinformatics/article/25/9/1105/203994" target="_blank">Tophat</a>, which was replaced by <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-4-r36" target="_blank">Tophat2</a> and then <a href="https://www.nature.com/articles/nmeth.3317" target="_blank">HISAT</a>, which was finally upgraded to HISAT2. A popular alternative is the <a href="https://academic.oup.com/bioinformatics/article/29/1/15/272537" target="_blank">STAR algorithm</a>.</p>
-
-<p>Recently, tools that do not rely on full genome alignment have been proposed, including <a href="https://www.nature.com/articles/nbt.3519" target="_blank">Kallisto</a> and <a href="https://www.nature.com/articles/nmeth.4197" target="_blank">Salmon</a>. A recent (not yet per-reviewed comparison) can be found by <a href="https://www.biorxiv.org/content/10.1101/444620v1.abstract" target="_blank">here</a>.</p>
-
-<p>To run those scripts, basic knowledge of shell scripting is needed. Good tutorials can be <a href="https://github.com/berkeley-scf/tutorial-using-bash" target="_blank">found here</a> or <a href="https://datacarpentry.org/shell-genomics/" target="_blank">here</a>.</p>
-
-<p>Also, sequencing data can be stored into many different formats. <a href="https://binf.snipcademy.com/lessons/sequence-file-formats" target="_blank">This page</a> is a very complete overview of the types of format and list tools to convert from one to another.</p>
-
+<p>The sequencing step produces reads at the cell level. The next question is how to map them to a reference genome to obtain transcript or gene expression levels. To obtain this matrix, a few bioinformatic tools exist. One series of tool is <a href="https://academic.oup.com/bioinformatics/article/25/9/1105/203994">Tophat</a>, which was replaced by <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-4-r36">Tophat2</a> and then <a href="https://www.nature.com/articles/nmeth.3317">HISAT</a>, which was finally upgraded to HISAT2. A popular alternative is the <a href="https://academic.oup.com/bioinformatics/article/29/1/15/272537">STAR algorithm</a>.</p>
+<p>Recently, tools that do not rely on full genome alignment have been proposed, including <a href="https://www.nature.com/articles/nbt.3519">Kallisto</a> and <a href="https://www.nature.com/articles/nmeth.4197">Salmon</a>. A recent (not yet per-reviewed comparison) can be found by <a href="https://www.biorxiv.org/content/10.1101/444620v1.abstract">here</a>.</p>
+<p>To run those scripts, basic knowledge of shell scripting is needed. Good tutorials can be <a href="https://github.com/berkeley-scf/tutorial-using-bash">found here</a> or <a href="https://datacarpentry.org/shell-genomics/">here</a>.</p>
+<p>Also, sequencing data can be stored into many different formats. <a href="https://binf.snipcademy.com/lessons/sequence-file-formats">This page</a> is a very complete overview of the types of format and list tools to convert from one to another.</p>
 <h2 id="pre-processed-data">Pre-processed data.</h2>
-
-<p>Many datasets have been stored in a clean format in the <a href="https://jhubiostatistics.shinyapps.io/recount/" target="_blank">recount2 project</a>. This is an excellent place to start if you want to explore algorithms on real world and diverse datasets.</p>
-
-<p>The <a href="http://imlspenticton.uzh.ch:3838/conquer/" target="_blank">conquer project</a> has a shorter list of very well processed datasets, using <a href="https://www.nature.com/articles/nmeth.4197" target="_blank">Salmon</a>.</p>
-
-<p><a href="https://bioconductor.org/" target="_blank">The Bioconductor Project</a> also has a lot of datasets packages.</p>
-
+<p>Many datasets have been stored in a clean format in the <a href="https://jhubiostatistics.shinyapps.io/recount/">recount2 project</a>. This is an excellent place to start if you want to explore algorithms on real world and diverse datasets.</p>
+<p>The <a href="http://imlspenticton.uzh.ch:3838/conquer/">conquer project</a> has a shorter list of very well processed datasets, using <a href="https://www.nature.com/articles/nmeth.4197">Salmon</a>.</p>
+<p><a href="https://bioconductor.org/">The Bioconductor Project</a> also has a lot of datasets packages.</p>
 <h1 id="Stat">Tools needed for analysis</h1>
-
-<p>Many excellent books exist to give a clear understanding of the many tools and concept needed. Freedman&rsquo;s book, <a href="https://www.cambridge.org/core/books/statistical-models/15F12FD4EB5FAD43B85FA824286DD44F" target="_blank">Statistical Models: Theory and Practice</a> is a must-read, which I consider maybe closer to a philosophical treaty. More applied, Susan&rsquo;s Holmes new book, <a href="http://web.stanford.edu/class/bios221/" target="_blank">Modern Statistics for Modern Biology</a> is quite complete for tools used in genomics. Key concepts include dimensionality reduction, clustering and modelling. A deeper and mathier book is the <a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of  Statistical Learning</a> by Hastie, Tibshirani &amp; Friedman.</p>
-
-<p>A central concept in high-dimensional statistics that characterize genomics is multiple hypothesis testing. <a href="https://statweb.stanford.edu/~ckirby/brad/LSI/monograph_CUP.pdf?fbclid=IwAR2sggb2cAkJmElvE6uz61egXYWu94-4933X1NbOn05AqPFVAeliQFE15PQ" target="_blank">Efron (2010)</a> is a good reference with a clear Baysien justification. <a href="https://www.pnas.org/content/100/16/9440.abstract" target="_blank">This paper</a> present the concepts in a genomic setting.</p>
-
-<p>The R language is used in many RNA-Seq applications. To improve your coding practices, I also recommend <a href="http://adv-r.had.co.nz/" target="_blank">advanced R</a> by Hadley Wickham. The <a href="http://adv-r.had.co.nz/OO-essentials.html#s4" target="_blank">S4 section</a> of the book will be of particular interest, given that Bioconductor strongly recommands using S4 objects and functions.</p>
-
+<p>Many excellent books exist to give a clear understanding of the many tools and concept needed. Freedman&rsquo;s book, <a href="https://www.cambridge.org/core/books/statistical-models/15F12FD4EB5FAD43B85FA824286DD44F">Statistical Models: Theory and Practice</a> is a must-read, which I consider maybe closer to a philosophical treaty. More applied, Susan&rsquo;s Holmes new book, <a href="http://web.stanford.edu/class/bios221/">Modern Statistics for Modern Biology</a> is quite complete for tools used in genomics. Key concepts include dimensionality reduction, clustering and modelling. A deeper and mathier book is the <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">The Elements of  Statistical Learning</a> by Hastie, Tibshirani &amp; Friedman.</p>
+<p>A central concept in high-dimensional statistics that characterize genomics is multiple hypothesis testing. <a href="https://statweb.stanford.edu/~ckirby/brad/LSI/monograph_CUP.pdf?fbclid=IwAR2sggb2cAkJmElvE6uz61egXYWu94-4933X1NbOn05AqPFVAeliQFE15PQ">Efron (2010)</a> is a good reference with a clear Baysien justification. <a href="https://www.pnas.org/content/100/16/9440.abstract">This paper</a> present the concepts in a genomic setting.</p>
+<p>The R language is used in many RNA-Seq applications. To improve your coding practices, I also recommend <a href="http://adv-r.had.co.nz/">advanced R</a> by Hadley Wickham. The <a href="http://adv-r.had.co.nz/OO-essentials.html#s4">S4 section</a> of the book will be of particular interest, given that Bioconductor strongly recommands using S4 objects and functions.</p>
 <h1 id="Biostat">Applications to RNA-Seq</h1>
-
-<p>We&rsquo;re finally getting to the RNA-Seq analysis part. To start, I advice to begin with a practical tutorial. The <a href="https://bioconductor.github.io/BiocWorkshops/" target="_blank">Bioconductor 2018 Workshop</a> provides a few that I recommend. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5558107/" target="_blank">This other one</a> is longer but more complete.
-This <a href="https://hectorrdb.github.io/NationalAssembly/" target="_blank">other tutorial</a> that I wrote is shorter but can be a good place to start.</p>
-
-<p>Once you have seen how to proceed, this <a href="https://peerj.com/preprints/27283/?fbclid=IwAR0WH2eTl2Hwig9xxnt_DuYuIsFORwtRMrcI-LgZ6AujxPX1tsPb6t_esXk" target="_blank">recent review by Koen, et al.</a> is a good follow-up that very nicely recoup many concepts from above and can point you to further resources.</p>
-
-<p>Then, I recommend to dive into method papers. This list is partly inspired from the <a href="https://github.com/jtleek/genomicspapers" target="_blank">Leek group paper</a>.</p>
-
+<p>We&rsquo;re finally getting to the RNA-Seq analysis part. To start, I advice to begin with a practical tutorial. The <a href="https://bioconductor.github.io/BiocWorkshops/">Bioconductor 2018 Workshop</a> provides a few that I recommend. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5558107/">This other one</a> is longer but more complete.
+This <a href="https://hectorrdb.github.io/NationalAssembly/">other tutorial</a> that I wrote is shorter but can be a good place to start.</p>
+<p>Once you have seen how to proceed, this <a href="https://peerj.com/preprints/27283/?fbclid=IwAR0WH2eTl2Hwig9xxnt_DuYuIsFORwtRMrcI-LgZ6AujxPX1tsPb6t_esXk">recent review by Koen, et al.</a> is a good follow-up that very nicely recoup many concepts from above and can point you to further resources.</p>
+<p>Then, I recommend to dive into method papers. This list is partly inspired from the <a href="https://github.com/jtleek/genomicspapers">Leek group paper</a>.</p>
 <ul>
-<li><a href="http://biostat.jhsph.edu/~jleek/papers/seqvar.pdf" target="_blank">Sequencing technology does not eliminate biological variability</a></li>
-<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/16646809" target="_blank">The first paper behind the Limma package</a> and the <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29" target="_blank">second, with voom</a></li>
-<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/" target="_blank">edgeR</a></li>
-<li><a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-94" target="_blank">Key need for Normalization</a>, especially because of <a href="https://www.nature.com/articles/nrg2825" target="_blank">batch effects</a></li>
-<li>Methods for normalization include <a href="https://www.biorxiv.org/content/10.1101/235382v2" target="_blank">scone</a>, <a href="https://www.nature.com/articles/s41467-017-02554-5" target="_blank">zinbWave</a> and <a href="https://www.nature.com/articles/s41592-018-0229-2" target="_blank">scVI</a>.</li>
-<li><a href="https://satijalab.org/seurat/" target="_blank">Seurat</a> is a global framework of analysis</li>
-<li>Clustering is a key step of RNA-Seq analysis. <a href="https://f1000research.com/articles/7-1141/v2" target="_blank">This paper</a> contrasts several methods on real and synthetic data.<br /></li>
-<li><a href="https://www.nature.com/articles/s41587-019-0071-9" target="_blank">This paper</a> proposes a nice overview of trajectory inference</li>
-<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/20048385" target="_blank">Gene Set Enrichment Analysis</a></li>
+<li><a href="http://biostat.jhsph.edu/~jleek/papers/seqvar.pdf">Sequencing technology does not eliminate biological variability</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/16646809">The first paper behind the Limma package</a> and the <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29">second, with voom</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/">edgeR</a></li>
+<li><a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-94">Key need for Normalization</a>, especially because of <a href="https://www.nature.com/articles/nrg2825">batch effects</a></li>
+<li>Methods for normalization include <a href="https://www.biorxiv.org/content/10.1101/235382v2">scone</a>, <a href="https://www.nature.com/articles/s41467-017-02554-5">zinbWave</a> and <a href="https://www.nature.com/articles/s41592-018-0229-2">scVI</a>.</li>
+<li><a href="https://satijalab.org/seurat/">Seurat</a> is a global framework of analysis</li>
+<li>Clustering is a key step of RNA-Seq analysis. <a href="https://f1000research.com/articles/7-1141/v2">This paper</a> contrasts several methods on real and synthetic data.</li>
+<li><a href="https://www.nature.com/articles/s41587-019-0071-9">This paper</a> proposes a nice overview of trajectory inference</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/20048385">Gene Set Enrichment Analysis</a></li>
 </ul>
-
 <h1 id="Repro">Reproducible research</h1>
-
-<p>All the analyses you conduct should aim for reproducibility in the science. This <a href="https://www.nature.com/collections/prbfkwmwvz" target="_blank">nature collection</a> group of papers gives a broad overview of the issue of reproducibility, and of how to fix it.  A first step to try and limit the crisis of reproducibilty in science - and one where (bio)-statisticians have a key role - is statistical and computational reproducibility.</p>
-
-<p>To help, several tool exist. Git and Github are powerful tools and many good tutorial exist (see <a href="https://bids.github.io/2019-01-17-bids/" target="_blank">here</a> for example). Good coding practices are also necessary. Saving your software in packages is a part of it, and <a href="http://r-pkgs.had.co.nz/" target="_blank">this book</a> is a good reference on how to build them in an efficient fashion. I also recommend using tools like <a href="https://rmarkdown.rstudio.com/" target="_blank">RMarkdown</a> or <a href="https://yihui.name/knitr/" target="_blank">knitr</a> to combine text, math, code and figures in one coherent place when writing papers, reports or even for day-to-day analyses.</p>
-
-<p>While code is now commonly saved and made public for reproducibility purposes, data is unfortunatly not always available. Raw files can be made accessible through ncbi. Pre-processed data (a count matrix for example) can also be made public using a data R package, such as the experiment packages that can be found in <a href="https://www.bioconductor.org/packages/release/BiocViews.html#___ExperimentData" target="_blank">Bioconductor</a>.</p>
+<p>All the analyses you conduct should aim for reproducibility in the science. This <a href="https://www.nature.com/collections/prbfkwmwvz">nature collection</a> group of papers gives a broad overview of the issue of reproducibility, and of how to fix it.  A first step to try and limit the crisis of reproducibilty in science - and one where (bio)-statisticians have a key role - is statistical and computational reproducibility.</p>
+<p>To help, several tool exist. Git and Github are powerful tools and many good tutorial exist (see <a href="https://bids.github.io/2019-01-17-bids/">here</a> for example). Good coding practices are also necessary. Saving your software in packages is a part of it, and <a href="http://r-pkgs.had.co.nz/">this book</a> is a good reference on how to build them in an efficient fashion. I also recommend using tools like <a href="https://rmarkdown.rstudio.com/">RMarkdown</a> or <a href="https://yihui.name/knitr/">knitr</a> to combine text, math, code and figures in one coherent place when writing papers, reports or even for day-to-day analyses.</p>
+<p>While code is now commonly saved and made public for reproducibility purposes, data is unfortunatly not always available. Raw files can be made accessible through ncbi. Pre-processed data (a count matrix for example) can also be made public using a data R package, such as the experiment packages that can be found in <a href="https://www.bioconductor.org/packages/release/BiocViews.html#___ExperimentData">Bioconductor</a>.</p>
 
     </div>
 
@@ -693,23 +634,8 @@ This <a href="https://hectorrdb.github.io/NationalAssembly/" target="_blank">oth
         
       
       <li>
-        <a itemprop="sameAs" href="https://twitter.com/hector_rdb" target="_blank" rel="noopener">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=yqLG9k0AAAAJ&amp;hl=en" target="_blank" rel="noopener">
-          <i class="ai ai-google-scholar"></i>
+        <a itemprop="sameAs" href="https://www.linkedin.com/in/hector-rouxdebezieux/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
         </a>
       </li>
       
@@ -733,6 +659,36 @@ This <a href="https://hectorrdb.github.io/NationalAssembly/" target="_blank">oth
       
       
       
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=yqLG9k0AAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/files/cv.pdf" >
+          <i class="ai ai-cv"></i>
+        </a>
+      </li>
+      
+      
+      
+      
         
       
       
@@ -742,8 +698,8 @@ This <a href="https://hectorrdb.github.io/NationalAssembly/" target="_blank">oth
         
       
       <li>
-        <a itemprop="sameAs" href="https://www.linkedin.com/in/hector-rouxdebezieux/" target="_blank" rel="noopener">
-          <i class="fab fa-linkedin"></i>
+        <a itemprop="sameAs" href="https://twitter.com/hector_rdb" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
         </a>
       </li>
       
@@ -779,21 +735,6 @@ This <a href="https://hectorrdb.github.io/NationalAssembly/" target="_blank">oth
         </a>
       </li>
       
-      
-      
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <a itemprop="sameAs" href="/files/cv.pdf" >
-          <i class="ai ai-cv"></i>
-        </a>
-      </li>
-      
     </ul>
   </div>
 </div>
@@ -823,10 +764,6 @@ This <a href="https://hectorrdb.github.io/NationalAssembly/" target="_blank">oth
 
 <div class="container">
   <footer class="site-footer">
-  
-  <p class="powered-by">
-    <a href="/privacy/">Privacy Policy</a>
-  </p>
   
 
   <p class="powered-by">
@@ -976,7 +913,7 @@ This <a href="https://hectorrdb.github.io/NationalAssembly/" target="_blank">oth
     
     
     
-    <script src="/js/academic.min.109caa4f51ff39522c6dfc25fb05b6e9.js"></script>
+    <script src="/js/academic.min.6e3f6df706f5e1819f516bc13278decb.js"></script>
 
   </body>
 </html>
