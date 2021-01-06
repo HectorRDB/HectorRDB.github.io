@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gauthier Croizat | Hector Roux de Bézieux</title>
+    <link>http://hector-rdb.org/author/gauthier-croizat/</link>
+      <atom:link href="http://hector-rdb.org/author/gauthier-croizat/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gauthier Croizat</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 08 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://hector-rdb.org/media/icon-192.png</url>
+      <title>Gauthier Croizat</title>
+      <link>http://hector-rdb.org/author/gauthier-croizat/</link>
+    </image>
+    
+    <item>
+      <title>Influence of pulsatile blood flow on allometry of aortic wall shear stress</title>
+      <link>http://hector-rdb.org/publication/aortic/</link>
+      <pubDate>Thu, 08 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/publication/aortic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
