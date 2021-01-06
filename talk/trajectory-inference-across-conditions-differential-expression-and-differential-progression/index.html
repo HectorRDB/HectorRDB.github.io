@@ -34,10 +34,10 @@
   
     
   
-  <meta name="description" content="Ph.D Student in Biostatistics">
+  <meta name="description" content="In single-cell RNA-sequencing (scRNA-seq), gene expression is assessed at the level of single cells. In dynamic biological systems, it may not be appropriate to assign cells to discrete groups, but rather a continuum of cell states may be observed, e.">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://hector-rdb.org/author/kelly-street/">
+  <link rel="alternate" hreflang="en-us" href="http://hector-rdb.org/talk/trajectory-inference-across-conditions-differential-expression-and-differential-progression/">
 
   
 
@@ -260,14 +260,12 @@
   
 
   
-  <link rel="alternate" href="/author/kelly-street/index.xml" type="application/rss+xml" title="Hector Roux de Bézieux">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="http://hector-rdb.org/author/kelly-street/">
+  <link rel="canonical" href="http://hector-rdb.org/talk/trajectory-inference-across-conditions-differential-expression-and-differential-progression/">
 
   
   
@@ -282,29 +280,72 @@
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Hector Roux de Bézieux">
-  <meta property="og:url" content="http://hector-rdb.org/author/kelly-street/">
-  <meta property="og:title" content="Kelly Street | Hector Roux de Bézieux">
-  <meta property="og:description" content="Ph.D Student in Biostatistics"><meta property="og:image" content="http://hector-rdb.org/media/icon-192.png">
-  <meta property="twitter:image" content="http://hector-rdb.org/media/icon-192.png"><meta property="og:locale" content="en-us">
+  <meta property="og:url" content="http://hector-rdb.org/talk/trajectory-inference-across-conditions-differential-expression-and-differential-progression/">
+  <meta property="og:title" content="Trajectory inference across conditions: differential expression and differential progression | Hector Roux de Bézieux">
+  <meta property="og:description" content="In single-cell RNA-sequencing (scRNA-seq), gene expression is assessed at the level of single cells. In dynamic biological systems, it may not be appropriate to assign cells to discrete groups, but rather a continuum of cell states may be observed, e."><meta property="og:image" content="http://hector-rdb.org/talk/trajectory-inference-across-conditions-differential-expression-and-differential-progression/featured.png">
+  <meta property="twitter:image" content="http://hector-rdb.org/talk/trajectory-inference-across-conditions-differential-expression-and-differential-progression/featured.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-12-17T15:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2020-12-17T15:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-12-17T15:00:00&#43;00:00">
   
-
-  
-
-
-
-
-  
-
 
   
 
 
 
+  
+    
 
 
-  <title>Kelly Street | Hector Roux de Bézieux</title>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://hector-rdb.org/talk/trajectory-inference-across-conditions-differential-expression-and-differential-progression/"
+  },
+  "name": "Trajectory inference across conditions: differential expression and differential progression",
+  
+  "location": {
+    "@type": "Place",
+    "name": "Europe"
+  },
+  
+  
+  "image": [
+    "http://hector-rdb.org/talk/trajectory-inference-across-conditions-differential-expression-and-differential-progression/featured.png"
+  ],
+  
+  "startDate": "2020-12-17T15:00:00Z",
+  
+  
+  "performer": {
+    "@type": "Person",
+    "name": "Kelly Street"
+  },
+  
+  "description": "In single-cell RNA-sequencing (scRNA-seq), gene expression is assessed at the level of single cells. In dynamic biological systems, it may not be appropriate to assign cells to discrete groups, but rather a continuum of cell states may be observed, e."
+}
+</script>
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Trajectory inference across conditions: differential expression and differential progression | Hector Roux de Bézieux</title>
 
 </head>
 
@@ -705,48 +746,463 @@
   </div>
 
   <div class="page-body">
+    <div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Trajectory inference across conditions: differential expression and differential progression</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
     
 
+  <span >
+      <a href="/author/kelly-street/">Kelly Street</a></span>, <span >
+      <a href="/author/koen-van-den-berge/">Koen Van den Berge</a></span>, <span class="author-highlighted">
+      <a href="/author/hector-roux-de-bezieux/">Hector Roux de Bézieux</a></span>
+  </div>
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i></span>
+  
+
+</div>
+
+  
 
 
-<div class="universal-wrapper pt-3">
-  <h1>Kelly Street</h1>
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://kstreet13.github.io/bioc2020trajectories/articles/workshopTrajectories.html" target="_blank" rel="noopener">
+    <i class="fas fa-chalkboard-teacher mr-1"></i>
+    Workshop
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://www.youtube.com/watch?v=Fbd08bIv4yk&amp;t=1s" target="_blank" rel="noopener">
+    <i class="fab fa-youtube mr-1"></i>
+    Video
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://hub.docker.com/repository/docker/kstreet13/bioc2020trajectories" target="_blank" rel="noopener">
+    <i class="fab fa-docker mr-1"></i>
+    Image
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/kstreet13/bioc2020trajectories" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>
+    Code
+  </a>
+
+
 </div>
 
 
-<section id="profile-page" class="pt-5">
-  <div class="container">
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 250px; max-height: 290px;">
+  <div style="position: relative">
+    <img src="/talk/trajectory-inference-across-conditions-differential-expression-and-differential-progression/featured.png" alt="" class="featured-image">
+    <span class="article-header-caption"><a href="https://eurobioc2020.bioconductor.org/">https://eurobioc2020.bioconductor.org/</a></span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
     
+      <br>
+    
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Date</div>
+          <div class="col-12 col-md-9">
+            Dec 17, 2020 3:00 PM
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Event</div>
+          <div class="col-12 col-md-9">
+            <a href="European%20Bioconductor%20Meeting%202020" target="_blank" rel="noopener">
+            BioC 2020: Where Software and Biology Connect
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
     
 
     
-    
-    
-    <div class="article-widget content-widget-hr">
-      <h3>Latest</h3>
-      <ul>
-        
-        <li>
-          <a href="/talk/trajectory-inference-across-conditions-differential-expression-and-differential-progression/">Trajectory inference across conditions: differential expression and differential progression</a>
-        </li>
-        
-        <li>
-          <a href="/talk/trajectory-inference-across-conditions-differential-expression-and-differential-progression/">Trajectory inference across conditions: differential expression and differential progression</a>
-        </li>
-        
-        <li>
-          <a href="/publication/dune/">Improving replicability in single-cell RNA-Seq cell type discovery with Dune</a>
-        </li>
-        
-        <li>
-          <a href="/publication/tradeseq/">Trajectory-based differential expression analysis for single-cell sequencing data</a>
-        </li>
-        
-      </ul>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Location</div>
+          <div class="col-12 col-md-9">Europe</div>
+          
+        </div>
+      </div>
+      <div class="col-md-1"></div>
     </div>
+    <div class="d-md-none space-below"></div>
     
+
+    <div class="space-below"></div>
+
+    <div class="article-style">
+      <p>In single-cell RNA-sequencing (scRNA-seq), gene expression is assessed at the level of single cells. In dynamic biological systems, it may not be appropriate to assign cells to discrete groups, but rather a continuum of cell states may be observed, e.g. the differentiation of a stem cell population into mature cell types. This is often represented as a trajectory in a reduced dimension of the scRNA-seq dataset.</p>
+<p>Many methods have been suggested for trajectory inference. However, in this setting, it is often unclear how one should handle multiple biological groups or conditions, e.g. constructing and comparing the differentiation trajectory of a wild type versus a knock-out stem cell population.</p>
+<p>In this workshop, we will explore methods for comparing multiple conditions in a trajectory inference analysis. We start by integrating datasets from multiple conditions into a single trajectory. By comparing the conditions along the trajectory’s path, we can detect large-scale changes, indicative of differential progression. We also demonstrate how to detect subtler changes by finding genes that exhibit different behaviors between these conditions along a differentiation path.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://hector-rdb.org/"><img class="avatar mr-3 avatar-circle" src="/author/hector-roux-de-bezieux/avatar_hu27f5da07ca72334cd07c72d82138a3f4_397410_270x270_fill_q75_lanczos_center.jpg" alt="Hector Roux de Bézieux"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://hector-rdb.org/">Hector Roux de Bézieux</a></h5>
+      <h6 class="card-subtitle">Ph.D Student in Biostatistics</h6>
+      <p class="card-text">Biostatistics Ph.D Student with strong interest in anything &lsquo;omics related.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/hector-rouxdebezieux/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/HectorRDB" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=yqLG9k0AAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/hector_rdb" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/hector_rdb" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.strava.com/athletes/30140675" target="_blank" rel="noopener">
+        <i class="fab fa-strava"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
   </div>
-</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
   </div>
 
   <div class="page-footer">

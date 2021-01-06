@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>http://hector-rdb.org/event/</loc>
+    <lastmod>2020-12-17T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://hector-rdb.org/</loc>
     <lastmod>2021-01-06T10:39:43+01:00</lastmod>
   </url>
@@ -28,12 +33,7 @@
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/talks/</loc>
-    <lastmod>2020-12-17T15:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/talks/eurobioc2020/</loc>
+    <loc>http://hector-rdb.org/talk/trajectory-inference-across-conditions-differential-expression-and-differential-progression/</loc>
     <lastmod>2020-12-17T15:00:00+00:00</lastmod>
   </url>
   
@@ -88,7 +88,7 @@
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/talks/bioc2020/</loc>
+    <loc>http://hector-rdb.org/talk/trajectory-inference-across-conditions-differential-expression-and-differential-progression/</loc>
     <lastmod>2020-07-30T15:00:00+00:00</lastmod>
   </url>
   
@@ -308,12 +308,12 @@
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/talks/statseminar/</loc>
+    <loc>http://hector-rdb.org/talk/trajectory-inference-differential-expression-and-clustering-along-developmental-trajectories-in-single-cell-rna-sequencing./</loc>
     <lastmod>2019-04-18T15:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/talks/stemcell/</loc>
+    <loc>http://hector-rdb.org/talk/unlocking-the-power-of-continuity-in-single-cell-rna-seq-differential-gene-expression-along-developmental-trajectories./</loc>
     <lastmod>2019-04-14T15:00:00+00:00</lastmod>
   </url>
   
