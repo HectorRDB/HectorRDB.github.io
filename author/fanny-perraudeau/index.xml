@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fanny Perraudeau | Hector Roux de Bezieux</title>
+    <link>http://hector-rdb.org/author/fanny-perraudeau/</link>
+      <atom:link href="http://hector-rdb.org/author/fanny-perraudeau/index.xml" rel="self" type="application/rss+xml" />
+    <description>Fanny Perraudeau</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://hector-rdb.org/media/icon-192.png</url>
+      <title>Fanny Perraudeau</title>
+      <link>http://hector-rdb.org/author/fanny-perraudeau/</link>
+    </image>
+    
+    <item>
+      <title>Finding All Significant Closed Connected Subgraphs</title>
+      <link>http://hector-rdb.org/publication/mlcb/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/publication/mlcb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

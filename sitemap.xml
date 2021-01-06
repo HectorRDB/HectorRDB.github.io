@@ -3,12 +3,97 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://hector-rdb.org/publication-type/3/</loc>
+    <loc>http://hector-rdb.org/authors/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/hector-roux-de-bezieux/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/kelly-street/</loc>
+    <lastmod>2020-12-17T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/koen-van-den-berge/</loc>
     <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/authors/</loc>
+    <loc>http://hector-rdb.org/talks/</loc>
+    <lastmod>2020-12-17T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/talks/eurobioc2020/</loc>
+    <lastmod>2020-12-17T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/publication-type/1/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/arnaud-mary/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/fanny-perraudeau/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/publication/mlcb/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/laurent-jacob/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/tag/main-work/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/publication_types/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/publication/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/sandrine-dudoit/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/tags/</loc>
+    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/talks/bioc2020/</loc>
+    <lastmod>2020-07-30T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/publication-type/3/</loc>
     <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   
@@ -20,16 +105,6 @@
   <url>
     <loc>http://hector-rdb.org/author/elizabeth-purdom/</loc>
     <lastmod>2020-03-04T15:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/</loc>
-    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/author/hector-roux-de-bezieux/</loc>
-    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   
   <url>
@@ -48,48 +123,13 @@
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/author/kelly-street/</loc>
-    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/author/koen-van-den-berge/</loc>
-    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/tag/main-work/</loc>
-    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/publication_types/</loc>
-    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/publication/</loc>
-    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://hector-rdb.org/author/rebecca-chance/</loc>
     <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/author/sandrine-dudoit/</loc>
-    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://hector-rdb.org/author/stephan-fischer/</loc>
     <lastmod>2021-01-06T10:14:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/tags/</loc>
-    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   
   <url>
@@ -258,23 +298,23 @@
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/author/hector-roux-de-bezieux/</loc>
-    <lastmod>2019-04-18T15:00:00+02:00</lastmod>
+    <loc>http://hector-rdb.org/categories/</loc>
+    <lastmod>2019-04-18T15:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/talks/</loc>
-    <lastmod>2019-04-18T15:00:00+02:00</lastmod>
+    <loc>http://hector-rdb.org/category/tradeseq/</loc>
+    <lastmod>2019-04-18T15:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/talks/statseminar/</loc>
-    <lastmod>2019-04-18T15:00:00+02:00</lastmod>
+    <lastmod>2019-04-18T15:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/talks/stemcell/</loc>
-    <lastmod>2019-04-14T15:00:00+02:00</lastmod>
+    <lastmod>2019-04-14T15:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -330,10 +370,6 @@
   <url>
     <loc>http://hector-rdb.org/project/resources/</loc>
     <lastmod>2018-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/categories/</loc>
   </url>
   
   <url>

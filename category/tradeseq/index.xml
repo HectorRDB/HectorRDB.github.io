@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tradeSeq | Hector Roux de Bezieux</title>
+    <link>http://hector-rdb.org/category/tradeseq/</link>
+      <atom:link href="http://hector-rdb.org/category/tradeseq/index.xml" rel="self" type="application/rss+xml" />
+    <description>tradeSeq</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 18 Apr 2019 15:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://hector-rdb.org/media/icon-192.png</url>
+      <title>tradeSeq</title>
+      <link>http://hector-rdb.org/category/tradeseq/</link>
+    </image>
+    
+    <item>
+      <title>Trajectory inference, Differential Expression and clustering along developmental trajectories in single cell RNA-Sequencing.</title>
+      <link>http://hector-rdb.org/talks/statseminar/</link>
+      <pubDate>Thu, 18 Apr 2019 15:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/talks/statseminar/</guid>
+      <description>&lt;p&gt;Trajectory inference is often used with single-cell RNA-seq data to study dynamic changes in gene expression levels during, e.g., cell cycle, differentiation, or cellular activation.  Downstream of trajectory inference, researchers are often interested in discovering genes that are associated with a particular lineage in the trajectory. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to the system under study. Current data analysis procedures, however, artificially cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference. Other methods only assess broad differences in gene expression between lineages, hence failing to pinpoint the exact types of divergence. Our new method allows flexible inference of (i) within-lineage differential expression by detecting associations between gene expression and pseudotime over an entire lineage, or comparing gene expression between points/regions within the linage; and (ii) between-lineage differential expression by comparing gene expression between lineages over the entire lineages or at specific points/regions. This talk gives a high-level overview of the  method, demonstrating its modularity and unique capacity to deliver powerful insights into complex biological phenomenons.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unlocking the power of continuity in single cell RNA-Seq - Differential gene Expression along developmental trajectories.</title>
+      <link>http://hector-rdb.org/talks/stemcell/</link>
+      <pubDate>Sun, 14 Apr 2019 15:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/talks/stemcell/</guid>
+      <description>&lt;p&gt;Trajectory inference is often used with single-cell RNA-seq data to study dynamic changes in gene expression levels during, e.g., cell cycle, differentiation, or cellular activation.  Downstream of trajectory inference, researchers are often interested in discovering genes that are associated with a particular lineage in the trajectory. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to the system under study. Current data analysis procedures, however, artificially cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference. Other methods only assess broad differences in gene expression between lineages, hence failing to pinpoint the exact types of divergence. Our new method allows flexible inference of (i) within-lineage differential expression by detecting associations between gene expression and pseudotime over an entire lineage, or comparing gene expression between points/regions within the linage; and (ii) between-lineage differential expression by comparing gene expression between lineages over the entire lineages or at specific points/regions. This talk gives a high-level overview of the  method, demonstrating its modularity and unique capacity to deliver powerful insights into complex biological phenomenons.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
