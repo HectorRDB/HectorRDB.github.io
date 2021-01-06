@@ -17,21 +17,23 @@
       <link>http://hector-rdb.org/publication/dune/</link>
       <pubDate>Wed, 04 Mar 2020 15:00:00 +0000</pubDate>
       <guid>http://hector-rdb.org/publication/dune/</guid>
-      <description>&lt;p&gt;Single-cell transcriptome sequencing (scRNA-Seq) has allowed many new types of investigations at unprecedented and unique levels of resolution. Among the primary goals of scRNA-Seq is the classification of cells into potentially novel cell types. Many approaches build on the existing clustering literature to develop tools specific to single-cell applications. However, almost all of these methods rely on heuristics or user-supplied parameters to control the number of clusters identified. This affects both the resolution of the clusters within the original dataset as well as their replicability across datasets. While many recommendations exist to select these tuning parameters, most of them are quite ad hoc. In general, there is little assurance that any given set of parameters will represent an optimal choice in the ever-present trade-off between cluster resolution and replicability. For instance, it may be the case that another set of parameters will result in more clusters that are also more replicable, or in fewer clusters that are also less replicable.&lt;/p&gt;
-&lt;p&gt;Here, we propose a new method called Dune for optimizing the trade-off between the resolution of the clusters and their replicability across datasets. Our method takes as input a set of clustering results on a single dataset, derived from any set of clustering algorithms and associated tuning parameters, and iteratively merges clusters within partitions in order to maximize their concordance between partitions. As demonstrated on a variety of scRNA-Seq datasets from different platforms, Dune outperforms existing techniques, that rely on hierarchical merging for reducing the number of clusters, in terms of replicability of the resultant merged clusters. It provides an objective approach for identifying replicable consensus clusters most likely to represent common biological features across multiple datasets.&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
-      <title>Trajectory-based differential expression analysis for single-cell sequencing data</title>
-      <link>http://hector-rdb.org/publication/tradeseq/</link>
-      <pubDate>Wed, 01 May 2019 15:00:00 +0200</pubDate>
-      <guid>http://hector-rdb.org/publication/tradeseq/</guid>
-      <description>&lt;p align=&#34;center&#34;&gt;
-  &lt;img src=&#34;http://hector-rdb.org/img/logo.png&#34; width=&#34;30%&#34;/&gt;
-&lt;/p&gt;
-&lt;p&gt;Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression. Downstream of trajectory inference, it is vital to discover genes that are (i) associated with the lineages in the trajectory, or (ii) differentially expressed between lineages, to illuminate the underlying biological processes. Current data analysis procedures, however, either fail to exploit the continuous resolution provided by trajectory inference, or fail to pinpoint the exact types of differential expression. We introduce tradeSeq, a powerful generalized additive model framework based on the negative binomial distribution that allows flexible inference of both within-lineage and between-lineage differential expression. By incorporating observation-level weights, the model additionally allows to account for zero inflation. We evaluate the method on simulated datasets and on real datasets from droplet-based and full-length protocols, and show that it yields biological insights through a clear interpretation of the data.&lt;/p&gt;
-</description>
+      <title>A multimodal cell census and atlas of the mammalian primary motor cortex</title>
+      <link>http://hector-rdb.org/publication/adkins/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/publication/adkins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An integrated transcriptomic and epigenomic atlas of mouse primary motor cortex cell types</title>
+      <link>http://hector-rdb.org/publication/yao/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/publication/yao/</guid>
+      <description></description>
     </item>
     
   </channel>

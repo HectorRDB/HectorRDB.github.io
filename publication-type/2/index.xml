@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Hector Roux de Bezieux</title>
+    <link>http://hector-rdb.org/publication-type/2/</link>
+      <atom:link href="http://hector-rdb.org/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://hector-rdb.org/media/icon-192.png</url>
+      <title>2</title>
+      <link>http://hector-rdb.org/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>Non-neuronal expression of SARS-CoV-2 entry genes in the olfaory system suggests mechanisms underlying COVID-19-associated anosmia</title>
+      <link>http://hector-rdb.org/publication/brann/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/publication/brann/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trajectory-based differential expression analysis for single-cell sequencing data</title>
+      <link>http://hector-rdb.org/publication/tradeseq/</link>
+      <pubDate>Wed, 01 May 2019 15:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/publication/tradeseq/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

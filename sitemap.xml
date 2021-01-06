@@ -4,12 +4,12 @@
   
   <url>
     <loc>http://hector-rdb.org/publication-type/3/</loc>
-    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/authors/</loc>
-    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   
   <url>
@@ -24,12 +24,12 @@
   
   <url>
     <loc>http://hector-rdb.org/</loc>
-    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/author/hector-roux-de-bezieux/</loc>
-    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   
   <url>
@@ -54,22 +54,27 @@
   
   <url>
     <loc>http://hector-rdb.org/author/koen-van-den-berge/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/tag/main-work/</loc>
     <lastmod>2020-03-04T15:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/publication_types/</loc>
-    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/publication/</loc>
-    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/author/rebecca-chance/</loc>
-    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   
   <url>
@@ -79,37 +84,182 @@
   
   <url>
     <loc>http://hector-rdb.org/author/stephan-fischer/</loc>
-    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+    <lastmod>2021-01-06T10:14:50+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/author/hector-roux-de-bezieux/</loc>
-    <lastmod>2019-05-01T15:00:00+02:00</lastmod>
+    <loc>http://hector-rdb.org/tags/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/others/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/publication-type/2/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/publication/adkins/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/publication/yao/</loc>
+    <lastmod>2021-01-06T10:14:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/andrew-i-aldridge/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/andrew-i-aldrige/</loc>
+    <lastmod>2021-01-06T10:14:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/anita-bandrowski/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/ann-bartlett/</loc>
+    <lastmod>2021-01-06T10:14:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/boying-gong/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/caleb-weinreb/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/tag/collaboration/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/david-h-brann/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/ethan-armand/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/fangming-xie/</loc>
+    <lastmod>2021-01-06T10:14:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/giorgio-a-ascoli/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/hanqing-liu/</loc>
+    <lastmod>2021-01-06T10:14:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/hsin-jung-chou/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/iain-c-macaulay/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/m-margarita-behrens/</loc>
+    <lastmod>2021-01-06T10:14:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/marcela-lipovsek/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/publication/brann/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/ricky-s-adkins/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/seth-a-ament/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/shona-allen/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/tatsuya-tsukahara/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/trygve-e-bakken/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/xu-an/</loc>
+    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/zizhen-yao/</loc>
+    <lastmod>2021-01-06T10:14:50+01:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/author/lieven-clement/</loc>
-    <lastmod>2019-05-01T15:00:00+02:00</lastmod>
+    <lastmod>2019-05-01T15:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/author/robrecht-cannoodt/</loc>
-    <lastmod>2019-05-01T15:00:00+02:00</lastmod>
+    <lastmod>2019-05-01T15:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/publication/tradeseq/</loc>
-    <lastmod>2019-05-01T15:00:00+02:00</lastmod>
+    <lastmod>2019-05-01T15:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/author/wouter-saelens/</loc>
-    <lastmod>2019-05-01T15:00:00+02:00</lastmod>
+    <lastmod>2019-05-01T15:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/author/yvan-saeys/</loc>
-    <lastmod>2019-05-01T15:00:00+02:00</lastmod>
+    <lastmod>2019-05-01T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/hector-roux-de-bezieux/</loc>
+    <lastmod>2019-04-18T15:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -164,11 +314,6 @@
   
   <url>
     <loc>http://hector-rdb.org/project/stat215a/</loc>
-    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/tags/</loc>
     <lastmod>2018-04-18T00:00:00+00:00</lastmod>
   </url>
   

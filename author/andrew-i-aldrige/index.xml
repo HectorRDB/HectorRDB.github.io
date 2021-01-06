@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrew I Aldrige | Hector Roux de Bezieux</title>
+    <link>http://hector-rdb.org/author/andrew-i-aldrige/</link>
+      <atom:link href="http://hector-rdb.org/author/andrew-i-aldrige/index.xml" rel="self" type="application/rss+xml" />
+    <description>Andrew I Aldrige</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://hector-rdb.org/media/icon-192.png</url>
+      <title>Andrew I Aldrige</title>
+      <link>http://hector-rdb.org/author/andrew-i-aldrige/</link>
+    </image>
+    
+    <item>
+      <title>An integrated transcriptomic and epigenomic atlas of mouse primary motor cortex cell types</title>
+      <link>http://hector-rdb.org/publication/yao/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/publication/yao/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
