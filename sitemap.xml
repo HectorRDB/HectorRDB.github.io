@@ -1,384 +1,202 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-    
-    <url>
-    
-      <loc>/publication/dune/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/publication-type/3/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/project/dune/</loc>
-      <lastmod>2020-02-25T00:00:00-08:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/authors/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/publication/tradeseq/</loc>
-      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/davide-risso/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/talk/statseminar/</loc>
-      <lastmod>2019-04-18T15:00:00-07:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/elizabeth-purdom/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/talk/stemcell/</loc>
-      <lastmod>2019-04-14T15:00:00-07:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/project/nationalassemby/</loc>
-      <lastmod>2019-02-18T00:00:00-08:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/hector-roux-de-bezieux/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/privacy/</loc>
-      <lastmod>2018-06-28T00:00:00-07:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/publication/dune/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/project/personal-package/</loc>
-      <lastmod>2018-04-19T00:00:00-07:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/jesse-gillis/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/project/cs289/</loc>
-      <lastmod>2018-04-18T00:00:00-07:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/john-ngai/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/project/courses/</loc>
-      <lastmod>2018-04-18T00:00:00-07:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/kelly-street/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/project/stat215a/</loc>
-      <lastmod>2018-04-18T00:00:00-07:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/koen-van-den-berge/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/project/resources/</loc>
-      <lastmod>2018-04-18T00:00:00-07:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/publication_types/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/project/tradeseq/</loc>
-      <lastmod>2018-04-18T00:00:00-07:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/publication/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/author/admin/</loc>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/rebecca-chance/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/publication_types/3/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/sandrine-dudoit/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/author/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/stephan-fischer/</loc>
+    <lastmod>2020-03-04T15:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/hector-roux-de-bezieux/</loc>
+    <lastmod>2019-05-01T15:00:00+02:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/lieven-clement/</loc>
+    <lastmod>2019-05-01T15:00:00+02:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/tags/classes/</loc>
-      <lastmod>2018-04-18T00:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/robrecht-cannoodt/</loc>
+    <lastmod>2019-05-01T15:00:00+02:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/davide-risso/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/publication/tradeseq/</loc>
+    <lastmod>2019-05-01T15:00:00+02:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/elizabeth-purdom/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/wouter-saelens/</loc>
+    <lastmod>2019-05-01T15:00:00+02:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/author/yvan-saeys/</loc>
+    <lastmod>2019-05-01T15:00:00+02:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/hector-roux-de-b%C3%A9zieux/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/talks/</loc>
+    <lastmod>2019-04-18T15:00:00+02:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/jesse-gillis/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/talks/statseminar/</loc>
+    <lastmod>2019-04-18T15:00:00+02:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/john-ngai/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/talks/stemcell/</loc>
+    <lastmod>2019-04-14T15:00:00+02:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/kelly-street/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/tag/classes/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/koen-van-den-berge/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/project/courses/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/lieven-clement/</loc>
-      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/project/cs289/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/post/</loc>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/project/dune/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2020-02-25T00:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/project/nationalassemby/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/publication_types/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/project/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/publication/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/tag/research/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/rebecca-chance/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/project/stat215a/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/talk/</loc>
-      <lastmod>2019-04-18T15:00:00-07:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/tags/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/tags/research/</loc>
-      <lastmod>2020-02-25T00:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/project/tradeseq/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/robrecht-cannoodt/</loc>
-      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/tag/tutorials/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/sandrine-dudoit/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/project/resources/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    <url>
-    
-      <loc>/slides/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/categories/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>/slides/example-slides/</loc>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/slides/</loc>
+  </url>
   
-    
-    <url>
-    
-      <loc>/authors/stephan-fischer/</loc>
-      <lastmod>2020-03-04T15:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2018-04-18T00:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/tutorial/</loc>
-      <lastmod>2018-04-19T00:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/tutorials/</loc>
-      <lastmod>2019-02-18T00:00:00-08:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/wouter-saelens/</loc>
-      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/yvan-saeys/</loc>
-      <lastmod>2019-05-01T15:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://hector-rdb.org/slides/example-slides/</loc>
+  </url>
   
 </urlset>

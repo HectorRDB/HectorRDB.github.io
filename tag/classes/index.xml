@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classes | Hector Roux de Bezieux</title>
+    <link>http://hector-rdb.org/tag/classes/</link>
+      <atom:link href="http://hector-rdb.org/tag/classes/index.xml" rel="self" type="application/rss+xml" />
+    <description>Classes</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://hector-rdb.org/media/icon-192.png</url>
+      <title>Classes</title>
+      <link>http://hector-rdb.org/tag/classes/</link>
+    </image>
+    
+    <item>
+      <title>Courses taken at UC Berkeley</title>
+      <link>http://hector-rdb.org/project/courses/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/project/courses/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#2019&#34;&gt;2019&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2018&#34;&gt;2018&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2017&#34;&gt;2017&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2019&#34;&gt;2019&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;PB HLTH 290: Targeted Learning with Biomedical Big Data&lt;/strong&gt; with Mark Van der Laan
+&lt;ul&gt;
+&lt;li&gt;Final Project Proposal on Overleaf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2018&#34;&gt;2018&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CMPBIO 293 Doctoral Seminar in Computational Biology (Spring)&lt;/strong&gt; with Nir Yosef
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://hector-rdb.org/slides/CMPBIO293_Presentation1-ATAC-seq.pdf&#34;&gt;Presentation 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://hector-rdb.org/slides/Single-Cell-Simulations.pdf&#34;&gt;Presentation 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CMPBIO 293 Doctoral Seminar in Computational Biology (Fall)&lt;/strong&gt; with Priya Moorjani &amp;amp; Daniel Rokhsar
+&lt;ul&gt;
+&lt;li&gt;[Presentation](/slides/Comp Bio C293_ Genetic uniqueness in humans.pdf)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;STAT 210A Theoretical Statistics&lt;/strong&gt; with Will Fithian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;STAT 215B Statistical Models: Theory and Application&lt;/strong&gt; with Jon Mcauliffe
+&lt;ul&gt;
+&lt;li&gt;Final Project not public&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;STAT 248 Analysis of Time Series&lt;/strong&gt; with David Brillinger
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://hector-rdb.org/courses/Stat248/paper.pdf&#34;&gt;Final Project report&lt;/a&gt; and  &lt;a href=&#34;http://hector-rdb.org/courses/Stat248/code.Rmd&#34;&gt;code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CS 298A Introduction to Machine Learning&lt;/strong&gt; with Jennifer Listgarten and Anant Sahai
+&lt;ul&gt;
+&lt;li&gt;[Final Project] ( /project/cs289/)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CS 294 Machine Learning and Statistics Meet Biology&lt;/strong&gt; with Jennifer Listgarten
+&lt;ul&gt;
+&lt;li&gt;[Presentation](/slides/CS294-150 Slides.pdf)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://hector-rdb.org/courses/CS294/paper.pdf&#34;&gt;Final Project report&lt;/a&gt;. Code not yet public.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2017&#34;&gt;2017&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;STAT 215A  Statistical Models: Theory and Application&lt;/strong&gt; with Bin Yu
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://hector-rdb.org/project/stat215a/&#34;&gt;Labs and final project&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;STAT 243 Introduction to Statistical Computing&lt;/strong&gt; with Christopher Paciorek&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;STAT C245D Biostatistical Methods: Computational Statistics with Applications in Biology and Medicine II&lt;/strong&gt; with Sandrine Dudoit
+&lt;ul&gt;
+&lt;li&gt;Final Project not yet public&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;STAT C245F Statistical Genomics&lt;/strong&gt; with Sandrine Dudoit&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BIOENG 241 Probabilistic Modeling in Computational Biology&lt;/strong&gt; with Ian Holmes&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CS289 Final Project</title>
+      <link>http://hector-rdb.org/project/cs289/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/project/cs289/</guid>
+      <description>&lt;h1 id=&#34;modelization-of-single-cell-gene-expression-along-a-timeline&#34;&gt;Modelization of single-cell gene expression along a timeline&lt;/h1&gt;
+&lt;h2 id=&#34;report-abstract&#34;&gt;Report abstract&lt;/h2&gt;
+&lt;p&gt;The explosion of genomic data over the past two decades created a need for new and more performing tools. One type of data in particular, Single-cell RNA Sequencing data, allow for a cell-level detection of biological patterns but technical limitations add lots of noise sources to the data. In particular, some counts are dropped and appear as zeros, even thought the gene is expressed in the cell. Here, we present a new method to detect dropouts in cases of development trajectories. Our various model all improve substantially on random guesses and offer a computationally-efficient way to infer correct gene expression patterns over time. The GitHub containing all our scripts is available online at the following address: &lt;a href=&#34;https://github.com/HectorRDB/CS289%5c_Final%5c_Project&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/HectorRDB/CS289_Final_Project&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spring 2018&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Group members:&lt;/strong&gt;&lt;/em&gt; Daniel Amar, Ariane Lozac&amp;rsquo;hmeur, Hector Roux de Bézieux &amp;amp; Alexandre Vincent&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The project proposal is available on Overleaf and may be &lt;em&gt;read&lt;/em&gt; &lt;a href=&#34;https://www.overleaf.com/read/gqyqyqsmwfdj&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The project report is available on Overleaf and may be &lt;em&gt;read&lt;/em&gt; &lt;a href=&#34;https://v2.overleaf.com/read/kzddthmzqwnd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>STAT 215A - Labs</title>
+      <link>http://hector-rdb.org/project/stat215a/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/project/stat215a/</guid>
+      <description>&lt;h2 id=&#34;stat-215a-statistical-models-theory-and-application&#34;&gt;STAT 215A Statistical Models: Theory and Application&lt;/h2&gt;
+&lt;p&gt;I took this class in the Fall 2017, with &lt;a href=&#34;https://www.stat.berkeley.edu/~binyu/Site/Welcome.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bin Yu&lt;/a&gt; and &lt;a href=&#34;http://www.rebeccabarter.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rebecca Barter&lt;/a&gt;. For the purpose of this class, we studied 3 datasets across 4 labs. The grading was partly peer-reviewed based so my github for this class contains works from other students that I cannot share. However, the lab reports and code files are below:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Lab 1: Redwood trees&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Lab 2: Linguistic Survey&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Lab 3: Linguistic Survey Stability&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Lab 4: Cloud detection&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Report&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;http://hector-rdb.org/files/stat215a/lab1.pdf&#34;&gt;Lab1&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;http://hector-rdb.org/files/stat215a/lab2.pdf&#34;&gt;Lab2&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;http://hector-rdb.org/files/stat215a/lab3.pdf&#34;&gt;Lab3&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;http://hector-rdb.org/files/stat215a/lab4.pdf&#34;&gt;Lab4&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Code&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;http://hector-rdb.org/files/stat215a/lab1.Rnw&#34;&gt;Lab1&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;http://hector-rdb.org/files/stat215a/lab2.Rnw&#34;&gt;Lab2&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;http://hector-rdb.org/files/stat215a/lab3.Rnw&#34;&gt;Lab3&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;http://hector-rdb.org/files/stat215a/lab4.Rnw&#34;&gt;Lab4&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Likewise, for the final report, the &lt;a href=&#34;http://hector-rdb.org/files/stat215a/lab_final.pdf&#34;&gt;project report&lt;/a&gt; and &lt;a href=&#34;http://hector-rdb.org/files/stat215a/lab_final.Rnw&#34;&gt;code&lt;/a&gt; are accessible.&lt;/p&gt;
+&lt;p&gt;I also highly recommand to go and visit &lt;a href=&#34;http://www.rebeccabarter.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rebecca Barter&amp;rsquo;s website&lt;/a&gt; for great tutorials.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

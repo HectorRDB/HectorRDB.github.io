@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yvan Saeys | Hector Roux de Bezieux</title>
+    <link>http://hector-rdb.org/author/yvan-saeys/</link>
+      <atom:link href="http://hector-rdb.org/author/yvan-saeys/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yvan Saeys</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 May 2019 15:00:00 +0200</lastBuildDate>
+    <image>
+      <url>http://hector-rdb.org/media/icon-192.png</url>
+      <title>Yvan Saeys</title>
+      <link>http://hector-rdb.org/author/yvan-saeys/</link>
+    </image>
+    
+    <item>
+      <title>Trajectory-based differential expression analysis for single-cell sequencing data</title>
+      <link>http://hector-rdb.org/publication/tradeseq/</link>
+      <pubDate>Wed, 01 May 2019 15:00:00 +0200</pubDate>
+      <guid>http://hector-rdb.org/publication/tradeseq/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;http://hector-rdb.org/img/logo.png&#34; width=&#34;30%&#34;/&gt;
+&lt;/p&gt;
+&lt;p&gt;Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression. Downstream of trajectory inference, it is vital to discover genes that are (i) associated with the lineages in the trajectory, or (ii) differentially expressed between lineages, to illuminate the underlying biological processes. Current data analysis procedures, however, either fail to exploit the continuous resolution provided by trajectory inference, or fail to pinpoint the exact types of differential expression. We introduce tradeSeq, a powerful generalized additive model framework based on the negative binomial distribution that allows flexible inference of both within-lineage and between-lineage differential expression. By incorporating observation-level weights, the model additionally allows to account for zero inflation. We evaluate the method on simulated datasets and on real datasets from droplet-based and full-length protocols, and show that it yields biological insights through a clear interpretation of the data.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

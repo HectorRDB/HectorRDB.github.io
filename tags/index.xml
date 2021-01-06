@@ -1,51 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hector Roux de Bézieux</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Hector Roux de Bézieux</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 18 Apr 2018 00:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Classes</title>
-      <link>/tags/classes/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 -0700</pubDate>
-      
-      <guid>/tags/classes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Research</title>
-      <link>/tags/research/</link>
-      <pubDate>Tue, 25 Feb 2020 00:00:00 -0800</pubDate>
-      
-      <guid>/tags/research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorial</title>
-      <link>/tags/tutorial/</link>
-      <pubDate>Thu, 19 Apr 2018 00:00:00 -0700</pubDate>
-      
-      <guid>/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorials</title>
-      <link>/tags/tutorials/</link>
-      <pubDate>Mon, 18 Feb 2019 00:00:00 -0800</pubDate>
-      
-      <guid>/tags/tutorials/</guid>
-      <description></description>
-    </item>
+    <title>Tags | Hector Roux de Bezieux</title>
+    <link>http://hector-rdb.org/tags/</link>
+      <atom:link href="http://hector-rdb.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://hector-rdb.org/media/icon-192.png</url>
+      <title>Tags</title>
+      <link>http://hector-rdb.org/tags/</link>
+    </image>
     
   </channel>
 </rss>

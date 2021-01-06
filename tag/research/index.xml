@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research | Hector Roux de Bezieux</title>
+    <link>http://hector-rdb.org/tag/research/</link>
+      <atom:link href="http://hector-rdb.org/tag/research/index.xml" rel="self" type="application/rss+xml" />
+    <description>Research</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://hector-rdb.org/media/icon-192.png</url>
+      <title>Research</title>
+      <link>http://hector-rdb.org/tag/research/</link>
+    </image>
+    
+    <item>
+      <title>Dune</title>
+      <link>http://hector-rdb.org/project/dune/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/project/dune/</guid>
+      <description>&lt;h2 id=&#34;improving-replicability-in-single-cell-rna-seq-cell-type-discovery-with-dune&#34;&gt;Improving replicability in single-cell RNA-Seq cell type discovery with Dune&lt;/h2&gt;
+&lt;p&gt;Work in collaboration with  Kelly Street, Stephan Fischer, Koen Van den Berge, Rebecca Chance, Davide Risso, Jesse Gillis, John Ngai, Elizabeth Purdom, Sandrine Dudoit.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; Single-cell transcriptome sequencing (scRNA-Seq) has allowed many new types of investigations at unprecedented and unique levels of resolution. Among the primary goals of scRNA-Seq is the classification of cells into potentially novel cell types. Many approaches build on the existing clustering literature to develop tools specific to single-cell applications. However, almost all of these methods rely on heuristics or user-supplied parameters to control the number of clusters identified. This affects both the resolution of the clusters within the original dataset as well as their replicability across datasets. While many recommendations exist to select these tuning parameters, most of them are quite ad hoc. In general, there is little assurance that any given set of parameters will represent an optimal choice in the ever-present trade-off between cluster resolution and replicability. For instance, it may be the case that another set of parameters will result in more clusters that are also more replicable, or in fewer clusters that are also less replicable.&lt;/p&gt;
+&lt;p&gt;Here, we propose a new method called Dune for optimizing the trade-off between the resolution of the clusters and their replicability across datasets. Our method takes as input a set of clustering results on a single dataset, derived from any set of clustering algorithms and associated tuning parameters, and iteratively merges clusters within partitions in order to maximize their concordance between partitions. As demonstrated on a variety of scRNA-Seq datasets from different platforms, Dune outperforms existing techniques, that rely on hierarchical merging for reducing the number of clusters, in terms of replicability of the resultant merged clusters. It provides an objective approach for identifying replicable consensus clusters most likely to represent common biological features across multiple datasets.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>tradeSeq</title>
+      <link>http://hector-rdb.org/project/tradeseq/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/project/tradeseq/</guid>
+      <description>&lt;h2 id=&#34;tradeseq-trajectory-based-differential-expression-analysis-for-single-cell-sequencing-data&#34;&gt;tradeSeq: &lt;strong&gt;Tra&lt;/strong&gt;jectory-based &lt;strong&gt;d&lt;/strong&gt;ifferential &lt;strong&gt;e&lt;/strong&gt;xpression analysis for single-cell &lt;strong&gt;seq&lt;/strong&gt;uencing data&lt;/h2&gt;
+&lt;p&gt;Work in collaboration with Koen Van den Berge, Kelly Street, Wouter Saelens, Robrecht Cannoodt, Yvan Saeys, Sandrine Dudoit and Lieven Clement&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; Trajectory inference has radically enhanced single-cell RNA-seq research by enabling the study of dynamic changes in gene expression. Downstream of trajectory inference, it is vital to discover genes that are (i) associated with the lineages in the trajectory, or (ii) differentially expressed between lineages, to illuminate the underlying biological processes. Current data analysis procedures, however, either fail to exploit the continuous resolution provided by trajectory inference, or fail to pinpoint the exact types of differential expression. We introduce tradeSeq, a powerful generalized additive model framework based on the negative binomial distribution that allows flexible inference of both within-lineage and between-lineage differential expression. By incorporating observation-level weights, the model additionally allows to account for zero inflation. We evaluate the method on simulated datasets and on real datasets from droplet-based and full-length protocols, and show that it yields biological insights through a clear interpretation of the data.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome to the RNA-Seq world</title>
+      <link>http://hector-rdb.org/project/resources/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/project/resources/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;Recently, Philippe Boileau joined the &lt;a href=&#34;https://www.stat.berkeley.edu/~sandrine/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dudoit lab&lt;/a&gt; and I had to think on which resources to point him to so that he could start getting up to speed with on the field. Together, we hence build the following list of interesting material. Those fall into 4 broad (and largely overlapping) categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#Bio&#34;&gt;How to produce data with sequencing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#Data&#34;&gt;How to find, access and pre-process data (including how to use bio-informatics tools)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#Stat&#34;&gt;How to analyze the data:  statistics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#Biostat&#34;&gt;How to use all of the above to conduct an analysis (with - of course - a strong emphasis on R tools)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#Repro&#34;&gt;How to do all those analyses correctly: reproducible research&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&amp;rsquo;ll therefore try to list resources to help in all subjects. This will be a mix of (scientific) papers, books, package vignette, personal tutorials, video&amp;hellip;&lt;/p&gt;
+&lt;p&gt;If you find any other relevant material, feel free to put an issue on the &lt;a href=&#34;https://github.com/HectorRDB/HectorRDB.github.io/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github repo&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;before-we-begin&#34;&gt;Before we begin&lt;/h1&gt;
+&lt;p&gt;The resources below broadly assume that you have at least a basic knowledge of &lt;a href=&#34;https://cran.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt;, statistics and biology.&lt;/p&gt;
+&lt;p&gt;Otherwise, for R, I recommend (and I am far from the only one) Garrett Grolemund &amp;amp; Hadley Wickham&amp;rsquo;s &lt;a href=&#34;https://r4ds.had.co.nz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R For Data Science&lt;/a&gt;.  Additionally, the statistical computing facility at Berkeley host yearly R bootcamp. The material is &lt;a href=&#34;https://github.com/berkeley-scf/r-bootcamp-2018&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;on Github&lt;/a&gt; and are a great way to practice (this is how I really learned R, and I had the change to help in the teaching in 2018).&lt;/p&gt;
+&lt;p&gt;Biological concept you should be familiar with are (with links to the relevant Wikipedia pages): the &lt;a href=&#34;https://en.wikipedia.org/wiki/Central_dogma_of_molecular_biology&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Central Dogma&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/RNA_splicing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mRNA splicing&lt;/a&gt;. Keeping up to date with the current knowledge  on majors diseases is also crucial to .&lt;/p&gt;
+&lt;p&gt;For statistics, I do not have any material to recommend.&lt;/p&gt;
+&lt;h1 id=&#34;Bio&#34;&gt;Sequencing methodology&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;RNA - Sequencing mostly relies on Illumina Sequencing nowadays but it&amp;rsquo;s useful to learn about other sequencing methods. I feel that for this, videos are the best medium to understand the mechanisms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Sanger sequencing&lt;/strong&gt; The first method used for sequening. The video below gives a 3mn tutorial on how it works.
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/FvHRio1yyhQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Illumina Sequencing&lt;/strong&gt; Also called Next Generation Sequencing or Short read sequencing. The best resources I have found come from the Illumina Website
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fCd6B5HRaZ8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PacBio Sequencing&lt;/strong&gt; Long read sequencing, 2$^nd$ generation of NGS. In very, short, longer reads with lower accuracy compared to Illumina reads
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NHCJ8PtYCFc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Oxford NanoPore sequencing&lt;/strong&gt; Even longer reads with even lower quality.
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://player.vimeo.com/video/211385238&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;vimeo video&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Single-cell RNA-Sequencing is, of course, conducted at the single-cell level. The way the cells are pre-processed, separated and sequenced is method-dependent. A good overview of those methods can be found in &lt;a href=&#34;https://www.nature.com/articles/nprot.2017.149&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Svensson et al&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Many other different types of &amp;lsquo;omics exist: the &lt;a href=&#34;https://www.youtube.com/user/joshstarmer/videos&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;youtube chanel StatQuest&lt;/a&gt; gives a good intro to many of them (as well as clear explanations for many statistical analyses). Some &amp;lsquo;omics that are often collected along RNA-Seq are Chip-Seq and ATAC-Seq.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Data&#34;&gt;Prepping the data for analysis&lt;/h1&gt;
+&lt;h2 id=&#34;obtaining-data&#34;&gt;Obtaining data&lt;/h2&gt;
+&lt;p&gt;The R &lt;a href=&#34;https://www.bioconductor.org/packages/release/bioc/html/GEOquery.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GEOQuery package&lt;/a&gt; from &lt;a href=&#34;https://www.bioconductor.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bioconductor&lt;/a&gt; allows you to download data and sample information from &lt;a href=&#34;https://www.ncbi.nlm.nih.gov&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ncbi&lt;/a&gt;. Most papers provide GEO accession numbers as a key to access their data and is usually enough.&lt;/p&gt;
+&lt;h2 id=&#34;pre-processing-data&#34;&gt;Pre-processing data&lt;/h2&gt;
+&lt;p&gt;The sequencing step produces reads at the cell level. The next question is how to map them to a reference genome to obtain transcript or gene expression levels. To obtain this matrix, a few bioinformatic tools exist. One series of tool is &lt;a href=&#34;https://academic.oup.com/bioinformatics/article/25/9/1105/203994&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tophat&lt;/a&gt;, which was replaced by &lt;a href=&#34;https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-4-r36&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tophat2&lt;/a&gt; and then &lt;a href=&#34;https://www.nature.com/articles/nmeth.3317&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HISAT&lt;/a&gt;, which was finally upgraded to HISAT2. A popular alternative is the &lt;a href=&#34;https://academic.oup.com/bioinformatics/article/29/1/15/272537&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;STAR algorithm&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Recently, tools that do not rely on full genome alignment have been proposed, including &lt;a href=&#34;https://www.nature.com/articles/nbt.3519&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kallisto&lt;/a&gt; and &lt;a href=&#34;https://www.nature.com/articles/nmeth.4197&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Salmon&lt;/a&gt;. A recent (not yet per-reviewed comparison) can be found by &lt;a href=&#34;https://www.biorxiv.org/content/10.1101/444620v1.abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To run those scripts, basic knowledge of shell scripting is needed. Good tutorials can be &lt;a href=&#34;https://github.com/berkeley-scf/tutorial-using-bash&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;found here&lt;/a&gt; or &lt;a href=&#34;https://datacarpentry.org/shell-genomics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Also, sequencing data can be stored into many different formats. &lt;a href=&#34;https://binf.snipcademy.com/lessons/sequence-file-formats&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This page&lt;/a&gt; is a very complete overview of the types of format and list tools to convert from one to another.&lt;/p&gt;
+&lt;h2 id=&#34;pre-processed-data&#34;&gt;Pre-processed data.&lt;/h2&gt;
+&lt;p&gt;Many datasets have been stored in a clean format in the &lt;a href=&#34;https://jhubiostatistics.shinyapps.io/recount/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recount2 project&lt;/a&gt;. This is an excellent place to start if you want to explore algorithms on real world and diverse datasets.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;http://imlspenticton.uzh.ch:3838/conquer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;conquer project&lt;/a&gt; has a shorter list of very well processed datasets, using &lt;a href=&#34;https://www.nature.com/articles/nmeth.4197&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Salmon&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bioconductor.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Bioconductor Project&lt;/a&gt; also has a lot of datasets packages.&lt;/p&gt;
+&lt;h1 id=&#34;Stat&#34;&gt;Tools needed for analysis&lt;/h1&gt;
+&lt;p&gt;Many excellent books exist to give a clear understanding of the many tools and concept needed. Freedman&amp;rsquo;s book, &lt;a href=&#34;https://www.cambridge.org/core/books/statistical-models/15F12FD4EB5FAD43B85FA824286DD44F&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Statistical Models: Theory and Practice&lt;/a&gt; is a must-read, which I consider maybe closer to a philosophical treaty. More applied, Susan&amp;rsquo;s Holmes new book, &lt;a href=&#34;http://web.stanford.edu/class/bios221/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Modern Statistics for Modern Biology&lt;/a&gt; is quite complete for tools used in genomics. Key concepts include dimensionality reduction, clustering and modelling. A deeper and mathier book is the &lt;a href=&#34;https://web.stanford.edu/~hastie/ElemStatLearn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Elements of  Statistical Learning&lt;/a&gt; by Hastie, Tibshirani &amp;amp; Friedman.&lt;/p&gt;
+&lt;p&gt;A central concept in high-dimensional statistics that characterize genomics is multiple hypothesis testing. &lt;a href=&#34;https://statweb.stanford.edu/~ckirby/brad/LSI/monograph_CUP.pdf?fbclid=IwAR2sggb2cAkJmElvE6uz61egXYWu94-4933X1NbOn05AqPFVAeliQFE15PQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Efron (2010)&lt;/a&gt; is a good reference with a clear Baysien justification. &lt;a href=&#34;https://www.pnas.org/content/100/16/9440.abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This paper&lt;/a&gt; present the concepts in a genomic setting.&lt;/p&gt;
+&lt;p&gt;The R language is used in many RNA-Seq applications. To improve your coding practices, I also recommend &lt;a href=&#34;http://adv-r.had.co.nz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;advanced R&lt;/a&gt; by Hadley Wickham. The &lt;a href=&#34;http://adv-r.had.co.nz/OO-essentials.html#s4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;S4 section&lt;/a&gt; of the book will be of particular interest, given that Bioconductor strongly recommands using S4 objects and functions.&lt;/p&gt;
+&lt;h1 id=&#34;Biostat&#34;&gt;Applications to RNA-Seq&lt;/h1&gt;
+&lt;p&gt;We&amp;rsquo;re finally getting to the RNA-Seq analysis part. To start, I advice to begin with a practical tutorial. The &lt;a href=&#34;https://bioconductor.github.io/BiocWorkshops/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bioconductor 2018 Workshop&lt;/a&gt; provides a few that I recommend. &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5558107/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This other one&lt;/a&gt; is longer but more complete.
+This &lt;a href=&#34;https://hectorrdb.github.io/NationalAssembly/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;other tutorial&lt;/a&gt; that I wrote is shorter but can be a good place to start.&lt;/p&gt;
+&lt;p&gt;Once you have seen how to proceed, this &lt;a href=&#34;https://peerj.com/preprints/27283/?fbclid=IwAR0WH2eTl2Hwig9xxnt_DuYuIsFORwtRMrcI-LgZ6AujxPX1tsPb6t_esXk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recent review by Koen, et al.&lt;/a&gt; is a good follow-up that very nicely recoup many concepts from above and can point you to further resources.&lt;/p&gt;
+&lt;p&gt;Then, I recommend to dive into method papers. This list is partly inspired from the &lt;a href=&#34;https://github.com/jtleek/genomicspapers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Leek group paper&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://biostat.jhsph.edu/~jleek/papers/seqvar.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sequencing technology does not eliminate biological variability&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/16646809&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The first paper behind the Limma package&lt;/a&gt; and the &lt;a href=&#34;https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;second, with voom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;edgeR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-94&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Key need for Normalization&lt;/a&gt;, especially because of &lt;a href=&#34;https://www.nature.com/articles/nrg2825&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;batch effects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Methods for normalization include &lt;a href=&#34;https://www.biorxiv.org/content/10.1101/235382v2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scone&lt;/a&gt;, &lt;a href=&#34;https://www.nature.com/articles/s41467-017-02554-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;zinbWave&lt;/a&gt; and &lt;a href=&#34;https://www.nature.com/articles/s41592-018-0229-2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;scVI&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://satijalab.org/seurat/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seurat&lt;/a&gt; is a global framework of analysis&lt;/li&gt;
+&lt;li&gt;Clustering is a key step of RNA-Seq analysis. &lt;a href=&#34;https://f1000research.com/articles/7-1141/v2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This paper&lt;/a&gt; contrasts several methods on real and synthetic data.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nature.com/articles/s41587-019-0071-9&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This paper&lt;/a&gt; proposes a nice overview of trajectory inference&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/20048385&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gene Set Enrichment Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Repro&#34;&gt;Reproducible research&lt;/h1&gt;
+&lt;p&gt;All the analyses you conduct should aim for reproducibility in the science. This &lt;a href=&#34;https://www.nature.com/collections/prbfkwmwvz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nature collection&lt;/a&gt; group of papers gives a broad overview of the issue of reproducibility, and of how to fix it.  A first step to try and limit the crisis of reproducibilty in science - and one where (bio)-statisticians have a key role - is statistical and computational reproducibility.&lt;/p&gt;
+&lt;p&gt;To help, several tool exist. Git and Github are powerful tools and many good tutorial exist (see &lt;a href=&#34;https://bids.github.io/2019-01-17-bids/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; for example). Good coding practices are also necessary. Saving your software in packages is a part of it, and &lt;a href=&#34;http://r-pkgs.had.co.nz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this book&lt;/a&gt; is a good reference on how to build them in an efficient fashion. I also recommend using tools like &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RMarkdown&lt;/a&gt; or &lt;a href=&#34;https://yihui.name/knitr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;knitr&lt;/a&gt; to combine text, math, code and figures in one coherent place when writing papers, reports or even for day-to-day analyses.&lt;/p&gt;
+&lt;p&gt;While code is now commonly saved and made public for reproducibility purposes, data is unfortunatly not always available. Raw files can be made accessible through ncbi. Pre-processed data (a count matrix for example) can also be made public using a data R package, such as the experiment packages that can be found in &lt;a href=&#34;https://www.bioconductor.org/packages/release/BiocViews.html#___ExperimentData&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bioconductor&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
