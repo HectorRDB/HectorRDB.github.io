@@ -51,6 +51,14 @@
     </item>
     
     <item>
+      <title>Bacterial and metagenome GWAS.</title>
+      <link>http://hector-rdb.org/talk/bacterial-and-metagenome-gwas./</link>
+      <pubDate>Tue, 18 Feb 2020 09:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/talk/bacterial-and-metagenome-gwas./</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A multimodal cell census and atlas of the mammalian primary motor cortex</title>
       <link>http://hector-rdb.org/publication/adkins/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
@@ -98,6 +106,14 @@
       <guid>http://hector-rdb.org/talk/unlocking-the-power-of-continuity-in-single-cell-rna-seq-differential-gene-expression-along-developmental-trajectories./</guid>
       <description>&lt;p&gt;Trajectory inference is often used with single-cell RNA-seq data to study dynamic changes in gene expression levels during, e.g., cell cycle, differentiation, or cellular activation.  Downstream of trajectory inference, researchers are often interested in discovering genes that are associated with a particular lineage in the trajectory. Furthermore, genes that are differentially expressed between developmental/activational lineages might be highly relevant to the system under study. Current data analysis procedures, however, artificially cluster cells and assess differential expression between the clusters, which fails to exploit the continuous resolution provided by trajectory inference. Other methods only assess broad differences in gene expression between lineages, hence failing to pinpoint the exact types of divergence. Our new method allows flexible inference of (i) within-lineage differential expression by detecting associations between gene expression and pseudotime over an entire lineage, or comparing gene expression between points/regions within the linage; and (ii) between-lineage differential expression by comparing gene expression between lineages over the entire lineages or at specific points/regions. This talk gives a high-level overview of the  method, demonstrating its modularity and unique capacity to deliver powerful insights into complex biological phenomenons.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Beyond DBGWAS: exploring assembly graphs in an efficient manner.</title>
+      <link>http://hector-rdb.org/talk/beyond-dbgwas-exploring-assembly-graphs-in-an-efficient-manner./</link>
+      <pubDate>Mon, 25 Mar 2019 09:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/talk/beyond-dbgwas-exploring-assembly-graphs-in-an-efficient-manner./</guid>
+      <description></description>
     </item>
     
     <item>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Caldera | Hector Roux de Bézieux</title>
+    <link>http://hector-rdb.org/category/caldera/</link>
+      <atom:link href="http://hector-rdb.org/category/caldera/index.xml" rel="self" type="application/rss+xml" />
+    <description>Caldera</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 18 Feb 2020 09:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://hector-rdb.org/media/icon-192.png</url>
+      <title>Caldera</title>
+      <link>http://hector-rdb.org/category/caldera/</link>
+    </image>
+    
+    <item>
+      <title>Bacterial and metagenome GWAS.</title>
+      <link>http://hector-rdb.org/talk/bacterial-and-metagenome-gwas./</link>
+      <pubDate>Tue, 18 Feb 2020 09:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/talk/bacterial-and-metagenome-gwas./</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beyond DBGWAS: exploring assembly graphs in an efficient manner.</title>
+      <link>http://hector-rdb.org/talk/beyond-dbgwas-exploring-assembly-graphs-in-an-efficient-manner./</link>
+      <pubDate>Mon, 25 Mar 2019 09:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/talk/beyond-dbgwas-exploring-assembly-graphs-in-an-efficient-manner./</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

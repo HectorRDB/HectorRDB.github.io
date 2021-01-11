@@ -93,6 +93,21 @@
   </url>
   
   <url>
+    <loc>http://hector-rdb.org/project/caldera/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/project/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/tag/research/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://hector-rdb.org/publication-type/3/</loc>
     <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
@@ -130,6 +145,21 @@
   <url>
     <loc>http://hector-rdb.org/author/stephan-fischer/</loc>
     <lastmod>2021-01-06T10:14:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/talk/bacterial-and-metagenome-gwas./</loc>
+    <lastmod>2020-02-18T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/category/caldera/</loc>
+    <lastmod>2020-02-18T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/categories/</loc>
+    <lastmod>2020-02-18T09:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -298,11 +328,6 @@
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/categories/</loc>
-    <lastmod>2019-04-18T15:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://hector-rdb.org/category/tradeseq/</loc>
     <lastmod>2019-04-18T15:00:00+00:00</lastmod>
   </url>
@@ -315,6 +340,11 @@
   <url>
     <loc>http://hector-rdb.org/talk/unlocking-the-power-of-continuity-in-single-cell-rna-seq-differential-gene-expression-along-developmental-trajectories./</loc>
     <lastmod>2019-04-14T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/talk/beyond-dbgwas-exploring-assembly-graphs-in-an-efficient-manner./</loc>
+    <lastmod>2019-03-25T09:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -339,16 +369,6 @@
   
   <url>
     <loc>http://hector-rdb.org/project/nationalassemby/</loc>
-    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/project/</loc>
-    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/tag/research/</loc>
     <lastmod>2018-04-18T00:00:00+00:00</lastmod>
   </url>
   
