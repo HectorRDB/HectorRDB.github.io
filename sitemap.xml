@@ -3,23 +3,73 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://hector-rdb.org/publication-type/2/</loc>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://hector-rdb.org/authors/</loc>
-    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/fanny-perraudeau/</loc>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/</loc>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/hector-roux-de-bezieux/</loc>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/james-bullard/</loc>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/tag/main-work/</loc>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/publication/jmir/</loc>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/michael-souza/</loc>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/author/orville-kolterman/</loc>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/publication_types/</loc>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/publication/</loc>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hector-rdb.org/tags/</loc>
+    <lastmod>2021-03-04T15:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://hector-rdb.org/event/</loc>
     <lastmod>2020-12-17T15:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/</loc>
-    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/author/hector-roux-de-bezieux/</loc>
-    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
   </url>
   
   <url>
@@ -48,11 +98,6 @@
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/author/fanny-perraudeau/</loc>
-    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://hector-rdb.org/publication/mlcb/</loc>
     <lastmod>2021-01-06T10:39:43+01:00</lastmod>
   </url>
@@ -63,27 +108,7 @@
   </url>
   
   <url>
-    <loc>http://hector-rdb.org/tag/main-work/</loc>
-    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/publication_types/</loc>
-    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/publication/</loc>
-    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://hector-rdb.org/author/sandrine-dudoit/</loc>
-    <lastmod>2021-01-06T10:39:43+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/tags/</loc>
     <lastmod>2021-01-06T10:39:43+01:00</lastmod>
   </url>
   
@@ -164,11 +189,6 @@
   
   <url>
     <loc>http://hector-rdb.org/author/others/</loc>
-    <lastmod>2021-01-06T10:14:51+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hector-rdb.org/publication-type/2/</loc>
     <lastmod>2021-01-06T10:14:51+01:00</lastmod>
   </url>
   

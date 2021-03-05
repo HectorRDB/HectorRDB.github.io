@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Main Work | Hector Roux de Bézieux</title>
-    <link>http://hector-rdb.org/tag/main-work/</link>
-      <atom:link href="http://hector-rdb.org/tag/main-work/index.xml" rel="self" type="application/rss+xml" />
-    <description>Main Work</description>
+    <title>Michael Souza | Hector Roux de Bézieux</title>
+    <link>http://hector-rdb.org/author/michael-souza/</link>
+      <atom:link href="http://hector-rdb.org/author/michael-souza/index.xml" rel="self" type="application/rss+xml" />
+    <description>Michael Souza</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 04 Mar 2021 15:00:00 +0000</lastBuildDate>
     <image>
       <url>http://hector-rdb.org/media/icon-192.png</url>
-      <title>Main Work</title>
-      <link>http://hector-rdb.org/tag/main-work/</link>
+      <title>Michael Souza</title>
+      <link>http://hector-rdb.org/author/michael-souza/</link>
     </image>
     
     <item>
@@ -24,30 +24,6 @@
 &lt;p&gt;&lt;strong&gt;Conclusions:&lt;/strong&gt; We have shown that CGM devices can provide a comprehensive picture of glucose control without clinic visits. CGM device usage in conjunction with our custom smartphone app can lower the participation burden for subjects while reducing study costs, and allows for robust integration of multiple valuable data types with glucose levels remotely.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Trial Registration:&lt;/strong&gt; ClinicalTrials.gov NCT04424888; &lt;a href=&#34;http://clinicaltrials.gov/ct2/show/NCT04424888&#34;&gt;http://clinicaltrials.gov/ct2/show/NCT04424888&lt;/a&gt;.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Finding All Significant Closed Connected Subgraphs</title>
-      <link>http://hector-rdb.org/publication/mlcb/</link>
-      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>http://hector-rdb.org/publication/mlcb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Improving replicability in single-cell RNA-Seq cell type discovery with Dune</title>
-      <link>http://hector-rdb.org/publication/dune/</link>
-      <pubDate>Wed, 04 Mar 2020 15:00:00 +0000</pubDate>
-      <guid>http://hector-rdb.org/publication/dune/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Trajectory-based differential expression analysis for single-cell sequencing data</title>
-      <link>http://hector-rdb.org/publication/tradeseq/</link>
-      <pubDate>Wed, 01 May 2019 15:00:00 +0000</pubDate>
-      <guid>http://hector-rdb.org/publication/tradeseq/</guid>
-      <description></description>
     </item>
     
   </channel>
