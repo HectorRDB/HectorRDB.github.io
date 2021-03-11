@@ -5,12 +5,33 @@
     <link>http://hector-rdb.org/</link>
       <atom:link href="http://hector-rdb.org/index.xml" rel="self" type="application/rss+xml" />
     <description>Hector Roux de Bézieux</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 04 Mar 2021 15:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 09 Mar 2021 15:00:00 +0000</lastBuildDate>
     <image>
       <url>http://hector-rdb.org/media/icon-192.png</url>
       <title>Hector Roux de Bézieux</title>
       <link>http://hector-rdb.org/</link>
     </image>
+    
+    <item>
+      <title>Trajectory inference across multiple conditions with condiments: differential topology, progression, differentiation, and expression</title>
+      <link>http://hector-rdb.org/publication/condiments/</link>
+      <pubDate>Tue, 09 Mar 2021 15:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/publication/condiments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>condiments</title>
+      <link>http://hector-rdb.org/project/condiments/</link>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/project/condiments/</guid>
+      <description>&lt;h2 id=&#34;trajectory-inference-across-multiple-conditions-with-__condiments__-differential-topology-progression-differentiation-and-expression&#34;&gt;Trajectory inference across multiple conditions with &lt;strong&gt;condiments&lt;/strong&gt;: differential topology, progression, differentiation, and expression&lt;/h2&gt;
+&lt;p&gt;Work in collaboration with Koen Van den Berge, Kelly Street and Sandrine Dudoit&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; In single-cell RNA-sequencing (scRNA-seq), gene expression is assessed individually for each cell, allowing the investigation of developmental processes, such as embryogenesis and cellular differentiation and regeneration, at unprecedented resolutions. In such dynamic biological systems, grouping cells into discrete groups is not reflective of the biology. Cellular states rather form a continuum, e.g., for the differentiation of stem cells into mature cell types. This process is often represented via a trajectory in a reduced-dimensional representation of the scRNA-seq dataset.&lt;/p&gt;
+&lt;p&gt;While many methods have been suggested for trajectory inference, it is often unclear how to handle multiple biological groups or conditions, e.g., inferring and comparing the differentiation trajectories of wild-type and  knock-out stem cell populations.&lt;/p&gt;
+&lt;p&gt;In this manuscript, we present a method for the estimation and downstream interpretation of cell trajectories across multiple conditions. Our framework allows the interpretation of differences between conditions at the trajectory, cell population, and gene expression levels. We start by integrating datasets from multiple conditions into a single trajectory. By comparing the conditions along the trajectory’s path, we can detect large-scale changes, indicative of differential progression. We also demonstrate how to detect subtler changes by finding genes that exhibit different behaviors between these conditions along a differentiation path.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Medical Food Assessment Using a Smartphone App With Continuous Glucose Monitoring Sensors: Proof-of-Concept Study</title>
@@ -24,6 +45,14 @@
 &lt;p&gt;&lt;strong&gt;Conclusions:&lt;/strong&gt; We have shown that CGM devices can provide a comprehensive picture of glucose control without clinic visits. CGM device usage in conjunction with our custom smartphone app can lower the participation burden for subjects while reducing study costs, and allows for robust integration of multiple valuable data types with glucose levels remotely.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Trial Registration:&lt;/strong&gt; ClinicalTrials.gov NCT04424888; &lt;a href=&#34;http://clinicaltrials.gov/ct2/show/NCT04424888&#34;&gt;http://clinicaltrials.gov/ct2/show/NCT04424888&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Normalization benchmark of ATAC-seq datasets shows the importance of accounting for GC-content effects</title>
+      <link>http://hector-rdb.org/publication/berge/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/publication/berge/</guid>
+      <description></description>
     </item>
     
     <item>

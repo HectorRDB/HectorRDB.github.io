@@ -5,12 +5,20 @@
     <link>http://hector-rdb.org/publication/</link>
       <atom:link href="http://hector-rdb.org/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 04 Mar 2021 15:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 09 Mar 2021 15:00:00 +0000</lastBuildDate>
     <image>
       <url>http://hector-rdb.org/media/icon-192.png</url>
       <title>Publications</title>
       <link>http://hector-rdb.org/publication/</link>
     </image>
+    
+    <item>
+      <title>Trajectory inference across multiple conditions with condiments: differential topology, progression, differentiation, and expression</title>
+      <link>http://hector-rdb.org/publication/condiments/</link>
+      <pubDate>Tue, 09 Mar 2021 15:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/publication/condiments/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Medical Food Assessment Using a Smartphone App With Continuous Glucose Monitoring Sensors: Proof-of-Concept Study</title>
@@ -24,6 +32,14 @@
 &lt;p&gt;&lt;strong&gt;Conclusions:&lt;/strong&gt; We have shown that CGM devices can provide a comprehensive picture of glucose control without clinic visits. CGM device usage in conjunction with our custom smartphone app can lower the participation burden for subjects while reducing study costs, and allows for robust integration of multiple valuable data types with glucose levels remotely.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Trial Registration:&lt;/strong&gt; ClinicalTrials.gov NCT04424888; &lt;a href=&#34;http://clinicaltrials.gov/ct2/show/NCT04424888&#34;&gt;http://clinicaltrials.gov/ct2/show/NCT04424888&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Normalization benchmark of ATAC-seq datasets shows the importance of accounting for GC-content effects</title>
+      <link>http://hector-rdb.org/publication/berge/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/publication/berge/</guid>
+      <description></description>
     </item>
     
     <item>

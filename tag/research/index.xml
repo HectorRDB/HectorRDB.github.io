@@ -5,12 +5,25 @@
     <link>http://hector-rdb.org/tag/research/</link>
       <atom:link href="http://hector-rdb.org/tag/research/index.xml" rel="self" type="application/rss+xml" />
     <description>Research</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://hector-rdb.org/media/icon-192.png</url>
       <title>Research</title>
       <link>http://hector-rdb.org/tag/research/</link>
     </image>
+    
+    <item>
+      <title>condiments</title>
+      <link>http://hector-rdb.org/project/condiments/</link>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://hector-rdb.org/project/condiments/</guid>
+      <description>&lt;h2 id=&#34;trajectory-inference-across-multiple-conditions-with-__condiments__-differential-topology-progression-differentiation-and-expression&#34;&gt;Trajectory inference across multiple conditions with &lt;strong&gt;condiments&lt;/strong&gt;: differential topology, progression, differentiation, and expression&lt;/h2&gt;
+&lt;p&gt;Work in collaboration with Koen Van den Berge, Kelly Street and Sandrine Dudoit&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Abstract:&lt;/strong&gt; In single-cell RNA-sequencing (scRNA-seq), gene expression is assessed individually for each cell, allowing the investigation of developmental processes, such as embryogenesis and cellular differentiation and regeneration, at unprecedented resolutions. In such dynamic biological systems, grouping cells into discrete groups is not reflective of the biology. Cellular states rather form a continuum, e.g., for the differentiation of stem cells into mature cell types. This process is often represented via a trajectory in a reduced-dimensional representation of the scRNA-seq dataset.&lt;/p&gt;
+&lt;p&gt;While many methods have been suggested for trajectory inference, it is often unclear how to handle multiple biological groups or conditions, e.g., inferring and comparing the differentiation trajectories of wild-type and  knock-out stem cell populations.&lt;/p&gt;
+&lt;p&gt;In this manuscript, we present a method for the estimation and downstream interpretation of cell trajectories across multiple conditions. Our framework allows the interpretation of differences between conditions at the trajectory, cell population, and gene expression levels. We start by integrating datasets from multiple conditions into a single trajectory. By comparing the conditions along the trajectory’s path, we can detect large-scale changes, indicative of differential progression. We also demonstrate how to detect subtler changes by finding genes that exhibit different behaviors between these conditions along a differentiation path.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Caldera</title>
